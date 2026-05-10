@@ -1,0 +1,3108 @@
+# BLACKARCH TOOLS - CATEGORIZED
+**Total Tools: 2863**
+
+---
+
+## WEBAPP (309 tools)
+
+- **0d1n** `263.2d723ae` - Web security tool to make fuzzing at HTTP inputs, made in C with libCurl.
+- **abuse-ssl-bypass-waf** `7.c28f98e` - Bypassing WAF by abusing SSL/TLS Ciphers.
+- **adfind** `v1.0.3.r3.g46acf19` - Simple admin panel finder for php,js,cgi,asp and aspx admin panels.
+- **adminpagefinder** `0.1` - This python script looks for a large amount of possible administrative interfaces on a given site.
+- **albatar** `36.d500657` - A SQLi exploitation framework in Python.
+- **anti-xss** `166.2725dc9` - A XSS vulnerability scanner.
+- **arachni** `1.6.1.3.2.gc1710d607` - A feature-full, modular, high-performance Ruby framework aimed towards helping penetration testers and administrators evaluate the security of web applications.
+- **astra** `489.092804a` - Automated Security Testing For REST API's.
+- **atlas** `7.77bd6c8` - Open source tool that can suggest sqlmap tampers to bypass WAF/IDS/IPS.
+- **badministration** `16.69e4ec2` - A tool which interfaces with management or administration applications from an offensive standpoint.
+- **badsecrets** `v0.13.47.r0.g4540a4a` - A library for detecting known secrets across many web frameworks.
+- **bbqsql** `261.b9859d2` - SQL injection exploit tool.
+- **bbscan** `53.29b9f11` - A tiny Batch web vulnerability Scanner.
+- **bing-lfi-rfi** `0.1` - Python script for searching Bing for sites that may have local and remote file inclusion vulnerabilities.
+- **blisqy** `20.e9995fc` - Exploit Time-based blind-SQL injection in HTTP-Headers (MySQL/MariaDB).
+- **brutemap** `65.da4b303` - Penetration testing tool that automates testing accounts to the site's login page.
+- **brutexss** `54.ba753df` - Cross-Site Scripting Bruteforcer.
+- **bsqlbf** `2.7` - Blind SQL Injection Brute Forcer.
+- **bsqlinjector** `14.98c8ce8` - Blind SQL injection exploitation tool written in ruby.
+- **burpsuite** `2025.9.4` - An integrated platform for attacking web applications (community edition) + SHELLING plugin.
+- **c5scan** `30.be8845c` - Vulnerability scanner and information gatherer for the Concrete5 CMS.
+- **cansina** `59.67c6301` - A python-based Web Content Discovery Tool.
+- **cariddi** `v1.4.3.r3.gdbac386` - Take a list of domains, crawl urls and scan for endpoints, secrets, api keys, file extensions, token.
+- **cent** `v2.0.0.r0.gfe2e389` - Community edition nuclei templates.
+- **chankro** `21.7b6e844` - Tool that generates a PHP capable of run a custom binary (like a meterpreter) or a bash script (p.e. reverse shell) bypassing disable_functions & open_basedir).
+- **cjexploiter** `2.d1caa21` - Drag and Drop ClickJacking exploit development assistance tool.
+- **clairvoyance** `2.5.2` - Obtain GraphQL API Schema even if the introspection is not enabled.
+- **cloudget** `64.cba10b1` - Python script to bypass cloudflare from command line. Built upon cfscrape module.
+- **cms-few** `0.1` - Joomla, Mambo, PHP-Nuke, and XOOPS CMS SQL injection vulnerability scanning tool written in Python.
+- **cmseek** `382.20f9780` - CMS (Content Management Systems) Detection and Exploitation suite.
+- **cmsfuzz** `5.6be5a98` - Fuzzer for wordpress, cold fusion, drupal, joomla, and phpnuke.
+- **cmsscan** `43.f060b4b` - CMS scanner to identify and find vulnerabilities for Wordpress, Drupal, Joomla, vBulletin.
+- **cmsscanner** `0.15.0.r0.ge2fd720` - CMS Scanner Framework.
+- **comission** `203.67b890e` - WhiteBox CMS analysis.
+- **commentor** `20.4582674` - Extract all comments from the specified URL resource.
+- **commix** `2322.c38be53f` - Automated All-in-One OS Command Injection and Exploitation Tool.
+- **corscanner** `99.593043f` - Fast CORS misconfiguration vulnerabilities scanner.
+- **corsy** `69.2985ae2` - CORS Misconfiguration Scanner.
+- **crabstick** `47.bb7827f` - Automatic remote/local file inclusion vulnerability analysis and exploit tool.
+- **crackql** `1.0.r53.gac26a44` - GraphQL password brute-force and fuzzing utility
+- **crawlic** `51.739fe2b` - Web recon tool (find temporary files, parse robots.txt, search folders, google dorks and search domains hosted on same server).
+- **crlfuzz** `62.7a442bb` - A fast tool to scan CRLF vulnerability written in Go.
+- **csrftester** `1.0` - The OWASP CSRFTester Project attempts to give developers the ability to test their applications for CSRF flaws.
+- **cybercrowl** `111.f7cac52` - A Python Web path scanner tool.
+- **dalfox** `2049.9ee05e2` - Parameter Analysis and XSS Scanning tool.
+- **darkdump** `Darkdump2.0.r27.gf7424f2` - Open Source Intelligence interface for Deep Web scraping.
+- **darkjumper** `5.8` - This tool will try to find every website that host at the same server at your target.
+- **darkscrape** `68.2ca0e37` - OSINT Tool For Scraping Dark Websites.
+- **davscan** `30.701f967` - Fingerprints servers, finds exploits, scans WebDAV.
+- **dawnscanner** `v2.2.0.r15.g0d647fc` - A static analysis security scanner for ruby written web applications.
+- **dff-scanner** `1.1` - Tool for finding path of predictable resource locations.
+- **dirble** `1.4.2` - Fast directory scanning and scraping tool.
+- **dirbuster-ng** `9.0c34920` - C CLI implementation of the Java dirbuster tool.
+- **dirhunt** `329.a5ea20d` - Find web directories without bruteforce.
+- **dirscraper** `16.e752450` - OSINT Scanning tool which discovers and maps directories found in javascript files hosted on a website.
+- **dirsearch** `2521.70a7635` - HTTP(S) directory/file brute forcer.
+- **docem** `21.59db436` - Uility to embed XXE and XSS payloads in docx,odt,pptx,etc (OXML_XEE on steroids).
+- **domi-owned** `41.583d0a5` - A tool used for compromising IBM/Lotus Domino servers.
+- **dontgo403** `v1.1.8.r1.g5629009` - Tool to bypass 40X response codes..
+- **doork** `6.90c7260` - Passive Vulnerability Auditor.
+- **dorknet** `58.419d6a2` - Selenium powered Python script to automate searching for vulnerable web apps.
+- **droopescan** `1.45.1` - A plugin-based scanner that aids security researchers in identifying issues with several CMSs, mainly Drupal & Silverstripe.
+- **drupal-module-enum** `11.525543c` - Enumerate on drupal modules.
+- **drupalscan** `0.5.2` - Simple non-intrusive Drupal scanner.
+- **drupwn** `59.8186732` - Drupal enumeration & exploitation tool.
+- **dsfs** `36.8e9f8e9` - A fully functional File inclusion vulnerability scanner (supporting GET and POST parameters) written in under 100 lines of code.
+- **dsjs** `32.26287d0` - A fully functional JavaScript library vulnerability scanner written in under 100 lines of code.
+- **dsss** `124.f354215` - A fully functional SQL injection vulnerability scanner (supporting GET and POST parameters) written in under 100 lines of code.
+- **dsstore-crawler** `7.efa51f5` - A parser + crawler for .DS_Store files exposed publically.
+- **dsxs** `130.3e628b6` - A fully functional Cross-site scripting vulnerability scanner (supporting GET and POST parameters) written in under 100 lines of code.
+- **eos** `16.47f0086` - Enemies Of Symfony - Debug mode Symfony looter.
+- **epicwebhoneypot** `2.0a` - Tool which aims to lure attackers using various types of web vulnerability scanners by tricking them into believing that they have found a vulnerability on a host.
+- **evine** `42.46051de` - Interactive CLI Web Crawler.
+- **extended-ssrf-search** `28.680f815` - Smart ssrf scanner using different methods like parameter brute forcing in post and get.
+- **eyewitness** `1161.4ff0f01` - Designed to take screenshots of websites, provide some server header info, and identify default credentials if possible.
+- **fbht** `70.d75ae93` - A Facebook Hacking Tool
+- **fdsploit** `26.4522f53` - A File Inclusion & Directory Traversal fuzzing, enumeration & exploitation tool.
+- **feroxbuster** `v2.13.0.r0.g2f608c5` - A fast, simple, recursive content discovery tool written in Rust.
+- **ffuf** `v2.1.0.r5.g57da720` - Fast web fuzzer written in Go.
+- **fhttp** `1.3` - This is a framework for HTTP related attacks. It is written in Perl with a GTK interface, has a proxy for debugging and manipulation, proxy chaining, evasion rules, and more.
+- **filebuster** `95.f2b04c7` - An extremely fast and flexible web fuzzer.
+- **filegps** `90.03cbc75` - A tool that help you to guess how your shell was renamed after the server-side script of the file uploader saved it.
+- **fingerprinter** `486.e0078b4` - CMS/LMS/Library etc Versions Fingerprinter.
+- **flask-session-cookie-manager2** `v1.2.2.r1.g3c271d2` - Decode and encode Flask session cookie.
+- **flask-session-cookie-manager3** `v1.2.2.r1.g3c271d2` - Decode and encode Flask session cookie.
+- **fockcache** `10.3e7efa9` - Tool to make cache poisoning by trying X-Forwarded-Host and X-Forwarded-Scheme headers on web pages.
+- **fuxploider** `143.75a81ff` - Tool that automates the process of detecting and exploiting file upload forms flaws.
+- **gau** `169.bfc58a0` - Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.
+- **ghauri** `1.4.3.r0.g18e3677` - An advanced cross-platform tool that automates the process of detecting and exploiting SQL injection security flaws.
+- **ghost-py** `2.0.0` - Webkit based webclient (relies on PyQT).
+- **gitdump** `1.682fa37` - A pentesting tool that dumps the source code from .git even when the directory traversal is disabled.
+- **gittools** `70.7cac63a` - A repository with 3 tools for pwn'ing websites with .git repositories available'.
+- **golismero** `73.7d605b9` - Opensource web security testing framework.
+- **goop-dump** `74.5865759` - Tool to dump a git repository from a website, focused on as-complete-as-possible dumps and handling weird edge-cases.
+- **gopherus** `33.90a2fd5` - Tool generates gopher link for exploiting SSRF and gaining RCE in various servers.
+- **gospider** `108.f6cc9a7` - Fast web spider written in Go.
+- **gowitness** `3.0.5.r9.g6f859e9` - A golang, web screenshot utility using Chrome Headless.
+- **grabber** `0.1` - A web application scanner. Basically it detects some kind of vulnerabilities in your website.
+- **graphql-path-enum** `23.5450280` - Tool that lists the different ways of reaching a given type in a GraphQL schema.
+- **graphqlmap** `63.59305d7` - Scripting engine to interact with a graphql endpoint for pentesting purposes.
+- **graphw00f** `1.2.1.r2.gb4096a8` - GraphQL endpoint detection and engine fingerprinting.
+- **grpc-pentest-suite** `103.832f44f` - Set of tools for pentesting gRPC-Web Applications.
+- **h2csmuggler** `7.7ea573a` - HTTP Request Smuggling over HTTP/2 Cleartext (h2c).
+- **h2t** `38.56e1447` - Scans a website and suggests security headers to apply.
+- **hakrawler** `235.7615255` - Simple, fast web crawler designed for easy, quick discovery of endpoints and assets within a web application.
+- **hetty** `v0.7.0.r7.gf7def87` - HTTP toolkit for security research. Aims to become an open source alternative to commercial software like Burp Suite Pro.
+- **hookshot** `205.df30b85` - Integrated web scraper and email account data breach comparison tool.
+- **htcap** `155.a59c592` - A web application analysis tool for detecting communications between javascript and the server.
+- **http2smugl** `43.ccdf772` - Http2Smugl - Tool to detect and exploit HTTP request smuggling in cases it can be achieved via HTTP/2 -> HTTP/1.1 conversion.
+- **httpforge** `11.02.01` - A set of shell tools that let you manipulate, send, receive, and analyze HTTP messages. These tools can be used to test, discover, and assert the security of Web servers, apps, and sites. An accompanying Python library is available for extensions.
+- **httpgrep** `2.4` - A python tool which scans for HTTP servers and finds given strings in HTTP body and HTTP response headers.
+- **httppwnly** `47.528a664` - "Repeater" style XSS post-exploitation tool for mass browser control.
+- **httpx** `2545.cb1dd8d` - A fast and multi-purpose HTTP toolkit allow to run multiple probers using retryablehttp library.
+- **identywaf** `207.ae7e44a` - Blind WAF identification tool.
+- **injectus** `12.3c01fa0` - CRLF and open redirect fuzzer.
+- **interactsh-client** `v1.2.4.r3.gbcbfdb9` - Open-Source Solution for Out of band Data Extraction.
+- **ipsourcebypass** `1.2.r17.gd89edb1` - This Python script can be used to bypass IP source restrictions using HTTP headers.
+- **jaeles** `233.243e0b6` - The Swiss Army knife for automated Web Application Testing.
+- **jaidam** `18.15e0fec` - Penetration testing tool that would take as input a list of domain names, scan them, determine if wordpress or joomla platform was used and finally check them automatically, for web vulnerabilities using two well-known open source tools,
+- **jast** `17.361ecde` - Just Another Screenshot Tool.
+- **jdeserialize** `31.20635ba` - A library that interprets Java serialized objects. It also comes with a command-line tool that can generate compilable class declarations, extract block data, and print textual representations of instance values.
+- **jexboss** `86.338b531` - Jboss verify and Exploitation Tool.
+- **jira-scan** `7.447d0ec` - A simple remote scanner for Atlassian Jira
+- **jok3r** `447.0761996` - Network and Web Pentest Framework.
+- **jomplug** `0.1` - This php script fingerprints a given Joomla system and then uses Packet Storm's archive to check for bugs related to the installed components.
+- **jooforce** `11.43c21ad` - A Joomla password brute force tester.
+- **joomlascan** `1.2` - Joomla scanner scans for known vulnerable remote file inclusion paths and files.
+- **joomlavs** `254.eea7500` - A black box, Ruby powered, Joomla vulnerability scanner.
+- **joomscan** `83.2ea8cc7` - Detects file inclusion, sql injection, command execution vulnerabilities of a target Joomla! web site.
+- **jshell** `7.ee3c92d` - Get a JavaScript shell with XSS.
+- **jsonbee** `30.c0c87fc` - A ready to use JSONP endpoints/payloads to help bypass content security policy (CSP).
+- **jsparser** `31.ccd3ab6` - Parse javascript using Tornado and JSBeautifier to discover interesting enpoints.
+- **jsql-injection** `0.112` - A Java application for automatic SQL database injection.
+- **jstillery** `65.512e9af` - Advanced JavaScript Deobfuscation via Partial Evaluation.
+- **juumla** `106.130565e` - Python tool created to identify Joomla version, scan for vulnerabilities and search for config files.
+- **jwt-hack** `v1.2.0.r2.gde22655` - A tool for hacking / security testing to JWT.
+- **kadimus** `183.ac5f438` - LFI Scan & Exploit Tool.
+- **katana-pd** `v1.2.1.r91.g64a99ad` - Crawling and spidering framework.
+- **kiterunner** `19.7d5824c` - Contextual Content Discovery Tool.
+- **kolkata** `3.0` - A web application fingerprinting engine written in Perl that combines cryptography with IDS evasion.
+- **konan** `23.7b5ac80` - Advanced Web Application Dir Scanner.
+- **kubolt** `28.0027239` - Utility for scanning public kubernetes clusters.
+- **lfi-exploiter** `1.1` - This perl script leverages /proc/self/environ to attempt getting code execution out of a local file inclusion vulnerability..
+- **lfi-fuzzploit** `1.1` - A simple tool to help in the fuzzing for, finding, and exploiting of local file inclusion vulnerabilities in Linux-based PHP applications.
+- **lfi-image-helper** `0.8` - A simple script to infect images with PHP Backdoors for local file inclusion attacks.
+- **lfi-sploiter** `1.0` - This tool helps you exploit LFI (Local File Inclusion) vulnerabilities. Post discovery, simply pass the affected URL and vulnerable parameter to this tool. You can also use this tool to scan a URL for LFI vulnerabilities.
+- **lfifreak** `21.0c6adef` - A unique automated LFi Exploiter with Bind/Reverse Shells.
+- **lfimap** `286.ac1f29c` - Local file inclusion discovery and exploitation tool.
+- **liffy** `33.89dd4f8` - A Local File Inclusion Exploitation tool.
+- **lightbulb** `88.9e8d6f3` - Python framework for auditing web applications firewalls.
+- **linkfinder** `168.1debac5` - Discovers endpoint and their parameters in JavaScript files.
+- **list-urls** `0.1` - Extracts links from webpage.
+- **log4j-bypass** `33.f5c92f9` - Log4j web app tester that includes WAF bypasses.
+- **log4j-scan** `88.07f7e32` - A fully automated, accurate, and extensive scanner for finding log4j RCE CVE-44228.
+- **lorsrf** `v2.1.r3.g5c69453` - Find the parameters that can be used to find SSRF or Out-of-band resource load.
+- **lulzbuster** `1.3.3` - A very fast and smart web directory and file enumeration tool written in C.
+- **magescan** `1.12.9` - Scan a Magento site for information.
+- **malicious-pdf** `64.5676086` - Generate a bunch of malicious pdf files with phone-home functionality.
+- **mando.me** `9.8b34f1a` - Web Command Injection Tool.
+- **meg** `87.9daab00` - Fetch many paths for many hosts - without killing the hosts.
+- **metoscan** `05` - Tool for scanning the HTTP methods supported by a webserver. It works by testing a URL and checking the responses for the different requests.
+- **monsoon** `261.f4f9852` - A fast HTTP enumerator that allows you to execute a large number of HTTP requests.
+- **mooscan** `10.82963b0` - A scanner for Moodle LMS.
+- **morxtraversal** `1.0` - Path Traversal checking tool.
+- **multiinjector** `0.4` - Automatic SQL injection utility using a lsit of URI addresses to test parameter manipulation.
+- **nosqli** `37.6fce3eb` - NoSQL scanner and injector.
+- **nosqlmap** `300.54d3fdb` - Automated Mongo database and NoSQL web application exploitation tool
+- **novahot** `23.69857bb` - A webshell framework for penetration testers.
+- **okadminfinder** `122.a165681` - Tool to find admin panels / admin login pages.
+- **onionsearch** `44.fc9d62c` - Script that scrapes urls on different ".onion" search engines.
+- **opendoor** `422.d1ed311` - OWASP WEB Directory Scanner.
+- **owasp-bywaf** `26.e730d1b` - A web application penetration testing framework (WAPTF).
+- **owtf** `2187.af993ecb` - The Offensive (Web) Testing Framework.
+- **pappy-proxy** `77.e1bb049` - An intercepting proxy for web application testing.
+- **parameth** `56.8da6f27` - This tool can be used to brute discover GET and POST parameters.
+- **parampampam** `45.9171018` - This tool for brute discover GET and POST parameters.
+- **paros** `3.2.13` - Java-based HTTP/HTTPS proxy for assessing web app vulnerabilities. Supports editing/viewing HTTP messages on-the-fly, spiders, client certificates, proxy-chaining, intelligent scanning for XSS and SQLi, etc.
+- **payloadmask** `17.58e0525` - Web Payload list editor to use techniques to try bypass web application firewall.
+- **peepingtom** `56.bc6f4d8` - A tool to take screenshots of websites. Much like eyewitness.
+- **photon** `329.91c90ea` - Incredibly fast crawler which extracts urls, emails, files, website accounts and much more.
+- **php-findsock-shell** `2.b8a984f` - A Findsock Shell implementation in PHP + C.
+- **php-malware-finder** `0.3.4.r82.g87b6d7f` - Detect potentially malicious PHP files.
+- **phpggc** `725.f8aebde` - A library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.
+- **phpsploit** `1021.aea961d` - Stealth post-exploitation framework.
+- **pinkerton** `1.7.r6.gec6b954` - JavaScript file crawler and secret finder.
+- **pixload** `87.a8f58a7` - Image Payload Creating/Injecting tools.
+- **plecost** `104.4895e34` - Wordpress finger printer Tool.
+- **plown** `13.ccf998c` - A security scanner for Plone CMS.
+- **poly** `52.4e6f189` - Polymorphic webshells.
+- **pown** `332.0e32edf` - Security testing and exploitation toolkit built on top of Node.js and NPM.
+- **ppfuzz** `31.80982ec` - A fast tool to scan client-side prototype pollution vulnerability written in Rust.
+- **ppmap** `v1.2.0.r15.g9426af6` - A scanner/exploitation tool written in GO, which leverages client-side Prototype Pollution to XSS by exploiting known gadgets.
+- **proxenet** `712.67fc6b5` - THE REAL hacker friendly proxy for web application pentests.
+- **pwndrop** `18.385ba70` - Self-deployable file hosting service for red teamers, allowing to easily upload and share payloads over HTTP and WebDAV.
+- **pyfiscan** `3002.bea806a` - Free web-application vulnerability and version scanner.
+- **python-witnessme** `1.5.0` - Web Inventory tool, takes screenshots of webpages using Pyppeteer.
+- **python2-jsbeautifier** `1.13.4` - JavaScript unobfuscator and beautifier.
+- **rabid** `v0.2.0.r0.g3705b9c` - A CLI tool and library allowing to simply decode all kind of BigIP cookies.
+- **rapidscan** `221.296a20b` - The Multi-Tool Web Vulnerability Scanner.
+- **remot3d** `38.a707ef7` - An Simple Exploit for PHP Language.
+- **restler-fuzzer** `419.1f1d59c` - First stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services.
+- **riwifshell** `38.40075d5` - Web backdoor - infector - explorer.
+- **ruler** `310.1fe118c` - A tool to abuse Exchange services.
+- **rustbuster** `302.4a243d4` - DirBuster for Rust.
+- **rww-attack** `0.9.2` - Performs a dictionary attack against a live Microsoft Windows Small Business Server.
+- **sawef** `32.e5ce862` - Send Attack Web Forms.
+- **scanqli** `26.40a028d` - SQLi scanner to detect SQL vulns.
+- **scrying** `234.caa233c` - Collect RDP, web, and VNC screenshots smartly.
+- **second-order** `v3.2.r12.g400a81d` - Second-order subdomain takeover scanner.
+- **secretfinder** `15.d06119d` - A python script to find sensitive data (apikeys, accesstoken, jwt,..) in javascript files.
+- **secscan** `1.5` - Web Apps Scanner and Much more utilities.
+- **see-surf** `v2.0.r54.g9333190` - A Python based scanner to find potential SSRF parameters in a web application.
+- **serializationdumper** `34.6d161cd` - A tool to dump Java serialization streams in a more human readable form.
+- **shortfuzzy** `0.1` - A web fuzzing script written in perl.
+- **shuffledns** `362.1e45a1b` - A wrapper around massdns written in GO.
+- **sitadel** `123.e4d9ed4` - Web Application Security Scanner.
+- **sitediff** `3.1383935` - Fingerprint a web app using local files as the fingerprint sources.
+- **sj** `2.0.1.r0.g7417f9f` - A tool for auditing endpoints defined in exposed (Swagger/OpenAPI) definition files.
+- **skipfish** `2.10b` - A fully automated, active web application security reconnaissance tool.
+- **smplshllctrlr** `9.2baf390` - PHP Command Injection exploitation tool.
+- **smuggler** `23.2be871e` - An HTTP Request Smuggling / Desync testing tool written in Python 3.
+- **smuggler-py** `1.0` - Python tool used to test for HTTP Desync/Request Smuggling attacks.
+- **snallygaster** `v0.0.14.r3.g64d71f4` - Tool to scan for secret files on HTTP servers.
+- **snuck** `6.76196b6` - Automatic XSS filter bypass.
+- **sourcemapper** `37.467916e` - Extract JavaScript source trees from Sourcemap files.
+- **spaf** `11.671a976` - Static Php Analysis and Fuzzer.
+- **sparty** `0.1` - An open source tool written in python to audit web applications using sharepoint and frontpage architecture.
+- **spiga** `686.6d331b6` - Configurable web resource scanner.
+- **spike-proxy** `148` - A Proxy for detecting vulnerabilities in web applications
+- **spipscan** `69.4ad3235` - SPIP (CMS) scanner for penetration testing purpose written in Python.
+- **sprayingtoolkit** `60.82e2ec8` - Scripts to make password spraying attacks against Lync/S4B & OWA a lot quicker, less painful and more efficient.
+- **sqid** `0.3` - A SQL injection digger.
+- **ssrf-sheriff** `2.f95d691` - A simple SSRF-testing sheriff written in Go.
+- **ssrfmap** `120.69103b2` - Automatic SSRF fuzzer and exploitation tool.
+- **stews** `1.0.0.r7.gc7bba5a` - A Security Tool for Enumerating WebSockets.
+- **striker** `85.87c184d` - An offensive information and vulnerability scanner.
+- **subjs** `48.3eb4dc9` - Fetches javascript file from a list of URLS or subdomains.
+- **themole** `0.3` - Automatic SQL injection exploitation tool.
+- **tidos-framework** `v2.0.beta2.r22.g4098187` - Offensive Web Application Penetration Testing Framework.
+- **tinja** `1.2.0.r0.ga434f52` - CLI tool for testing web pages for template injection vulnerabilities.
+- **torcrawl** `142.43369ad` - Crawl and extract (regular or onion) webpages through TOR network.
+- **tplmap** `719.616b0e5` - Automatic Server-Side Template Injection Detection and Exploitation Tool.
+- **typo3scan** `v1.2.final.r0.g0c4ec73` - Enumerate Typo3 version and extensions.
+- **uncaptcha2** `7.473f33d` - Defeating the latest version of ReCaptcha with 91% accuracy.
+- **uppwn** `9.f69dec4` - A script that automates detection of security flaws on websites' file upload systems'.
+- **urlcrazy** `v0.8.2.r0.g78bf6e8` - Generate and test domain typos and variations to detect and perform typo squatting, URL hijacking, phishing, and corporate espionage.
+- **urldigger** `02c` - A python tool to extract URL addresses from different HOT sources and/or detect SPAM and malicious code
+- **urlextractor** `19.739864d` - Information gathering & website reconnaissance.
+- **urx** `0.8.0.r8.g4e33d44` - Extracts URLs from OSINT Archives for Security Insights.
+- **vane** `1899.48f9ab5` - A vulnerability scanner which checks the security of WordPress installations using a black box approach.
+- **vanguard** `0.1` - A comprehensive web penetration testing tool written in Perl thatidentifies vulnerabilities in web applications.
+- **vbscan** `39.2b1ce48` - A black box vBulletin vulnerability scanner written in perl.
+- **vega** `1.0` - An open source platform to test the security of web applications.
+- **vsvbp** `6.241a7ab` - Black box tool for Vulnerability detection in web applications.
+- **vulnerabilities-spider** `1.426e70f` - A tool to scan for web vulnerabilities.
+- **vulnx** `321.bcf451d` - Cms and vulnerabilites detector & An intelligent bot auto shell injector.
+- **w13scan** `430.432b835` - Passive Security Scanner.
+- **wafninja** `25.379cd98` - A tool which contains two functions to attack Web Application Firewalls.
+- **wafp** `0.01_26c3` - An easy to use Web Application Finger Printing tool written in ruby using sqlite3 databases for storing the fingerprints.
+- **wafpass** `50.4211785` - Analysing parameters with all payloads' bypass methods, aiming at benchmarking security solutions like WAF.
+- **wapiti** `3.2.6.r1.g7e4dd1c9` - A vulnerability scanner for web applications.
+- **wascan** `37.6926338` - Web Application Scanner.
+- **waybackpack** `114.c5507a0` - Download the entire Wayback Machine archive for a given URL.
+- **wcvs** `2.0.0.r1.g64e6441` - Web Cache Vulnerability Scanner is a Go-based CLI tool for testing for web cache poisoning.
+- **web-soul** `2` - A plugin based scanner for attacking and data mining web sites written in Perl.
+- **webanalyze** `121.707f3a4` - Port of Wappalyzer (uncovers technologies used on websites) in go to automate scanning.
+- **webborer** `173.b323cf4` - A directory-enumeration tool written in Go.
+- **webhandler** `348.1bd971e` - A handler for PHP system functions & also an alternative 'netcat' handler.
+- **webkiller** `42.d680598` - Tool Information Gathering Write By Python.
+- **webshells** `46.e8e1a37` - Web Backdoors.
+- **webslayer** `5` - A tool designed for brute forcing Web Applications.
+- **webtech** `1.3.3` - Identify technologies used on websites.
+- **webxploiter** `56.c03fe6b` - An OWASP Top 10 Security scanner.
+- **weevely** `902.ff906a1` - Weaponized web shell.
+- **weirdaal** `331.c14e36d` - AWS Attack Library.
+- **whatwaf** `392.b14e866` - Detect and bypass web application firewalls and protection systems.
+- **whichcdn** `22.5fc6ddd` - Tool to detect if a given website is protected by a Content Delivery Network.
+- **wig** `574.d5ddd91` - WebApp Information Gatherer.
+- **witchxtool** `1.1` - A perl script that consists of a port scanner, LFI scanner, MD5 bruteforcer, dork SQL injection scanner, fresh proxy scanner, and a dork LFI scanner.
+- **wordpress-exploit-framework** `v2.0.1.r7.ge55ded4` - A Ruby framework for developing and using modules which aid in the penetration testing of WordPress powered websites and systems.
+- **wpforce** `88.b72ec64` - Wordpress Attack Suite.
+- **wpintel** `6.741c0c9` - Chrome extension designed for WordPress Vulnerability Scanning and information gathering.
+- **wpseku** `39.862fb2c` - Simple Wordpress Security Scanner.
+- **ws-attacker** `1.7` - A modular framework for web services penetration testing.
+- **wssip** `75.56d0d2c` - Application for capturing, modifying and sending custom WebSocket data from client to server and vice versa.
+- **wuzz** `234.9ae9b52` - Interactive cli tool for HTTP inspection.
+- **x8** `v4.1.0.r2.g6ee4532` - Hidden parameters discovery suite.
+- **xmlrpc-bruteforcer** `36.6a46371` - An XMLRPC brute forcer targeting Wordpress written in Python 3.
+- **xspear** `1.4.1.r9.g57bb7b4` - Powerful XSS Scanning and Parameter analysis tool&gem.
+- **xsrfprobe** `575.b051d78` - The Prime Cross Site Request Forgery Audit and Exploitation Toolkit.
+- **xss-freak** `17.e361766` - An XSS scanner fully written in Python3 from scratch.
+- **xsscon** `45.ce91fd6` - Simple XSS Scanner tool.
+- **xsscrapy** `153.4966255` - XSS spider - 66/66 wavsep XSS detected.
+- **xsser** `1.8` - A penetration testing tool for detecting and exploiting XSS vulnerabilites.
+- **xssless** `45.8e7ebe1` - An automated XSS payload generator written in python.
+- **xsspy** `60.b10d336` - Web Application XSS Scanner.
+- **xsss** `0.40b` - A brute force cross site scripting scanner.
+- **xssscan** `17.7f1ea90` - Command line tool for detection of XSS attacks in URLs. Based on ModSecurity rules from OWASP CRS.
+- **xsssniper** `79.02b59af` - An automatic XSS discovery tool
+- **xsstrike** `475.ab27955` - An advanced XSS detection and exploitation suite.
+- **xssya** `13.cd62817` - A Cross Site Scripting Scanner & Vulnerability Confirmation.
+- **xwaf** `162.c6f6bb7` - Automatic WAF bypass tool.
+- **xxxpwn** `10.27a2d27` - A tool Designed for blind optimized XPath 1 injection attacks.
+- **xxxpwn-smart** `6.b11b95b` - A fork of xxxpwn adding further optimizations and tweaks.
+- **yaaf** `7.4d6273a` - Yet Another Admin Finder.
+- **yasuo** `121.994dcb1` - A ruby script that scans for vulnerable & exploitable 3rd-party web applications on a network.
+- **yawast** `0.12.1` - The YAWAST Antecedent Web Application Security Toolkit.
+- **ycrawler** `0.1` - A web crawler that is useful for grabbing all user supplied input related to a given website and will save the output. It has proxy and log file support.
+- **ysoserial** `0.0.6` - A proof-of-concept tool for generating payloads that exploit unsafe Java object deserialization.
+
+---
+
+## SCANNER (305 tools)
+
+- **0trace** `1.5` - A hop enumeration tool.
+- **a2sv** `140.cb24c4e` - Auto Scanning to SSL Vulnerability.
+- **admsnmp** `0.1` - ADM SNMP audit scanner.
+- **allthevhosts** `1.0` - A vhost discovery tool that scrapes various web applications.
+- **amass** `2559.61f53cc9` - In-depth subdomain enumeration written in Go.
+- **anubis-netsec** `1.1.3.r10.g52c4d62` - Subdomain enumeration and information gathering tool.
+- **apache-users** `2.1` - This perl script will enumerate the usernames on a unix system that use the apache module UserDir.
+- **apachetomcatscanner** `3.2` - Apache Tomcat vulnerability scanner.
+- **arjun** `2.2.7.r5.gd1fb995` - HTTP parameter discovery suite.
+- **assassingo** `173.2dd8650` - Web pentest framework for information gathering and vulnerability scanning.
+- **assetfinder** `19.4e95d87` - Find domains and subdomains potentially related to a given domain.
+- **athena-ssl-scanner** `0.6.2` - A SSL cipher scanner that checks all cipher codes. It can identify about 150 different ciphers.
+- **atscan** `2461.06521a9` - Server, Site and Dork Scanner.
+- **attk** `2.0.1023` - Trend Micro Anti-Threat Toolkit.
+- **aws-extender-cli** `17.a351154` - Script to test S3 buckets as well as Google Storage buckets and Azure Storage containers for common misconfiguration issues.
+- **aws-iam-privesc** `11.2983efd` - AWS IAM policy scanner that helps determine where privilege escalation can be achieved.
+- **barmie** `1.01` - Java RMI enumeration and attack tool.
+- **bashscan** `94.80c066c` - A port scanner built to utilize /dev/tcp for network and service discovery.
+- **belati** `72.49577a1` - The Traditional Swiss Army Knife for OSINT.
+- **bingoo** `3.698132f` - A Linux bash based Bing and Google Dorking Tool.
+- **birp** `65.b2e108a` - A tool that will assist in the security assessment of mainframe applications served over TN3270.
+- **blackbox-scanner** `1.7a25220` - Dork scanner & bruteforcing & hash cracker with blackbox framework.
+- **bleah** `53.6a2fd3a` - A BLE scanner for "smart" devices hacking.
+- **blindy** `12.59de8f2` - Simple script to automate brutforcing blind sql injection vulnerabilities.
+- **bluto** `142.25cad7a` - Recon, Subdomain Bruting, Zone Transfers.
+- **braa** `0.82` - A mass snmp scanner
+- **cameradar** `201.4c39e60` - Hacks its way into RTSP videosurveillance cameras.
+- **camscan** `1.0057215` - A tool which will analyze the CAM table of Cisco switches to look for anamolies.
+- **cangibrina** `123.6de0165` - Dashboard Finder.
+- **cecster** `5.15544cb` - A tool to perform security testing against the HDMI CEC (Consumer Electronics Control) and HEC (HDMI Ethernet Channel) protocols.
+- **cero** `v1.3.0.r19.gb73125b` - Scrape domain names from SSL certificates of arbitrary hosts.
+- **changeme** `272.26fa2c3` - A default credential scanner.
+- **check-weak-dh-ssh** `0.1` - Debian OpenSSL weak client Diffie-Hellman Exchange checker.
+- **chiron** `48.524abe1` - An all-in-one IPv6 Penetration Testing Framework.
+- **cipherscan** `423.30bd239` - A very simple way to find out which SSL ciphersuites are supported by a target.
+- **ciscos** `1.3` - Scans class A, B, and C networks for cisco routers which have telnet open and have not changed the default password from cisco.
+- **clair** `2109.fe37c68b` - Vulnerability Static Analysis for Containers.
+- **climber** `30.5530a78` - Check UNIX/Linux systems for privilege escalation.
+- **cloudflare-enum** `10.412387f` - Cloudflare DNS Enumeration Tool for Pentesters.
+- **cloudsploit** `6623.5f95cdae7` - AWS security scanning checks.
+- **cmsmap** `8.59dd0e2` - A python open source Content Management System scanner that automates the process of detecting security flaws of the most popular CMSs.
+- **configpush** `0.8.5` - This is a tool to span /8-sized networks quickly sending snmpset requests with default or otherwise specified community string to Cisco devices.
+- **corstest** `10.beffd0b` - A simple CORS misconfigurations checker.
+- **cpfinder** `0.1` - Simple script that looks for administrative web interfaces.
+- **crackmapexec** `v6.0.1.r198.gda472cb` - A swiss army knife for pentesting Windows/Active Directory environments.
+- **creepy** `137.9f60449` - A geolocation information gatherer. Offers geolocation information gathering through social networking platforms.
+- **ct-exposer** `24.71252ac` - An OSINT tool that discovers sub-domains by searching Certificate Transparency logs.
+- **cvechecker** `4.0` - The goal of cvechecker is to report about possible vulnerabilities on your system, by scanning the installed software and matching the results with the CVE database.
+- **d-tect** `13.9555c25` - Pentesting the Modern Web.
+- **darkbing** `0.1` - A tool written in python that leverages bing for mining data on systems that may be susceptible to SQL injection.
+- **davtest** `3.a282c58` - Tests WebDAV enabled servers by uploading test executable files, and then (optionally) uploading files which allow for command execution or other actions directly on the target.
+- **dbusmap** `16.6bb2831` - Simple utility for enumerating D-Bus endpoints, an nmap for D-Bus.
+- **dcrawl** `7.3273c35` - Simple, but smart, multi-threaded web crawler for randomly gathering huge lists of unique domain names.
+- **deblaze** `1.0608dc3` - Performs method enumeration and interrogation against flash remoting end points.
+- **delldrac** `0.1a` - DellDRAC and Dell Chassis Discovery and Brute Forcer.
+- **dhcpig** `1.6.r4.ga140c62` - Enhanced DHCPv4 and DHCPv6 exhaustion and fuzzing script written in python using scapy network library.
+- **dirb** `2.22` - A web content scanner, brute forceing for hidden files.
+- **dirbuster** `1.0_RC1` - An application designed to brute force directories and files names on web/application servers
+- **dirscanner** `0.1` - This is a python script that scans webservers looking for administrative directories, php shells, and more.
+- **dirstalk** `1.3.3` - Modern alternative to dirbuster/dirb.
+- **dmitry** `1.3a` - Deepmagic Information Gathering Tool.
+- **dnmap** `0.6` - The distributed nmap framework.
+- **dns2geoip** `0.1` - A simple python script that brute forces DNS and subsequently geolocates the found subdomains.
+- **dnsa** `0.6` - A dns security swiss army knife.
+- **dnsbf** `0.3` - Search for available domain names in an IP range.
+- **dnscan** `209.281721e` - A python wordlist-based DNS subdomain scanner.
+- **dnsgoblin** `0.1` - Nasty creature constantly searching for DNS servers. It uses standard dns querys and waits for the replies.
+- **dnspredict** `0.0.2` - DNS prediction.
+- **dnstwist** `645.3413953` - Domain name permutation engine for detecting typo squatting, phishing and corporate espionage.
+- **dockerscan** `59.590a844` - Docker security analysis & hacking tools.
+- **dorkbot** `411.ad4b5bb` - Command-line tool to scan Google search results for vulnerabilities.
+- **dorkme** `57.0a7017a` - Tool designed with the purpose of making easier the searching of vulnerabilities with Google Dorks, such as SQL Injection vulnerabilities.
+- **dpscan** `0.1` - Drupal Vulnerability Scanner.
+- **driftnet** `v1.3.0.r13.ge492335` - Listens to network traffic and picks out images from TCP streams it observes.
+- **dripper** `v1.r1.gc9bb0c9` - A fast, asynchronous DNS scanner; it can be used for enumerating subdomains and enumerating boxes via reverse DNS.
+- **dvcs-ripper** `54.2c1bbc6` - Rip web accessible (distributed) version control systems: SVN/GIT/BZR/CVS/HG.
+- **eazy** `0.1` - This is a small python tool that scans websites to look for PHP shells, backups, admin panels, and more.
+- **enum-shares** `7.97cba5a` - Tool that enumerates shared folders across the network and under a custom user account.
+- **enumiax** `1.0` - An IAX enumerator.
+- **eternal-scanner** `101.3979b0f` - An internet scanner for exploit CVE-0144 (Eternal Blue).
+- **faradaysec** `13509.bd132bb46` - Collaborative Penetration Test and Vulnerability Management Platform.
+- **fernmelder** `8.030212e` - Asynchronous mass DNS scanner.
+- **fgscanner** `11.893372c` - An advanced, opensource URL scanner.
+- **fi6s** `195.1380b86` - IPv6 network scanner designed to be fast.
+- **find-dns** `0.1` - A tool that scans networks looking for DNS servers.
+- **flashscanner** `11.6815b02` - Flash XSS Scanner.
+- **flunym0us** `2.0` - A Vulnerability Scanner for Wordpress and Moodle.
+- **forkingportscanner** `1` - Simple and fast forking port scanner written in perl. Can only scan on host at a time, the forking is done on the specified port range. Or on the default range of 1. Has the ability to scan UDP or TCP, defaults to tcp.
+- **fortiscan** `0.7.r7.gd54faa0` - A high performance FortiGate SSL-VPN vulnerability scanning and exploitation tool.
+- **fs-nyarl** `1.0` - A network takeover & forensic analysis tool - useful to advanced PenTest tasks & for fun and profit.
+- **fscan** `v2.0.1.r0.g03b21f9` - A Security Auditing Tool.
+- **fsnoop** `3.4` - A tool to monitor file operations on GNU/Linux systems by using the Inotify mechanism. Its primary purpose is to help detecting file race condition vulnerabilities and since version 3, to exploit them with loadable DSO modules (also called "payload modules" or "paymods").
+- **ftp-spider** `1.0` - FTP investigation tool - Scans ftp server for the following: reveal entire directory tree structures, detect anonymous access, detect directories with write permissions, find user specified data within repository.
+- **ftpscout** `12.cf1dff1` - Scans ftps for anonymous access.
+- **gcpbucketbrute** `17.6866bd2` - A script to enumerate Google Storage buckets, determine what access you have to them, and determine if they can be privilege escalated.
+- **gethsploit** `3.144778b` - Finding Ethereum nodes which are vulnerable to RPC-attacks.
+- **gggooglescan** `0.4` - A Google scraper which performs automated searches and returns results of search queries in the form of URLs or hostnames.
+- **ghost-phisher** `1.62` - GUI suite for phishing and penetration attacks
+- **git-dump** `7.4c9a2a9` - Dump the contents of a remote git repository without directory listing enabled.
+- **git-dumper** `1.0.8.r1.g544a3e5` - A tool to dump a git repository from a website.
+- **gitrob** `7.7be4c53` - Reconnaissance tool for GitHub organizations.
+- **gloom** `93.cd6e927` - Linux Penetration Testing Framework.
+- **grabbb** `0.0.7` - Clean, functional, and fast banner scanner.
+- **graphql-cop** `1.14.r0.g6efbc2d` - GraphQL vulnerability scanner.
+- **grepforrfi** `0.1` - Simple script for parsing web logs for RFIs and Webshells v1.2
+- **grype** `0.33.1` - A vulnerability scanner for container images and filesystems.
+- **gtp-scan** `0.7` - A small python script that scans for GTP (GPRS tunneling protocol) speaking hosts.
+- **h2buster** `79.6c4dd1c` - A threaded, recursive, web directory brute-force scanner over HTTP/2.
+- **habu** `359.8326936` - Python Network Hacking Toolkit.
+- **hakku** `384.bbb434d` - Simple framework that has been made for penetration testing tools.
+- **halberd** `0.2.4` - Halberd discovers HTTP load balancers. It is useful for web application security auditing and for load balancer configuration testing.
+- **hbad** `1.0` - This tool allows you to test clients on the heartbleed bug.
+- **hellraiser** `279.bea43e2` - Vulnerability Scanner.
+- **hexhttp** `v2.0.r0.gc63a417` - Perform tests on HTTP headers and analyze the results to identify vulnerabilities and interesting behaviors.
+- **hikpwn** `8.5a7d69c` - A simple scanner for Hikvision devices with basic vulnerability scanning capabilities written in Python 3.8.
+- **homepwn** `31.0803981` - Swiss Army Knife for Pentesting of IoT Devices.
+- **hoppy** `1.8.1` - A python script which tests http methods for configuration issues leaking information or just to see if they are enabled.
+- **host-extract** `8.0134ad7` - Ruby script tries to extract all IP/Host patterns in page response of a given URL and JavaScript/CSS files of that URL.
+- **hsecscan** `67.aa5845b` - A security scanner for HTTP response headers.
+- **http-enum** `0.4` - A tool to enumerate the enabled HTTP methods supported on a webserver.
+- **httprobe** `22.5555984` - Take a list of domains and probe for working HTTP and HTTPS servers
+- **httpsscanner** `1.2` - A tool to test the strength of a SSL web server.
+- **iaxscan** `0.02` - A Python based scanner for detecting live IAX/2 hosts and then enumerating (by bruteforce) users on those hosts.
+- **icmpquery** `1.0` - Send and receive ICMP queries for address mask and current time.
+- **iis-shortname-scanner** `5.4ad4937` - An IIS shortname Scanner.
+- **ike-scan** `1.9.5` - A tool that uses IKE protocol to discover, fingerprint and test IPSec VPN servers.
+- **ilo4-toolbox** `47.672a5d6` - Toolbox for HPE iLO4 analysis.
+- **infip** `0.1` - A python script that checks output from netstat against RBLs from Spamhaus.
+- **inurlbr** `34.dbf9773` - Advanced search in the search engines - Inurl scanner, dorker, exploiter.
+- **ipscan** `3.9.2` - A very fast IP address and port scanner.
+- **iptv** `138.ae6457b` - Search and brute force illegal iptv server.
+- **ipv6toolkit** `861.9ee80b6` - SI6 Networks' IPv6 Toolkit.
+- **jaadas** `0.1` - Joint Advanced Defect assEsment for android applications.
+- **knock** `100.d6de173` - Subdomain scanner.
+- **knxmap** `252.6f40dd1` - KNXnet/IP scanning and auditing tool for KNX home automation installations.
+- **krbrelayx** `61.aef69a7` - Kerberos unconstrained delegation abuse toolkit.
+- **kscan** `v1.85.r55.gcf76af2` - Asset mapping tool that can perform port scanning, TCP fingerprinting and banner capture for specified assets.
+- **kube-hunter** `703.bc47f08` - Hunt for security weaknesses in Kubernetes clusters.
+- **kubesploit** `86.2de2f12` - Cross-platform post-exploitation HTTP/2 Command & Control server.
+- **kubestriker** `39.e1776ea` - A Blazing fast Security Auditing tool for Kubernetes.
+- **laf** `12.7a456b3` - Login Area Finder: scans host/s for login panels.
+- **leaklooker** `5.0d2b9fc` - Find open databases with Shodan.
+- **letmefuckit-scanner** `3.f3be22b` - Scanner and Exploit Magento.
+- **leviathan** `35.a1a1d8c` - A mass audit toolkit which has wide range service discovery, brute force, SQL injection detection and running custom exploit capabilities.
+- **lfi-scanner** `4.0` - This is a simple perl script that enumerates local file inclusion attempts when given a specific target.
+- **lfisuite** `85.470e01f` - Totally Automatic LFI Exploiter (+ Reverse Shell) and Scanner.
+- **linenum** `75.c47f9b2` - Scripted Local Linux Enumeration & Privilege Escalation Checks
+- **linux-smart-enumeration** `299.eb80976` - Linux enumeration tool for pentesting and CTFs with verbosity levels.
+- **littleblackbox** `0.1.3` - Penetration testing tool, search in a collection of thousands of private SSL keys extracted from various embedded devices.
+- **locasploit** `117.fa48151` - Local enumeration and exploitation framework.
+- **logmepwn** `24.f257a8f` - A fully automated, reliable, super-fast, mass scanning and validation toolkit for the Log4J RCE CVE-44228 vulnerability.
+- **lotophagi** `0.1` - a relatively compact Perl script designed to scan remote hosts for default (or common) Lotus NSF and BOX databases.
+- **lunar** `968.62c8554` - A UNIX security auditing tool based on several security frameworks.
+- **maligno** `2.5` - An open source penetration testing tool written in python, that serves Metasploit payloads. It generates shellcode with msfvenom and transmits it over HTTP or HTTPS.
+- **manspider** `86.499f44f` - Spider entire networks for juicy files sitting on SMB shares. Search filenames or file content - regex supported!
+- **mantra** `v3.1.r4.g0634a79` - Hunt down API key leaks in JS files and pages.
+- **maryam** `819.99ae85a` - Full-featured Web Identification framework written in Python.
+- **mitm6** `33.8e75884` - Pwning IPv4 via IPv6.
+- **modscan** `0.1` - A new tool designed to map a SCADA MODBUS TCP based network.
+- **mongoaudit** `222.70b83e8` - A powerful MongoDB auditing and pentesting tool .
+- **mqtt-pwn** `43.40368e5` - A one-stop-shop for IoT Broker penetration-testing and security assessment operations.
+- **msmailprobe** `1.c01c8bf` - Office 365 and Exchange Enumeration tool.
+- **mssqlscan** `0.8.4` - A small multi-threaded tool that scans for Microsoft SQL Servers.
+- **multiscanner** `1559.86e0145` - Modular file scanning/analysis framework.
+- **naabu** `v2.3.4.r183.g73ded87` - A fast port scanner written in go with focus on reliability and simplicity.
+- **navgix** `3.6f25c98` - Multi-threaded golang tool that will check for nginx alias traversal vulnerabilities.
+- **netbios-share-scanner** `1.0` - This tool could be used to check windows workstations and servers if they have accessible shared resources.
+- **netexec** `v1.4.0.r1003.gf981215` - A Windows / Active Directory environments pentest tool.
+- **netscan** `1.0` - Tcp/Udp/Tor port scanner with: synpacket, connect TCP/UDP and socks5 (tor connection).
+- **netscan2** `60.3d02ba1` - Active / passive network scanner.
+- **netz** `v0.1.0.r8.g3754e56` - Discover internet-wide misconfigurations while drinking coffee.
+- **nili** `39.285220a` - Tool for Network Scan, Man in the Middle, Protocol Reverse Engineering and Fuzzing.
+- **nmbscan** `1.2.6` - Tool to scan the shares of a SMB/NetBIOS network, using the NMB/SMB/NetBIOS protocols.
+- **nray** `99.f5eeb37` - Distributed port scanner.
+- **ntlm-challenger** `8.bd61ef6` - Parse NTLM over HTTP challenge messages.
+- **ntlm-scanner** `6.4b29329` - A simple python tool based on Impacket that tests servers for various known NTLM vulnerabilities.
+- **ntlmrecon** `81.64d7f9d` - A tool to enumerate information from NTLM authentication enabled web endpoints.
+- **nuclei** `v3.4.7.r139.g4e2af6b` - A fast tool for configurable targeted scanning based on templates offering massive extensibility and ease of use.
+- **nuclei-templates** `v10.3.0.r260.gd1411e1` - Community curated list of template files for the nuclei engine.
+- **o-saft** `7160.33265027` - A tool to show informations about SSL certificate and tests the SSL connection according given list of ciphers and various SSL configurations.
+- **ocs** `0.2` - Compact mass scanner for Cisco routers with default telnet/enable passwords.
+- **onetwopunch** `v1.0.0.r2.gd4ab4e8` - Use unicornscan to quickly scan all open ports, and then pass the open ports to nmap for detailed scans.
+- **onionscan** `130.da42865` - Scan Onion Services for Security Issues.
+- **openvas** `20250606` - Meta package for installing all OpenVAS components.
+- **pagodo** `163.33c4c0f` - Google dork script to collect potentially vulnerable web pages and applications on the Internet.
+- **paketto** `1.10` - Advanced TCP/IP Toolkit.
+- **panhunt** `63.ec87e88` - Searches for credit card numbers (PANs) in directories.
+- **paranoic** `1.7` - A simple vulnerability scanner written in Perl.
+- **passhunt** `5.332f374` - Search drives for documents containing passwords.
+- **pbscan** `10.566c3d7` - Faster and more efficient stateless SYN scanner and banner grabber due to userland TCP/IP stack usage.
+- **pcredz** `100.7bef6cc` - A tool that extracts credit card numbers and more from a pcap file or from a live interface.
+- **peass** `20251007.02ee8e3f.r0.gbe3fe91` - Privilege Escalation Awesome Scripts SUITE (with colors).
+- **pentestly** `1798.93d1b39` - Python and Powershell internal penetration testing framework.
+- **plcscan** `0.1` - This is a tool written in Python that will scan for PLC devices over s7comm or modbus protocols.
+- **pnscan** `1.14.1` - A parallel network scanner that can be used to survey TCP network services.
+- **poison** `1.5.41` - A fast, asynchronous syn and udp scanner.
+- **ppscan** `0.3` - Yet another port scanner with HTTP and FTP tunneling support.
+- **prads** `1132.e631f4f` - A "Passive Real-time Asset Detection System".
+- **praeda** `49.b0b17d3` - An automated data/information harvesting tool designed to gather critical information from various embedded devices.
+- **proxycheck** `0.1` - This is a simple proxy tool that checks for the HTTP CONNECT method and grabs verbose output from a webserver.
+- **proxyscan** `0.3` - A security penetration testing tool to scan for hosts and ports through a Web proxy server.
+- **pwndora** `248.d3f676a` - Massive IPv4 scanner, find and analyze internet-connected devices in minutes, create your own IoT search engine at home.
+- **pyssltest** `9.d7703f0` - A python multithreaded script to make use of Qualys ssllabs api to test SSL flaws.
+- **pytbull** `19.3d82a54` - Next generation of pytbull, IDS/IPS testing framework.
+- **pythem** `454.e4fcb8a` - Python2 penetration testing framework.
+- **python2-ldapdomaindump** `0.9.4` - Active Directory information dumper via LDAP.
+- **ranger-scanner** `149.3aae5dd` - A tool to support security professionals to access and interact with remote Microsoft Windows based systems.
+- **rawr** `74.544dd75` - Rapid Assessment of Web Resources. A web enumerator.
+- **rbac-lookup** `v0.10.3.r0.g46385c5` - A CLI that allows you to easily find Kubernetes roles and cluster roles bound to any user.
+- **rdp-cipher-checker** `0.1` - Enumerate the encryption protocols supported by the server and the cipher strengths supported using native RDP encryption.
+- **rdp-sec-check** `11.d0cc143` - Script to enumerate security settings of an RDP Service.
+- **relay-scanner** `1.7` - An SMTP relay scanner.
+- **remote-method-guesser** `v5.1.0.r11.g3398ec6` - Java RMI vulnerability scanner.
+- **responder** `v3.1.7.0.r0.gfe5f632` - A LLMNR and NBT-NS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2 (multirelay version).
+- **retire** `5.3.0.r11.gefe801f` - Scanner detecting the use of JavaScript libraries with known vulnerabilities.
+- **routerhunter** `21.4da257c` - Tool used to find vulnerable routers and devices on the Internet and perform tests.
+- **rtlizer** `35.5614163` - Simple spectrum analyzer.
+- **rtlsdr-scanner** `1013.3c032de` - A cross platform Python frequency scanning GUI for the OsmoSDR rtl-sdr library.
+- **s3scanner** `479.0c6d8d7` - A tool to find open S3 buckets in AWS or other cloud providers.
+- **sambascan** `0.5.0` - Allows you to search an entire network or a number of hosts for SMB shares. It will also list the contents of all public shares that it finds.
+- **sandcastle** `73.10af7c7` - A Python script for AWS S3 bucket enumeration.
+- **sandmap** `581.5be99d4` - Simple CLI with the ability to run pure Nmap engine, 31 modules with 459 scan profiles.
+- **sandy** `6.531ab16` - An open-source Samsung phone encryption assessment framework
+- **sb0x** `19.04f40fe` - A simple and Lightweight framework for Penetration testing.
+- **scamper** `20240920` - A tool that actively probes the Internet in order to analyze topology and performance.
+- **scanless** `90.3da40e9` - Utility for using websites that can perform port scans on your behalf.
+- **scanssh** `2.1` - Fast SSH server and open proxy scanner.
+- **scout2** `1182.5d86d46` - Security auditing tool for AWS environments.
+- **scoutsuite** `5.14.0.r0.g7909f2fc6` - Multi-Cloud Security Auditing Tool.
+- **scrape-dns** `58.3df392f` - Searches for interesting cached DNS entries.
+- **sdnpwn** `85.0080574` - An SDN penetration testing toolkit.
+- **seat** `0.3` - Next generation information digging application geared toward the needs of security professionals. It uses information stored in search engine databases, cache repositories, and other public resources to scan web sites for potential vulnerabilities.
+- **shareenum** `48.db728dd` - Tool to enumerate shares from Windows hosts.
+- **sharesniffer** `58.a0c5ed6` - Network share sniffer and auto-mounter for crawling remote file systems.
+- **simple-lan-scan** `1.0` - A simple python script that leverages scapy for discovering live hosts on a network.
+- **simple-lan-scan3** `1.0.1` - A simple python3 script that leverages scapy for discovering live hosts on a network.
+- **sipshock** `7.6ab5591` - A scanner for SIP proxies vulnerable to Shellshock.
+- **slurp-scanner** `93.2dea27e` - Evaluate the security of S3 buckets.
+- **smap-scanner** `0.1.12.r5.gfcf43c1` - Passive port scanner built with shodan free API.
+- **smbexec** `59.a54fc14` - A rapid psexec style attack with samba tools.
+- **smbmap** `v1.10.7.r5.g6af1b59` - A handy SMB enumeration tool.
+- **smbspider** `10.7db9323` - A lightweight python utility for searching SMB/CIFS/Samba file shares.
+- **smbsr** `50.7f86241` - Lookup for interesting stuff in SMB shares.
+- **smod** `53.7eb8423` - A modular framework with every kind of diagnostic and offensive feature you could need in order to pentest modbus protocol.
+- **smtp-test** `5.d8d8598` - Automated testing of SMTP servers for penetration testing.
+- **smtp-vrfy** `1.0` - An SMTP Protocol Hacker.
+- **smtptx** `1.0` - A very simple tool used for sending simple email and do some basic email testing from a pentester perspective.
+- **snmpenum** `1.7` - An snmp enumerator.
+- **snmpscan** `0.1` - A free, multi-processes SNMP scanner.
+- **snoopbrute** `17.589fbe6` - Multithreaded DNS recursive host brute-force tool.
+- **sparta** `21.b0a4514` - Python GUI application which simplifies network infrastructure penetration testing by aiding the penetration tester in the scanning and enumeration phase.
+- **sqlivulscan** `249.cc8e657` - This will give you the SQLi Vulnerable Website Just by Adding the Dork.
+- **ssdp-scanner** `1.0` - SSDP amplification scanner written in Python. Makes use of Scapy.
+- **ssh-user-enum** `7.ae453c1` - SSH User Enumeration Script in Python Using The Timing Attack.
+- **sslcaudit** `524.f218b9b` - Utility to perform security audits of SSL/TLS clients.
+- **ssllabs-scan** `251.53cd76a` - Command-line client for the SSL Labs APIs
+- **sslmap** `0.2.0` - A lightweight TLS/SSL cipher suite scanner.
+- **sslscan2** `757.35cd5f9` - Tests SSL/TLS enabled services to discover supported cipher suites.
+- **stacs** `0.5.1.r0.g11f3503` - Static Token And Credential Scanner.
+- **sticky-keys-hunter** `15.c816fc9` - Script to test an RDP host for sticky keys and utilman backdoor.
+- **stig-viewer** `2.8` - XCCDF formatted SRGs and STIGs files viewer for SCAP validation tools.
+- **strutscan** `4.8712c12` - Apache Struts2 vulnerability scanner written in Perl.
+- **subjack** `182.49c51e5` - Subdomain Takeover tool written in Go.
+- **subover** `71.3d258e2` - A Powerful Subdomain Takeover Tool.
+- **subzy** `v1.2.1.r0.gf2e2ec7` - Subdomain takeover vulnerability checker.
+- **swarm** `41.1713c1e` - A distributed penetration testing tool.
+- **synscan** `5.02` - fast asynchronous half-open TCP portscanner
+- **tachyon-scanner** `471.4f1b1a0` - Fast Multi-Threaded Web Discovery Tool.
+- **tactical-exploitation** `96.0d0307e` - Modern tactical exploitation toolkit.
+- **taipan** `2.9.498.18` - Web application security scanner.
+- **takeover** `98.a058647` - Sub-Domain TakeOver Vulnerability Scanner.
+- **tlsx** `v1.2.1.r2.gbbc0b1e` - TLS grabber focused on TLS based data collection.
+- **topera** `19.3e230fd` - An IPv6 security analysis toolkit, with the particularity that their attacks can't be detected by Snort.
+- **traxss** `81.48dee2e` - Automated XSS Vulnerability Scanner.
+- **udp-hunter** `4.b95cce5` - Network assessment tool for various UDP Services covering both IPv4 and IPv6 protocols.
+- **udsim** `33.b379464` - A graphical simulator that can emulate different modules in a vehicle and respond to UDS request.
+- **umap** `25.3ad8121` - The USB host security assessment tool.
+- **unicornscan** `0.4.7` - A new information gathering and correlation engine.
+- **upnpscan** `0.4` - Scans the LAN or a given address range for UPnP capable devices.
+- **uptux** `33.85ccfd0` - Linux privilege escalation checks (systemd, dbus, socket fun, etc).
+- **uw-loveimap** `0.1` - Multi threaded imap bounce scanner.
+- **uw-udpscan** `0.1` - Multi threaded udp scanner.
+- **uw-zone** `0.1` - Multi threaded, randomized IP zoner.
+- **v3n0m** `536.16b629f` - Offensive Security Tool for Vulnerability Scanning & Pentesting
+- **vais** `17.5c35c3a` - SWF Vulnerability & Information Scanner.
+- **vault-scanner** `299.0303cf4` - Swiss army knife for hackers.
+- **vcsmap** `v2.0.2.r1.g3889964` - A plugin-based tool to scan public version control systems for sensitive information.
+- **vhostscan** `347.acc7890` - A virtual host scanner that can be used with pivot tools, detect catch-all scenarios, aliases and dynamic default pages.
+- **videosnarf** `0.63` - A new security assessment tool for pcap analysis
+- **visql** `49.3082e30` - Scan SQL vulnerability on target site and sites of on server.
+- **vscan** `10.da4e47e` - HTTPS / Vulnerability scanner.
+- **vulmap** `95.a167c47` - Vulmap Online Local Vulnerability Scanners Project
+- **vuls** `1106.e3c27e1` - Vulnerability scanner for Linux/FreeBSD, agentless, written in Go.
+- **wafw00f** `870.1899def` - Identify and fingerprint Web Application Firewall (WAF) products protecting a website.
+- **webenum** `21.24b43b4` - Tool to enumerate http responses using dynamically generated queries and more.
+- **webhunter** `12.918b606` - Tool for scanning web applications and networks and easily completing the process of collecting knowledge.
+- **webpwn3r** `38.3d75e76` - A python based Web Applications Security Scanner.
+- **webrute** `3.3` - Web server directory brute forcer.
+- **whitewidow** `605.4f27bfe` - SQL Vulnerability Scanner.
+- **wolpertinger** `2.58ef8e2` - A distributed portscanner.
+- **wordpresscan** `76.f810c1c` - WPScan rewritten in Python + some WPSeku ideas.
+- **xcname** `11.9c475a1` - A tool for enumerating expired domains in CNAME records.
+- **xpire-crossdomain-scanner** `1.0cb8d3b` - Scans crossdomain.xml policies for expired domain names.
+- **xsstracer** `5.f2ed21a` - Python script that checks remote web servers for Clickjacking, Cross-Frame Scripting, Cross-Site Tracing and Host Header Injection.
+- **yasat** `848` - Yet Another Stupid Audit Tool.
+
+---
+
+## RECON (257 tools)
+
+- **activedirectoryenum** `0.5.0` - Enumerate AD through LDAP.
+- **ad-ldap-enum** `88.60bc5bb` - An LDAP based Active Directory user and group enumeration tool.
+- **ad-miner** `v1.8.1.r0.g6467f51` - Active Directory audit tool that extract data from Bloodhound to uncover security weaknesses and generate an HTML report
+- **adexplorersnapshot** `118.dd9bad0` - AD Explorer snapshot parser.
+- **adidnsdump** `29.95adaf8` - Active Directory Integrated DNS dumping by any authenticated user.
+- **aiodnsbrute** `38.e773a4c` - Python 3 DNS asynchronous brute force utility.
+- **altdns** `78.6728272` - Generates permutations, alterations and mutations of subdomains and then resolves them.
+- **aquatone** `153.30fbf6e` - A Tool for Domain Flyovers.
+- **asn** `0.78.0` - ASN, RPKI validity, BGP stats, IPv4v6, Prefix, URL, ASPath, Organization, IP reputation, IP geolocation, IP fingerprinting, Network recon, lookup API server, Web traceroute server.
+- **attacksurfacemapper** `47.8a402ed` - Tool that aims to automate the reconnaissance process.
+- **autosint** `236.25d292c` - Tool to automate common osint tasks.
+- **aws-inventory** `19.9a2fa8e` - Discover resources created in an AWS account.
+- **aztarna** `1.2.1` - A footprinting tool for ROS and SROS systems.
+- **badkarma** `85.2c46334` - Advanced network reconnaissance toolkit.
+- **basedomainname** `0.1` - Tool that can extract TLD (Top Level Domain), domain extensions (Second Level Domain + TLD), domain name, and hostname from fully qualified domain names.
+- **bfac** `53.18fb0b5` - An automated tool that checks for backup artifacts that may disclose the web-application's source code.
+- **billcipher** `32.97fba59` - Information Gathering tool for a Website or IP address.
+- **bing-ip2hosts** `1.0.5` - Enumerates all hostnames which Bing has indexed for a specific IP address.
+- **bloodhound** `v4.3.1.r60.g226f497` - Six Degrees of Domain Admin
+- **bloodhound-ce-python** `v1.0.1.r202.gebcff84` - Python data collector for Bloodhound community edition (v5)
+- **bloodhound-python** `v1.0.1.r179.g8a7a9bf` - Python data collector for Bloodhound legcacy (v4)
+- **bridgekeeper** `57.55c390c` - Scrape employee names from search engine LinkedIn profiles. Convert employee names to a specified username format.
+- **catnthecanary** `7.e9184fe` - An application to query the canary.pw data set for leaked data.
+- **ccrawldns** `6.92525b6` - Retrieves from the CommonCrawl data set unique subdomains for a given domain name.
+- **certgraph** `194.9826815` - Crawl the graph of certificate Alternate Names.
+- **chaos-client** `283.17a19d7` - Go client to communicate with Chaos dataset API.
+- **chronoleak** `0.0.1` - ICMP Timestamp Remote Time Leaker.
+- **citadel** `95.3b1adbc` - A library of OSINT tools.
+- **cloud-buster** `194.b55e4a1` - A tool that checks Cloudflare enabled sites for origin IP leaks.
+- **cloud_enum** `0.7.r11.g13fefdb` - Multi-cloud OSINT tool. Enumerate public resources in AWS, Azure, and Google Cloud.
+- **cloudfail** `79.7982c7d` - Utilize misconfigured DNS and old database records to find hidden IP's behind the CloudFlare network.
+- **cloudlist** `830.2e4fc52` - A tool for listing Assets from multiple Cloud Providers.
+- **cloudmare** `108.9c5a39f` - A simple tool to find origin servers of websites protected by CloudFlare with a misconfiguration DNS.
+- **cloudunflare** `14.b91a8a7` - Reconnaissance Real IP address for Cloudflare Bypass.
+- **cr3dov3r** `47.4e1f784` - Search for public leaks for email addresses + check creds against 16 websites.
+- **cutycapt** `10` - A Qt and WebKit based command-line utility that captures WebKit's rendering of a web page.
+- **datasploit** `367.a270d50` - Performs automated OSINT and more.
+- **dga-detection** `78.0a3186e` - DGA Domain Detection using Bigram Frequency Analysis.
+- **dns-parallel-prober** `68.422db61` - PoC for an adaptive parallelised DNS prober.
+- **dnsbrute** `2.b1dc84a` - Multi-theaded DNS bruteforcing, average speed 80 lookups/second with 40 threads.
+- **dnscobra** `1.0` - DNS subdomain bruteforcing tool with Tor support through torsocks.
+- **dnsenum** `1.2.4.2` - Script that enumerates DNS information from a domain, attempts zone transfers, performs a brute force dictionary style attack, and then performs reverse look-ups on the results.
+- **dnsgrep** `14.3f4fa7c` - A utility for quickly searching presorted DNS names.
+- **dnsprobe** `56.7120008` - Allows you to perform multiple dns queries of your choice with a list of user supplied resolvers.
+- **dnsrecon** `1.5.1` - Python script for enumeration of hosts, subdomains and emails from a given domain using google.
+- **dnssearch** `20.e4ea439` - A subdomain enumeration tool.
+- **dnsspider** `1.4` - A fast multithreaded bruteforcer of subdomains that leverages a wordlist and/or character permutation.
+- **dnstracer** `1.10` - Determines where a given DNS server gets its information from, and follows the chain of DNS servers
+- **dnswalk** `2.0.2` - A DNS debugger and zone-transfer utility.
+- **dnsx** `1168.037e267` - Fast and multi-purpose DNS toolkit allow to run multiple DNS queries of your choice with a list of user-supplied resolvers.
+- **domain-analyzer** `0.8.1` - Finds all the security information for a given domain name.
+- **domain-stats** `169.759c52c` - A web API to deliver domain information from whois and alexa.
+- **domained** `80.d9d079c` - Multi Tool Subdomain Enumeration.
+- **domainhunter** `51.38cb7ef` - Checks expired domains for categorization/reputation and Archive.org history to determine good candidates for phishing and C2 domain names.
+- **dradis-ce** `v4.9.0.r1865.g40f7163` - An open source framework to enable effective information sharing.
+- **elevate** `27.1272d51` - Horizontal domain discovery tool you can use to discover other domains owned by a given company.
+- **enum4linux** `0.9.1` - A tool for enumerating information from Windows and Samba systems.
+- **enum4linux-ng** `441.401a464` - A next generation version of enum4linux.
+- **enumerate-iam** `14.4529114` - Enumerate the permissions associated with an AWS credential set.
+- **enumerid** `36.d3e7265` - Enumerate RIDs using pure Python.
+- **exitmap** `373.8155029` - A fast and modular scanner for Tor exit relays.
+- **facebot** `23.57f6025` - A facebook profile and reconnaissance system.
+- **fav-up** `54.089aa11` - IP lookup by favicon using Shodan.
+- **favfreak** `27.8acea5e` - Weaponizing favicon.ico for BugBounties , OSINT and what not.
+- **fbid** `16.1b35eb9` - Show info about the author by facebook photo url.
+- **fierce** `145.965840d` - A DNS reconnaissance tool for locating non-contiguous IP space.
+- **finalrecon** `197.ac4681c` - OSINT Tool for All-In-One Web Reconnaissance.
+- **flashlight** `109.90d1dc5` - Automated Information Gathering Tool for Penetration Testers.
+- **forager** `115.7439b0a` - Multithreaded threat Intelligence gathering utilizing.
+- **gasmask** `172.2527371` - All in one Information gathering tool - OSINT.
+- **gatecrasher** `2.3ad5225` - Network auditing and analysis tool developed in Python.
+- **geoedge** `0.2` - This little tools is designed to get geolocalization information of a host, it get the information from two sources (maxmind and geoiptool).
+- **gh-dork** `3.799f86f` - Github dorking tool.
+- **ghunt** `v2.2.0.r24.g42c6035` - An offensive OSINT Google framework.
+- **git-hound** `248.ce1bd9b` - Pinpoints exposed API keys on GitHub. A batch-catching, pattern-matching, patch-attacking secret snatcher.
+- **git-wild-hunt** `16.6495672` - A tool to hunt for credentials in github wild AKA git*hunt.
+- **gitdorker** `113.8199375` - Python program to scrape secrets from GitHub through usage of a large repository of dorks.
+- **gitem** `104.d40a1c9` - A Github organization reconnaissance tool.
+- **gitgraber** `82.aab4839` - Monitor GitHub to search and find sensitive data in real time for different online services.
+- **githack** `16.a3d70b1` - A `.git` folder disclosure exploit.
+- **github-dorks** `88.0cfd2cc` - Collection of github dorks and helper tool to automate the process of checking dorks.
+- **github-subdomains** `v1.2.2.r1.g2bfdf12` - Find subdomains on GitHub.
+- **gitmails** `71.8aa8411` - An information gathering tool to collect git commit emails in version control host services.
+- **gitminer** `54.16ada58` - Tool for advanced mining for content on Github.
+- **gitrecon** `30.6467e78` - OSINT tool to get information from a Github and Gitlab profile and find user's email addresses leaked on commits.
+- **go-windapsearch** `v0.3.0.r22.ged05587` - Utility to enumerate users, groups and computers from a Windows domain through LDAP queries.
+- **goddi** `1.2` - Dumps Active Directory domain information.
+- **goodork** `2.2` - A python script designed to allow you to leverage the power of google dorking straight from the comfort of your command line.
+- **goofile** `1.5` - Command line filetype search
+- **goog-mail** `1.0` - Enumerate domain emails from google.
+- **googlesub** `14.a7a3cc7` - A python script to find domains by using google dorks.
+- **goohak** `31.815a31e` - Automatically Launch Google Hacking Queries Against A Target Domain.
+- **goop** `12.39b34eb` - Perform google searches without being blocked by the CAPTCHA or hitting any rate limits.
+- **gosint** `196.9c86ed2` - OSINT framework in Go.
+- **grabing** `11.9c1aa6c` - Counts all the hostnames for an IP adress
+- **graphinder** `1.11.6` - GraphQL endpoints finder using subdomain enumeration, scripts analysis and bruteforce.
+- **gwtenum** `7.f27a5aa` - Enumeration of GWT-RCP method calls.
+- **h8mail** `344.ee31c8f` - Email OSINT and password breach hunting.
+- **hakrevdns** `47.3001d16` - Small, fast tool for performing reverse DNS lookups en masse.
+- **halcyon** `0.1` - A repository crawler that runs checksums for static files found within a given git repository.
+- **hasere** `1.0` - Discover the vhosts using google and bing.
+- **hatcloud** `33.3012ad6` - Bypass CloudFlare with Ruby.
+- **hoper** `v0.1.1.r0.g8d5dbd9` - Trace URL's jumps across the rel links to obtain the last URL.
+- **hosthunter** `158.553f1c7` - A recon tool for discovering hostnames using OSINT techniques.
+- **howmanypeoplearearound** `123.b05e06a` - Count the number of people around you by monitoring wifi signals.
+- **id-entify** `34.dd064a5` - Search for information related to a domain: Emails - IP addresses - Domains - Information on WEB technology - Type of Firewall - NS and MX records.
+- **idswakeup** `1.0` - A collection of tools that allows to test network intrusion detection systems.
+- **infoga** `33.79a1c03` - Tool for gathering e-mail accounts information from different public sources (search engines, pgp key servers).
+- **inquisitor** `28.12a9ec1` - OSINT Gathering Tool for Companies and Organizations.
+- **intelplot** `12.4dd9fc0` - OSINT Tool to Mark Points on Offline Map.
+- **intrace** `1.5` - Traceroute-like application piggybacking on existing TCP connections
+- **ip-tracer** `92.6b9c454` - Track and retrieve any ip address information.
+- **ip2clue** `0.0.95` - A small memory/CPU footprint daemon to lookup country (and other info) based on IP (v4 and v6).
+- **iptodomain** `18.f1afcd7` - This tool extract domains from IP address based in the information saved in virustotal.
+- **ipv666** `182.ad45ae8` - Golang IPv6 address enumeration.
+- **ircsnapshot** `94.cb02a85` - Tool to gather information from IRC servers.
+- **isr-form** `1.0` - Simple html parsing tool that extracts all form related information and generates reports of the data. Allows for quick analyzing of data.
+- **ivre** `0.9.21.dev120` - Network recon framework based on Nmap, Masscan, Zeek (Bro), Argus, Netflow,...
+- **ivre-docs** `0.9.21.dev120` - Network recon framework based on Nmap, Masscan, Zeek (Bro), Argus, Netflow,... (documentation)
+- **ivre-web** `0.9.21.dev120` - Network recon framework based on Nmap, Masscan, Zeek (Bro), Argus, Netflow,... (web application)
+- **jackdaw** `417.19e38d1` - Collect all information in your domain, show you graphs on how domain objects interact with each-other and how to exploit these interactions.
+- **jsearch** `44.87cf9c1` - Simple script that grep infos from javascript files.
+- **kacak** `1.0` - Tools for penetration testers that can enumerate which users logged on windows system.
+- **kamerka** `47.23a9bd6` - Build interactive map of cameras from Shodan.
+- **keye** `29.d44a578` - Recon tool detecting changes of websites based on content-length differences.
+- **lanmap2** `127.1197999` - Passive network mapping tool.
+- **lbd** `20130719` - Load Balancing detector,
+- **ldapenum** `0.1` - Enumerate domain controllers using LDAP.
+- **ldeep** `1.0.89.r0.gf932f9f` - In-depth ldap enumeration utility.
+- **legion** `61.ca99853` - Automatic Enumeration Tool based in Open Source tools.
+- **lft** `3.91` - A layer four traceroute implementing numerous other features.
+- **lhf** `40.51568ee` - A modular recon tool for pentesting.
+- **linux-exploit-suggester** `32.9db2f5a` - A Perl script that tries to suggest exploits based OS version number.
+- **linux-exploit-suggester.sh** `171.2063aeb` - Linux privilege escalation auditing tool.
+- **littlebrother** `112.338cf82` - OSINT tool to get informations on French, Belgian and Swizerland people.
+- **loot** `51.656fb85` - Sensitive information extraction tool.
+- **lrod** `Version.r34.gbdd9b82` - Perform subdomain enumeration, endpoint recognition, and more.
+- **machinae** `197.9ef3e6c` - A tool for collecting intelligence from public sites/feeds about various security-related pieces of data.
+- **mail-crawl** `0.1` - Tool to harvest emails from website.
+- **massbleed** `20.44b7e85` - SSL Vulnerability Scanner.
+- **mdns-recon** `11.69b864e` - An mDNS recon tool written in Python.
+- **metabigor** `79.c0a3ecf` - Intelligence Tool but without API key.
+- **metafinder** `v1.2.r2.g30c8475` - Search for documents in a domain through Search Engines (Google, Bing and Baidu). The objective is to extract metadata.
+- **metagoofil** `93.8d50624` - An information gathering tool designed for extracting metadata of public documents.
+- **mildew** `11.df49c23` - Dotmil subdomain discovery tool that scrapes domains from official DoD website directories and certificate transparency logs.
+- **missidentify** `1.0` - A program to find Win32 applications.
+- **monocle** `1.0` - A local network host discovery tool. In passive mode, it will listen for ARP request and reply packets. In active mode, it will send ARP requests to the specific IP range. The results are a list of IP and MAC addresses present on the local network.
+- **nasnum** `5.df5df19` - Script to enumerate network attached storages.
+- **necromant** `4.53930c2` - Python Script that search unused Virtual Hosts in Web Servers.
+- **neglected** `8.68d02b3` - Facebook CDN Photo Resolver.
+- **netdiscover** `257.42648f9` - An active/passive address reconnaissance tool, mainly developed for those wireless networks without dhcp server, when you are wardriving. It can be also used on hub/switched networks.
+- **netkit-bsd-finger** `0.17` - BSD-finger ported to Linux.
+- **netkit-rusers** `0.17` - Logged in users; Displays who is logged in to machines on local network.
+- **netkit-rwho** `0.17` - Remote who client and server (with Debian patches).
+- **netmask** `2.4.4` - Helps determine network masks
+- **netscout** `37.2f409df` - OSINT tool that finds domains, subdomains, directories, endpoints and files.
+- **nohidy** `67.22c1283` - The system admins best friend, multi platform auditing tool.
+- **nsec3map** `v0.8.2.r0.gd145b13` - A tool to enumerate the resource records of a DNS zone using its DNSSEC NSEC or NSEC3 chain.
+- **nsec3walker** `20101223` - Enumerates domain names using DNSSEC
+- **ntp-ip-enum** `0.1` - Script to pull addresses from a NTP server using the monlist command. Can also output Maltego resultset.
+- **nullinux** `124.9f8727a` - Tool that can be used to enumerate OS information, domain information, shares, directories, and users through SMB null sessions.
+- **omnibus** `129.88dbf5d` - OSINT tool for intelligence collection, research and artifact management.
+- **onioff** `84.34dc309` - An onion url inspector for inspecting deep web links.
+- **osint-spy** `25.03dcf48` - Performs OSINT scan on email/domain/ip_address/organization.
+- **osinterator** `3.8447f58` - Open Source Toolkit for Open Source Intelligence Gathering.
+- **osintgram** `1.3.r14.gc8ba1f0` - OSINT tool offering an interactive shell to perform analysis on Instagram account of any users by its nickname.
+- **osrframework** `840.e02a6e9` - A project focused on providing API and tools to perform more accurate online researches.
+- **parsero** `81.e5b585a` - A robots.txt audit tool.
+- **pastemonitor** `12.bc5d326` - Scrape Pastebin API to collect daily pastes, setup a wordlist and be alerted by email when you have a match..
+- **pdfgrab** `15.1327508` - Tool for searching pdfs withthin google and extracting pdf metadata.
+- **pmapper** `82.91d2e60` - A tool for quickly evaluating IAM permissions in AWS.
+- **postenum** `125.3188f0a` - Clean, nice and easy tool for basic/advanced privilege escalation techniques.
+- **protosint** `30.5fb396e` - Python script that helps you investigate Protonmail accounts and ProtonVPN IP addresses.
+- **punter** `45.97b7bed` - Hunt domain names using DNSDumpster, WHOIS, Reverse WHOIS, Shodan, Crimeflare.
+- **puredns** `v2.1.1.r2.gd823415` - Fast domain resolver and subdomain bruteforcing with accurate wildcard filtering.
+- **pwned** `2835.e58438b` - A command-line tool for querying the 'Have I been pwned?' service.
+- **pwned-search** `40.04c1439` - Pwned Password API lookup.
+- **pwnedornot** `150.d25d3fa` - Tool to find passwords for compromised email addresses.
+- **pymeta** `13.fa74e64` - Auto Scanning to SSL Vulnerability.
+- **python-api-dnsdumpster** `79.0f8ba2b` - Unofficial Python API for http://dnsdumpster.com/.
+- **python-ivre** `0.9.21.dev120` - Network recon framework based on Nmap, Masscan, Zeek (Bro), Argus, Netflow,... (library)
+- **python2-api-dnsdumpster** `79.0f8ba2b` - Unofficial Python API for http://dnsdumpster.com/.
+- **python2-ivre** `0.9.16.dev26` - Network recon framework based on Nmap, Masscan, Zeek (Bro), Argus, Netflow,... (library)
+- **python2-shodan** `1.28.0` - Python library and command-line utility for Shodan (https://developer.shodan.io).
+- **quickrecon** `0.3.2` - A python script for simple information gathering. It attempts to find subdomain names, perform zone transfers and gathers emails from Google and Bing.
+- **raccoon** `190.44024ab` - A high performance offensive security tool for reconnaissance and vulnerability scanning.
+- **rdwatool** `1.2.r14.g2aefebc` - A python script to extract information from a Microsoft Remote Desktop Web Access (RDWA) application.
+- **recon-ng** `1028.c08acee` - A full-featured Web Reconnaissance framework written in Python.
+- **reconnoitre** `441.f62afba` - A security tool for multithreaded information gathering and service enumeration.
+- **reconscan** `61.afbcfc0` - Network reconnaissance and vulnerability assessment tools.
+- **recsech** `123.1fc298a` - Tool for doing Footprinting and Reconnaissance on the target web.
+- **red-hawk** `36.fa54e23` - All in one tool for Information Gathering, Vulnerability Scanning and Crawling.
+- **reverseip** `13.42cc9c3` - Ruby based reverse IP-lookup tool.
+- **revipd** `5.2aaacfb` - A simple reverse IP domain scanner.
+- **ridrelay** `34.f2fa99c` - Enumerate usernames on a domain where you have no creds by using SMB Relay with low priv.
+- **ripdc** `0.3` - A script which maps domains related to an given ip address or domainname.
+- **rita** `v5.1.0.r0.g470d050` - Real Intelligence Threat Analytics.
+- **rusthound** `55.6d7b945` - Active Directory data collector for BloodHound.
+- **rusthound-ce** `55.44b4613` - Active Directory data collector for BloodHound community edition (v5).
+- **s3enum** `v1.0.0.r17.gc23237b` - Amazon S3 bucket enumeration.
+- **scavenger** `103.75907e8` - Crawler (Bot) searching for credential leaks on different paste sites.
+- **sctpscan** `34.4d44706` - A network scanner for discovery and security.
+- **scylla** `99.621b7b8` - Find Advanced Information on a Username, Website, Phone Number, etc.
+- **seekr** `0.4.0` - A multi-purpose OSINT toolkit with a neat web-interface.
+- **server-status-pwn** `12.841d55d` - A script that monitors and extracts requested URLs and clients connected to the service by exploiting publicly accessible Apache server-status instances.
+- **shard** `1.5` - A command line tool to detect shared passwords.
+- **shhgit** `67.bac0c7d` - Find committed secrets and sensitive files across GitHub, Gists, GitLab and BitBucket or your local repositories in real time.
+- **shodanhat** `13.e5e7e68` - Search for hosts info with shodan.
+- **shosubgo** `V5.0.r0.gccb6dc7` - Small tool to Grab subdomains using Shodan API.
+- **simplyemail** `1.4.10.r7.6a42d37` - Email recon made fast and easy, with a framework to build on CyberSyndicates.
+- **sipi** `13.58f0dcc` - Simple IP Information Tools for Reputation Data Analysis.
+- **smbcrunch** `12.313400e` - 3 tools that work together to simplify reconnaissance of Windows File Shares.
+- **smtp-user-enum** `1.2` - Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
+- **snscrape** `0.4.3.20220106` - A social networking service scraper in Python.
+- **socialscan** `128.5ae42d0` - Check email address and username availability on online platforms.
+- **spfmap** `8.a42d15a` - A program to map out SPF and DKIM records for a large number of domains.
+- **spiderfoot** `4.0` - The Open Source Footprinting Tool.
+- **spoofcheck** `16.8cce591` - Simple script that checks a domain for email protections.
+- **spyse** `47.cd11ba9` - Python API wrapper and command-line client for the tools hosted on spyse.com.
+- **ssl-hostname-resolver** `1` - CN (Common Name) grabber on X.509 Certificates over HTTPS.
+- **stardox** `41.95b0a97` - Github stargazers information gathering tool.
+- **subdomainer** `1.2` - A tool designed for obtaining subdomain names from public sources.
+- **subfinder** `v2.8.0.r37.gc47f852d` - Modular subdomain discovery tool that can discover massive amounts of valid subdomains for any target.
+- **sublert** `67.56d2a12` - A security and reconnaissance tool which leverages certificate transparency to automatically monitor new subdomains deployed by specific organizations and issued TLS/SSL certificate.
+- **sublist3r** `138.729d649` - A Fast subdomains enumeration tool for penetration testers.
+- **subscraper** `34.29aa5cc` - Tool that performs subdomain enumeration through various techniques.
+- **svn-extractor** `45.6829804` - A simple script to extract all web resources by means of .SVN folder exposed over network.
+- **swamp** `59.3c8be65` - An OSINT tool for discovering associated sites through Google Analytics Tracking IDs.
+- **syborg** `36.5cd010b` - Recursive DNS Subdomain Enumerator with dead-end avoidance system.
+- **teamsuserenum** `v1.0.r1.g0c8b6c2` - User enumeration with Microsoft Teams API
+- **thedorkbox** `7.43852d3` - Comprehensive collection of Google Dorks & OSINT techniques to find Confidential Data.
+- **theharvester** `4120.90364d99` - Python tool for gathering e-mail accounts and subdomain names from different public sources (search engines, pgp key servers).
+- **tilt** `90.2bc2ef2` - An easy and simple tool implemented in Python for ip reconnaissance, with reverse ip lookup.
+- **tinfoleak** `3.6469eb3` - Get detailed information about a Twitter user activity.
+- **tinfoleak2** `41.c45c33e` - The most complete open-source tool for Twitter intelligence analysis.
+- **treasure** `2.b3249be` - Hunt for sensitive information through githubs code search.
+- **trusttrees** `102.a9b7399` - A Tool for DNS Delegation Trust Graphing.
+- **twofi** `2.0` - Twitter Words of Interest.
+- **ubiquiti-probing** `5.c28f4c1` - A Ubiquiti device discovery tool.
+- **udork** `102.1a0aab0` - Bash script that uses advanced Google search techniques to obtain sensitive information in files or directories, find IoT devices, detect versions of web applications.
+- **uhoh365** `26.110277a` - Script to enumerate Office 365 users without performing login attempts
+- **uncover** `v1.0.2.r2.g4b929e0` - Discover exposed hosts on the internet using multiple search engines.
+- **userrecon** `10.3b56891` - Find usernames across over 75 social networks.
+- **vbrute** `1.11dda8b` - Virtual hosts brute forcer.
+- **vpnpivot** `22.37bbde0` - Explore the network using this tool.
+- **waldo** `29.ee4f960` - A lightweight and multithreaded directory and subdomain bruteforcer implemented in Python.
+- **waybackurls** `11.89da10c` - Fetch all the URLs that the Wayback Machine knows about for a domain.
+- **waymore** `v6.2.r0.g049d1c5` - Find way more from the Wayback Machine, Common Crawl, Alien Vault OTX, URLScan & VirusTotal.
+- **websearch** `4.cb7ef8e` - Search vhost names given a host range. Powered by Bing..
+- **weebdns** `14.c01c04f` - DNS Enumeration with Asynchronicity.
+- **whatweb** `v0.6.2.r7.g660f0f4` - Next generation web scanner that identifies what websites are running.
+- **whoxyrm** `1.0.0.r5.g77318a7` - A reverse whois tool based on Whoxy API.
+- **windapsearch** `28.7724ec4` - Script to enumerate users, groups and computers from a Windows domain through LDAP queries.
+- **windows-exploit-suggester** `41.776bd91` - This tool compares a targets patch levels against the Microsoft vulnerability database in order to detect potential missing patches on the target.
+- **xray** `109.7e8cc67` - A tool for recon, mapping and OSINT gathering from public networks.
+- **zeus-scanner** `414.21b8756` - Advanced dork searching utility.
+- **zgrab** `804.59a517f` - Grab banners (optionally over TLS).
+
+---
+
+## EXPLOITATION (182 tools)
+
+- **aclpwn** `4.81480cc` - Active Directory ACL exploitation with BloodHound.
+- **adaptix-c2** `437.74fc6c0` - Extensible post-exploitation and adversarial emulation framework.
+- **adenum** `36.fbbe14d` - A pentesting tool that allows to find misconfiguration through the the protocol LDAP and exploit some of those weaknesses with kerberos.
+- **aggroargs** `51.c032446` - Bruteforce commandline buffer overflows, linux, aggressive arguments.
+- **angrop** `408.15616aa` - A rop gadget finder and chain builder.
+- **armitage** `150813` - A graphical cyber attack management tool for Metasploit.
+- **armor** `5.bae27a6` - A simple Bash script designed to create encrypted macOS payloads capable of evading antivirus scanners.
+- **armscgen** `98.c51b7d6` - ARM Shellcode Generator (Mostly Thumb Mode).
+- **arpoison** `0.7` - The UNIX arp cache update utility
+- **autosploit** `281.9a6a5ef` - Automate the exploitation of remote hosts.
+- **backoori** `55.988e507` - Tool aided persistence via Windows URI schemes abuse.
+- **bad-pdf** `61.a8149ee` - Steal NTLM Hashes with Bad-PDF.
+- **barq** `35.6f1a68c` - An AWS Cloud Post Exploitation framework.
+- **bed** `0.5` - Collection of scripts to test for buffer overflows, format string vulnerabilities.
+- **beef** `4832.32864da8` - The Browser Exploitation Framework that focuses on the web browser.
+- **beroot** `1.0.1.r109.g4c0b648` - A post exploitation tool to check common misconfigurations to find a way to escalate our privilege.
+- **bfbtester** `2.0.1` - Performs checks of single and multiple argument command line overflows and environment variable overflows
+- **binex** `1.0` - Format String exploit building tool.
+- **bitdump** `34.6a5cbd8` - A tool to extract database data from a blind SQL injection vulnerability.
+- **blind-sql-bitshifting** `1.c1da934` - A blind SQL injection module that uses bitshfting to calculate characters.
+- **bloodyad** `260.4e27678` - An Active Directory Privilege Escalation Framework.
+- **bluffy** `47.180ed5b` - Convert shellcode into different formats.
+- **botb** `69.6d33aae` - A container analysis and exploitation tool for pentesters and engineers.
+- **bowcaster** `230.17d69c1` - A framework intended to aid those developing exploits.
+- **brosec** `278.c51164f` - An interactive reference tool to help security professionals utilize useful payloads and commands.
+- **camover** `94.483befd` - A camera exploitation tool that allows to disclosure network camera admin password.
+- **certsync** `0.1.6` - Dump NTDS remotely without DRSUAPI: using golden certificate and UnPAC the hash.
+- **chw00t** `39.1fd1016` - Unices chroot breaking tool.
+- **cisco-global-exploiter** `1.3` - A perl script that targets multiple vulnerabilities in the Cisco Internetwork Operating System (IOS) and Catalyst products.
+- **cisco-torch** `0.4b` - Cisco Torch mass scanning, fingerprinting, and exploitation tool.
+- **coercer** `2.4.3` - Coerce a Windows server to authenticate on an arbitrary machine through 15 methods.
+- **cve-search** `v5.2.0.r120.g30e830ac` - A tool to perform local searches for known vulnerabilities.
+- **cvemap** `v1.0.0.r13.g42c85b6` - CLI tool designed to provide a structured and easily navigable interface to various vulnerability databases.
+- **darkd0rk3r** `1.0` - Python script that performs dork searching and searches for local file inclusion and SQL injection errors.
+- **darkmysqli** `1.6` - Multi-Purpose MySQL Injection Tool
+- **darkspiritz** `6.4d23e94` - A penetration testing framework for Linux, MacOS, and Windows systems.
+- **deepce** `121.a08648d` - Docker Enumeration, Escalation of Privileges and Container Escapes.
+- **delorean** `16.0291151` - NTP Main-in-the-Middle tool.
+- **dkmc** `56.3c238f0` - Dont kill my cat - Malicious payload evasion tool.
+- **dotdotpwn** `3.0.2` - The Transversal Directory Fuzzer.
+- **dr-checker** `140.ea63c0f` - A Soundy Vulnerability Detection Tool for Linux Kernel Drivers.
+- **drinkme** `19.acf1a14` - A shellcode testing harness.
+- **ducktoolkit** `37.42da733` - Encoding Tools for Rubber Ducky.
+- **encodeshellcode** `0.1b` - This is an encoding tool for 32-bit x86 shellcode that assists a researcher when dealing with character filter or byte restrictions in a buffer overflow vulnerability or some kind of IDS/IPS/AV blocking your code.
+- **enteletaor** `68.a975b5c` - Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.
+- **entropy** `702.13aac50` - A set of tools to exploit Netwave and GoAhead IP Webcams.
+- **erl-matter** `53.ab793cd` - Tool to exploit epmd related services such as rabbitmq, ejabberd and couchdb by bruteforcing the cookie and gaining RCE afterwards.
+- **evil-winrm** `v3.7.r0.gffe958c` - The ultimate WinRM shell for hacking/pentesting.
+- **evilclippy** `62.fa610c6` - A cross-platform assistant for creating malicious MS Office documents.
+- **exploit-db** `1.6` - The Exploit Database (EDB) – an ultimate archive of exploits and vulnerable software - A collection of hacks
+- **exploitpack** `139.e565c47` - Exploit Pack - The next generation exploit framework.
+- **eyepwn** `1.0` - Exploit for Eye-Fi Helper directory traversal vulnerability
+- **ffm** `129.6337eaf` - A hacking harness that you can use during the post-exploitation phase of a red-teaming engagement.
+- **fimap** `1.00` - A little tool for local and remote file inclusion auditing and exploitation
+- **firstexecution** `6.a275793` - A Collection of different ways to execute code outside of the expected entry points.
+- **flashsploit** `23.c465a6d` - Exploitation Framework for ATtiny85 Based HID Attacks.
+- **formatstringexploiter** `107.2810293` - Helper script for working with format string bugs.
+- **fs-exploit** `3.28bb9bb` - Format string exploit generation.
+- **fuzzbunch** `32.2b76c22` - NSA Exploit framework
+- **gadgettojscript** `20.005cb8b` - .NET serialized gadgets that can trigger .NET assembly from JS/VBS/VBA based scripts.
+- **getsploit** `37.bcab2ee` - Command line utility for searching and downloading exploits.
+- **ghostdelivery** `32.a23ed5a` - Python script to generate obfuscated .vbs script that delivers payload (payload dropper) with persistence and windows antivirus disabling functions.
+- **hackredis** `3.fbae1bc` - A simple tool to scan and exploit redis servers.
+- **hamster** `2.0.0` - Tool for HTTP session sidejacking.
+- **hcraft** `1.0.0` - HTTP Vuln Request Crafter
+- **heartleech** `1.0.0i.r4.g3ab1d60` - Scans for systems vulnerable to the heartbleed bug, and then download them.
+- **hqlmap** `38.bb6ab46` - A tool to exploit HQL Injections.
+- **htexploit** `0.77` - A Python script that exploits a weakness in the way that .htaccess files can be configured to protect a web directory with an authentication process
+- **htshells** `89.3216523` - Self contained web shells and other attacks via .htaccess files.
+- **impacket-ba** `0.12.0` - Collection of classes for working with network protocols.
+- **inception** `455.7c14eb1` - A FireWire physical memory manipulation and hacking tool exploiting IEEE 1394 SBP DMA.
+- **insanity** `117.cf51ff3` - Generate Payloads and Control Remote Machines .
+- **irpas** `0.10` - Internetwork Routing Protocol Attack Suite.
+- **isf** `68.5228865` - An exploitation framework based on Python.
+- **jboss-autopwn** `1.3bc2d29` - A JBoss script for obtaining remote shell access.
+- **jndi-injection-exploit** `10.2dc4018` - A tool which generates JNDI links can start several servers to exploit JNDI Injection vulnerability, like Jackson, Fastjson, etc.
+- **katana-framework** `1.0.0.1` - A framework that seekss to unite general auditing tools, which are general pentesting tools (Network,Web,Desktop and others).
+- **kerberoast** `0.2.0.r9.g82f5bb2` - Kerberoast attack -pure python-.
+- **kernelpop** `238.b3467d3` - Kernel privilege escalation enumeration and exploitation framework.
+- **killcast** `30.ee81cfa` - Manipulate Chromecast Devices in your Network.
+- **killerbee** `398.748740d` - Framework and tools for exploiting ZigBee and IEEE 802.15.4 networks.
+- **klar** `2.4.0` - Integration of Clair and Docker Registry.
+- **l0l** `322.1319ea7` - The Exploit Development Kit.
+- **leroy-jenkins** `3.bdc3965` - A python tool that will allow remote execution of commands on a Jenkins server and its nodes.
+- **lfi-autopwn** `3.0` - A Perl script to try to gain code execution on a remote server via LFI
+- **limelighter** `17.d119dc7` - A tool for generating fake code signing certificates or signing real ones.
+- **lisa.py** `61.2d1f81a` - An Exploit Dev Swiss Army Knife.
+- **m3-gen** `7.7c656cc` - Generates Malicious Macro and Execute Powershell or Shellcode via MSBuild Application Whitelisting Bypass, this tool intended for adversary simulation and red teaming purpose.
+- **marshalsec** `10.2dc4018` - Java Unmarshaller Security - Turning your data into code execution.
+- **minimysqlator** `0.5` - A multi-platform application used to audit web sites in order to discover and exploit SQL injection vulnerabilities.
+- **miranda-upnp** `1.3` - A Python-based Universal Plug-N-Play client application designed to discover, query and interact with UPNP devices
+- **mitmf** `467.0458300` - A Framework for Man-In-The-Middle attacks written in Python.
+- **moonwalk** `v1.0.0.r18.g68d5be1` - Cover your tracks during Linux Exploitation by leaving zero traces on system logs and filesystem timestamps.
+- **mosquito** `39.fe54831` - XSS exploitation tool - access victims through HTTP proxy.
+- **myjwt** `2.1.0.r1.gd2f4c8a` - This cli is for pentesters, CTF players, or dev. You can modify your jwt, sign, inject, etc.
+- **n1qlmap** `2.5365444` - An N1QL exploitation tool.
+- **nosqli-user-pass-enum** `18.1b3713a` - Script to enumerate usernames and passwords from vulnerable web applications running MongoDB.
+- **ntlm-theft** `32.9750e53` - A tool for generating multiple types of NTLMv2 hash theft files.
+- **office-dde-payloads** `34.53291f9` - Collection of scripts and templates to generate Office documents embedded with the DDE, macro-less command execution technique.
+- **opensvp** `65.df54ed8` - A security tool implementing "attacks" to be able to the resistance of firewall to protocol level attack.
+- **osueta** `82.2ee8068` - A simple Python script to exploit the OpenSSH User Enumeration Timing Attack.
+- **otori** `0.3` - Toolbox intended to allow useful exploitation of XML external entity ("XXE") vulnerabilities.
+- **owasp-zsc** `316.f763dea` - Shellcode/Obfuscate Code Generator.
+- **pacu** `v1.6.1.r0.g5cec7ff` - The AWS exploitation framework, designed for testing the security of Amazon Web Services environments.
+- **pathzuzu** `64.4f4533c` - Checks for PATH substitution vulnerabilities and logs the commands executed by the vulnerable executables.
+- **pblind** `1.0` - Little utility to help exploiting blind sql injection vulnerabilities.
+- **phantom-evasion** `103.2cd0673` - Antivirus evasion tool written in python.
+- **pirana** `0.3.1` - Exploitation framework that tests the security of a email content filter.
+- **pkinittools** `13.0f0cfa5` - Tools for Kerberos PKINIT and relaying to AD CS.
+- **pmcma** `1.00` - Automated exploitation of invalid memory writes (being them the consequences of an overflow in a writable section, of a missing format string, integer overflow, variable misuse, or any other type of memory corruption).
+- **pocsuite** `430.877d1b1` - An open-sourced remote vulnerability testing framework developed by the Knownsec Security Team.
+- **pompem** `141.3ebe768` - A python exploit tool finder.
+- **powersploit** `591.d943001` - A PowerShell Post-Exploitation Framework.
+- **preeny** `110.aaef77f` - Some helpful preload libraries for pwning stuff.
+- **pret** `108.a04bd04` - Printer Exploitation Toolkit - The tool that made dumpster diving obsolete.
+- **ps1encode** `41.68d7778` - A tool to generate and encode a PowerShell based Metasploit payloads.
+- **ptf** `1517.74f58d6` - The Penetration Testers Framework: Way for modular support for up-to-date tools.
+- **punk** `9.c2bc420` - A post-exploitation tool meant to help network pivoting from a compromised unix box.
+- **pwncat-caleb** `v0.5.4.r11.g37f04d4` - A post-exploitation platform.
+- **pykek** `12.651b9ba` - Kerberos Exploitation Kit.
+- **python-ssh-mitm** `5.0.1` - SSH mitm server for security audits supporting public key authentication, session hijacking and file manipulation.
+- **python2-ropgadget** `5.9` - Pythonic argument parser, that will make you smile.
+- **rebind** `0.3.4` - DNS Rebinding Tool
+- **rex** `726.617ed4d` - Shellphish's automated exploitation engine, originally created for the Cyber Grand Challenge.
+- **rext** `63.5f0f626` - Router EXploitation Toolkit - small toolkit for easy creation and usage of various python scripts that work with embedded devices.
+- **richsploit** `3.6b15e0f` - Exploitation toolkit for RichFaces.
+- **rmiscout** `1.4` - Enumerate Java RMI functions and exploit RMI parameter unmarshalling vulnerabilities.
+- **rombuster** `223.4592b7a` - A router exploitation tool that allows to disclosure network router admin password.
+- **ropeme** `4.9b3a8fd` - A set of python scripts to generate ROP gadgets and payload.
+- **roputils** `195.ae7ed20` - A Return-oriented Programming toolkit.
+- **rp** `138.3a54a7c` - A full-cpp written tool that aims to find ROP sequences in PE/Elf/Mach-O x86/x64 binaries.
+- **rspet** `263.de4356e` - A Python based reverse shell equipped with functionalities that assist in a post exploitation scenario.
+- **sc-make** `12.7e39718` - Tool for automating shellcode creation.
+- **scansploit** `9.a0890af` - Exploit using barcodes, QRcodes, earn13, datamatrix.
+- **sensepost-xrdp** `16.46d6c19` - A rudimentary remote desktop tool for the X11 protocol exploiting unauthenticated x11 sessions.
+- **serialbrute** `3.111c217` - Java serialization brute force attack tool.
+- **shellcode-compiler** `26.8a25463` - Compiles C/C++ style code into a small, position-independent and NULL-free shellcode for Windows & Linux.
+- **shellcode-factory** `96.07ae857` - Tool to create and test shellcodes from custom assembly sources.
+- **shellcodecs** `0.1` - A collection of shellcode, loaders, sources, and generators provided with documentation designed to ease the exploitation and shellcode programming process.
+- **shellen** `66.c0c5f83` - Interactive shellcoding environment to easily craft shellcodes.
+- **shellme** `5.d5206f0` - Because sometimes you just need shellcode and opcodes quickly. This essentially just wraps some nasm/objdump calls into a neat script.
+- **shellsploit-framework** `273.a16d22f` - New Generation Exploit Development Kit.
+- **shellter** `7.2` - A dynamic shellcode injection tool, and the first truly dynamic PE infector ever created.
+- **shocker** `65.65d4d76` - A tool to find and exploit servers vulnerable to Shellshock.
+- **sickle** `292.2193983` - A shellcode development tool, created to speed up the various steps needed to create functioning shellcode.
+- **sigploit** `786.0e52072` - Telecom Signaling Exploitation Framework - SS7, GTP, Diameter & SIP.
+- **sigthief** `25.ffb501b` - Stealing Signatures and Making One Invalid Signature at a Time.
+- **sireprat** `34.b8ef60b` - Remote Command Execution as SYSTEM on Windows IoT Core.
+- **sjet** `103.dd2a4e6` - Siberas JMX exploitation toolkit.
+- **smap** `24.3ed1ac7` - Shellcode mapper - Handy tool for shellcode analysis.
+- **smtptester** `13.634e1ee` - Small python3 tool to check common vulnerabilities in SMTP servers.
+- **snarf-mitm** `41.bada142` - SMB Man in the Middle Attack Engine / relay suite.
+- **spraykatz** `62.1fb3aa7` - Credentials gathering tool automating remote procdump and parse of lsass process.
+- **sqlninja** `0.2.999` - A tool targeted to exploit SQL Injection vulnerabilities on a web application that uses Microsoft SQL Server as its back-end.
+- **sqlsus** `0.7.2` - An open source MySQL injection and takeover tool.
+- **ssh-mitm** `140.70998ba` - SSH man-in-the-middle tool.
+- **sstimap** `v1.3.r0.gf69d275` - Automatic SSTI detection tool with interactive interface.
+- **stackflow** `2.2af525d` - Universal stack-based buffer overfow exploitation tool.
+- **staekka** `9.57787ca` - This plugin extends Metasploit for some missing features and modules allowing interaction with other/custom exploits/ways of getting shell access.
+- **subterfuge** `64.69dda99` - Automated Man-in-the-Middle Attack Framework.
+- **suid3num** `63.881b488` - Python script which utilizes python's built-in modules to enumerate SUID binaries.
+- **tcpjunk** `2.9.03` - A general tcp protocols testing and hacking utility.
+- **tomcatwardeployer** `98.4535e64` - Apache Tomcat auto WAR deployment & pwning penetration testing tool.
+- **unibrute** `1.b3fb4b7` - Multithreaded SQL union bruteforcer.
+- **venom** `135.2b84e68` - A Multi-hop Proxy for Penetration Testers.
+- **viproy-voipkit** `82.52b27db` - VoIP Pen-Test Kit for Metasploit Framework.
+- **vmap** `0.3` - A Vulnerability-Exploit desktop finder.
+- **volana** `v1.0.0.r26.g6dbf9a4` - Shell command obfuscation to avoid detection systems.
+- **webexploitationtool** `155.85bcf0e` - A cross platform web exploitation toolkit.
+- **websploit** `4.0.4` - An Open Source Project For, Social Engineering Works, Scan, Crawler & Analysis Web, Automatic Exploiter, Support Network Attacks
+- **wesng** `431.1c6862c` - Windows Exploit Suggester - Next Generation.
+- **wildpwn** `11.4623714` - Unix wildcard attacks.
+- **wsuspect-proxy** `24.89f9375` - A tool for MITM'ing insecure WSUS connections.
+- **xcat** `266.faaf8fe` - A command line tool to automate the exploitation of blind XPath injection vulnerabilities.
+- **xpl-search** `42.d4dbc97` - Search exploits in multiple exploit databases!.
+- **xrop** `83.4af7452` - Tool to generate ROP gadgets for ARM, AARCH64, x86, MIPS, PPC, RISCV, SH4 and SPARC.
+- **xxeinjector** `56.150067a` - Tool for automatic exploitation of XXE vulnerability using direct and different out of band methods.
+- **xxexploiter** `103.c1f0f41` - It generates the XML payloads, and automatically starts a server to serve the needed DTD's or to do data exfiltration.
+- **yinjector** `0.1` - A MySQL injection penetration tool. It has multiple features, proxy support, and multiple exploitation methods.
+- **zarp** `0.1.8` - A network attack tool centered around the exploitation of local networks.
+- **zeratool** `48.3fb3262` - Automatic Exploit Generation (AEG) and remote flag capture for exploitable CTF problems.
+- **zirikatu** `7.afe1d9c` - Fud Payload generator script.
+
+---
+
+## CRACKER (162 tools)
+
+- **acccheck** `0.2.1` - A password dictionary attack tool that targets windows authentication via the SMB protocol.
+- **adfspray** `6.3d7745d` - Python3 tool to perform password spraying against Microsoft Online service using various methods.
+- **aesfix** `1.0.1` - A tool to find AES key in RAM.
+- **aeskeyfind** `1.0` - A tool to find AES key in RAM.
+- **against** `0.2` - A very fast ssh attacking script which includes a multithreaded port scanning module (tcp connect) for discovering possible targets and a multithreaded brute-forcing module which attacks parallel all discovered hosts or given ip addresses from a list.
+- **ares** `v0.10.0.r110.ga63614a` - Automated decoding of encrypted text without knowing the key or ciphers used.
+- **asleap** `2.2` - Actively recover LEAP/PPTP passwords.
+- **beleth** `36.0963699` - A Multi-threaded Dictionary based SSH cracker.
+- **bgp-md5crack** `0.1` - RFC2385 password cracker
+- **bios_memimage** `1.2` - A tool to dump RAM contents to disk (aka cold boot attack).
+- **bkcrack** `v1.8.0.r5.g8cabf21` - Crack legacy zip encryption with Biham and Kocher known plaintext attack.
+- **bkhive** `1.1.1` - Program for dumping the syskey bootkey from a Windows NT/2K/XP system hive.
+- **blackhash** `0.2` - Creates a filter from system hashes.
+- **bob-the-butcher** `0.7.1` - A distributed password cracker package.
+- **brute-force** `52.78d1d8e` - Brute-Force attack tool for Gmail Hotmail Twitter Facebook Netflix.
+- **bruteforce-luks** `54.788d637` - Try to find the password of a LUKS encrypted volume.
+- **bruteforce-salted-openssl** `64.30b272e` - Try to find the password of a file that was encrypted with the 'openssl' command.
+- **bruteforce-wallet** `43.648d7d7` - Try to find the password of an encrypted Peercoin (or Bitcoin,Litecoin, etc...) wallet file.
+- **brutessh** `0.6` - A simple sshd password bruteforcer using a wordlist, it's very fast for internal networks. It's multithreads.
+- **chapcrack** `17.ae2827f` - A tool for parsing and decrypting MS-CHAPv2 network handshakes.
+- **cintruder** `14.f8a3f12` - An automatic pentesting tool to bypass captchas.
+- **cisco-auditing-tool** `1` - Perl script which scans cisco routers for common vulnerabilities. Checks for default passwords, easily guessable community names, and the IOS history bug. Includes support for plugins and scanning multiple hosts.
+- **cisco-ocs** `0.2` - Cisco Router Default Password Scanner.
+- **cisco-scanner** `0.2` - Multithreaded Cisco HTTP vulnerability scanner. Tested on Linux, OpenBSD and Solaris.
+- **cisco5crack** `2.c4b228c` - Crypt and decrypt the cisco enable 5 passwords.
+- **cisco7crack** `2.f1c21dd` - Crypt and decrypt the cisco enable 7 passwords.
+- **cmospwd** `5.1` - Decrypts password stored in CMOS used to access BIOS setup.
+- **compp** `1.0.5` - Company Passwords Profiler helps making a bruteforce wordlist for a targeted company.
+- **crackhor** `2.ae7d83f` - A Password cracking utility.
+- **crackle** `111.d83b4b6` - Crack and decrypt BLE encryption.
+- **crackpkcs12** `0.2.10.11.c7dedb1` - A multithreaded program to crack PKCS#12 files (p12 and pfx extensions).
+- **crackq** `48.89b7318` - Hashcrack.org GPU-accelerated password cracker.
+- **crackserver** `33.e5763ab` - An XMLRPC server for password cracking.
+- **creddump** `3.ed95e1a` - A python tool to extract various credentials and secrets from Windows registry hives.
+- **credmaster** `206.0a79f34` - Refactored & improved CredKing password spraying tool, uses FireProx APIs to rotate IP addresses, stay anonymous, and beat throttling.
+- **crowbar** `v4.2.r1.g4b563dc` - Brute forcing tool that can be used during penetration tests.
+- **cryptohazemultiforcer** `1.31a` - High performance multihash brute forcer with CUDA support.
+- **cudahashcat** `2.01` - Worlds fastest WPA cracker with dictionary mutation engine.
+- **cupp** `77.56547fd` - Common User Password Profiler
+- **dbpwaudit** `0.8` - A Java tool that allows you to perform online audits of password quality for several database engines.
+- **depant** `0.3a` - Check network for services with default passwords.
+- **device-pharmer** `40.b06a460` - Opens 1K+ IPs or Shodan search results and attempts to login.
+- **doozer** `9.5cfc8f8` - A Password cracking utility.
+- **dpeparser** `beta002` - Default password enumeration project
+- **eapmd5pass** `3.3d5551f` - An implementation of an offline dictionary attack against the EAP-MD5 protocol.
+- **enabler** `1` - Attempts to find the enable password on a cisco system via brute force.
+- **evilize** `0.2` - Tool to create MD5 colliding binaries.
+- **evilmaid** `1.01` - TrueCrypt loader backdoor to sniff volume password
+- **f-scrack** `19.9a00357` - A single file bruteforcer supports multi-protocol.
+- **facebrute** `7.ece355b` - This script tries to guess passwords for a given facebook account using a list of passwords (dictionary).
+- **fang** `22.4f94552` - A multi service threaded MD5 cracker.
+- **flask-unsign** `v1.2.1.r0.g6e6e91d` - Command line tool to fetch, decode, brute-force and craft session cookies of a Flask application by guessing secret keys.
+- **ftp-scanner** `0.2.5` - Multithreaded ftp scanner/brute forcer. Tested on Linux, OpenBSD and Solaris.
+- **gomapenum** `v1.1.0.r114.g5aee194` - User enumeration and password bruteforce on Azure, ADFS, OWA, O365, Teams and gather emails on Linkedin.
+- **gpocrack** `3.cf63c86` - Active Directory Group Policy Preferences cpassword cracker/decrypter.
+- **hasher** `48.40173c5` - A tool that allows you to quickly hash plaintext strings, or compare hashed values with a plaintext locally.
+- **hashtag** `0.41` - A python script written to parse and identify password hashes.
+- **hostbox-ssh** `0.1.1` - A ssh password/account scanner.
+- **htpwdscan** `23.e995d6f` - A python HTTP weak pass scanner.
+- **ibrute** `12.3a6a11e` - An AppleID password bruteforce tool. It uses Find My Iphone service API, where bruteforce protection was not implemented.
+- **icloudbrutter** `15.1f64f19` - Tool for AppleID Bruteforce.
+- **iheartxor** `0.01` - A tool for bruteforcing encoded strings within a boundary defined by a regular expression. It will bruteforce the key value range of 0x1 through 0x255.
+- **iisbruteforcer** `15` - HTTP authentication cracker. It's a tool that launchs an online dictionary attack to test for weak or simple passwords against protected areas on an IIS Web server.
+- **ikecrack** `1.00` - An IKE/IPSec crack tool designed to perform Pre-Shared-Key analysis of RFC compliant aggressive mode authentication
+- **ikeforce** `30.575af15` - A command line IPSEC VPN brute forcing tool for Linux that allows group name/ID enumeration and XAUTH brute forcing capabilities.
+- **inguma** `0.1.1` - A free penetration testing and vulnerability discovery toolkit entirely written in python. Framework includes modules to discover hosts, gather information about, fuzz targets, brute force usernames and passwords, exploits, and a disassembler.
+- **instashell** `44.8f867bd` - Multi-threaded Instagram Brute Forcer without password limit.
+- **ipmipwn** `6.74a08a8` - IPMI cipher 0 attack tool.
+- **jbrute** `0.99` - Open Source Security tool to audit hashed passwords.
+- **jeangrey** `43.9bf3cf4` - A tool to perform differential fault analysis attacks (DFA).
+- **johnny** `20120424` - GUI for John the Ripper.
+- **jwt-cracker** `23.8130879` - JWT brute force cracker written in C.
+- **jwt-tool** `83.3bc7407` - Toolkit for validating, forging and cracking JWTs (JSON Web Tokens).
+- **jwtcat** `77.f80f3d9` - Script performs offline brute-force attacks against JSON Web Token (JWT)
+- **keimpx** `300.37190f4` - Tool to verify the usefulness of credentials across a network over SMB.
+- **kerbrute** `90.9cfb81e` - A tool to perform Kerberos pre-auth bruteforcing.
+- **khc** `0.2` - A small tool designed to recover hashed known_hosts fiels back to their plain-text equivalents.
+- **ldap-brute** `21.acc06e3` - A semi fast tool to bruteforce values of LDAP injections over HTTP.
+- **levye** `84.5406303` - A brute force tool which is support sshkey, vnckey, rdp, openvpn.
+- **lodowep** `1.2.1` - Lodowep is a tool for analyzing password strength of accounts on a Lotus Domino webserver system.
+- **mdcrack** `1.2` - MD4/MD5/NTLM1 hash cracker
+- **mkbrutus** `27.ddd5f8e` - Password bruteforcer for MikroTik devices or boxes running RouterOS.
+- **morxbook** `1.0` - A password cracking tool written in perl to perform a dictionary-based attack on a specific Facebook user through HTTPS.
+- **morxbrute** `1.01` - A customizable HTTP dictionary-based password cracking tool written in Perl.
+- **morxbtcrack** `1.0` - Single Bitcoin private key cracking tool released.
+- **morxcoinpwn** `1.0` - Mass Bitcoin private keys brute forcing/Take over tool released.
+- **morxcrack** `1.2` - A cracking tool written in Perl to perform a dictionary-based attack on various hashing algorithm and CMS salted-passwords.
+- **mybff** `99.ba4de8d` - A Brute Force Framework.
+- **o365enum** `19.522a54c` - Username enumeration and password enuming tool aimed at Microsoft O365.
+- **o365spray** `160.28d8d1b` - Username enumeration and password spraying tool aimed at Microsoft O365.
+- **obevilion** `409.29fbe9d` - Another archive cracker created in python, cracking [zip/7z/rar].
+- **oclhashcat** `2.01` - Worlds fastest WPA cracker with dictionary mutation engine.
+- **omen** `19.10aa99e` - Ordered Markov ENumerator - Password Guesser.
+- **onesixtyone** `0.7` - An SNMP scanner that sends multiple SNMP requests to multiple IP addresses
+- **ophcrack** `3.8.0` - Windows password cracker based on rainbow tables.
+- **outlook-webapp-brute** `1.61d7177` - Microsoft Outlook WebAPP Brute.
+- **owabf** `1.3` - Outlook Web Access bruteforcer tool.
+- **pack** `0.0.4` - Password Analysis and Cracking Kit
+- **passcracking** `20131214` - A little python script for sending hashes to passcracking.com and milw0rm
+- **passe-partout** `0.1` - Tool to extract RSA and DSA private keys from any process linked with OpenSSL. The target memory is scanned to lookup specific OpenSSL patterns.
+- **passgan** `38.5927158` - A Deep Learning Approach for Password Guessing.
+- **patator** `235.5be299a` - A multi-purpose bruteforcer.
+- **pdgmail** `1.0` - A password dictionary attack tool that targets windows authentication via the SMB protocol.
+- **pemcrack** `12.66e02b8` - Cracks SSL PEM files that hold encrypted private keys. Brute forces or dictionary cracks.
+- **pemcracker** `9.a741c93` - Tool to crack encrypted PEM files.
+- **phoss** `0.1.13` - Sniffer designed to find HTTP, FTP, LDAP, Telnet, IMAP4, VNC and POP3 logins.
+- **php-mt-seed** `4.0` - PHP mt_rand() seed cracker.
+- **php-rfi-payload-decoder** `30.bd42caa` - Decode and analyze RFI payloads developed in PHP.
+- **phrasendrescher** `1.2.2c` - A modular and multi processing pass phrase cracking tool.
+- **pipal** `3.4.0.r9.g392f0aa` - A password analyser.
+- **pipeline** `19.f4935c9` - Designed to aid in targeted brute force password cracking attacks.
+- **pkcrack** `1.2.2` - A PkZip encryption cracker.
+- **pwcrack** `368.b6fba8a` - Password hash automatic cracking framework.
+- **pybozocrack** `87.ceb0cd9` - A silly & effective MD5 cracker in Python.
+- **pyrit** `0.5.0` - The famous WPA precomputed cracker.
+- **rainbowcrack** `1.8` - Password cracker based on the faster time-memory trade-off. With MySQL and Cisco PIX Algorithm patches.
+- **rcracki-mt** `0.7.0` - A tool to perform rainbow table attacks on password hashes. It is intended for indexed/perfected rainbow tables, mainly generated by the distributed project www.freerainbowtables.com.
+- **rdesktop-brute** `1.5.0` - It connects to windows terminal servers - Bruteforce patch included.
+- **rdpassspray** `33.c1ba58e` - Python3 tool to perform password spraying using RDP.
+- **rfcrack** `128.db73830` - A Software Defined Radio Attack Tool.
+- **ridenum** `75.9e3b89b` - A null session RID cycle attack for brute forcing domain controllers.
+- **rlogin-scanner** `0.2` - Multithreaded rlogin scanner. Tested on Linux, OpenBSD and Solaris.
+- **rootbrute** `0.1` - Local root account bruteforcer.
+- **rpdscan** `2.a71b0f3` - Remmina Password Decoder and scanner.
+- **rsakeyfind** `1.0` - A tool to find RSA key in RAM.
+- **samdump2** `3.0.0` - Dump password hashes from a Windows NT/2k/XP installation
+- **samydeluxe** `2.2ed1bac` - Automatic samdump creation script.
+- **shreder** `115.a108575` - A powerful multi-threaded SSH protocol password bruteforce tool.
+- **sidguesser** `1.0.5` - Guesses sids/instances against an Oracle database according to a predefined dictionary file.
+- **sipcrack** `0.2` - A SIP protocol login cracker.
+- **skul** `27.7bd83f1` - A PoC to bruteforce the Cryptsetup implementation of Linux Unified Key Setup (LUKS).
+- **smbbf** `0.9.1` - SMB password bruteforcer.
+- **snmp-brute** `19.830bb0a` - SNMP brute force, enumeration, CISCO config downloader and password cracking script.
+- **speedpwn** `8.3dd2793` - An active WPA/2 Bruteforcer, original created to prove weak standard key generation in different ISP labeled routers without a client is connected.
+- **spray365** `43.22b39af` - Makes spraying Microsoft accounts (Office 365 / Azure AD) easy through its customizable two-step password spraying approach.
+- **spraycharles** `227.a93a388` - Low and slow password spraying tool, designed to spray on an interval over a long period of time.
+- **sqlpat** `1.0.1` - This tool should be used to audit the strength of Microsoft SQL Server passwords offline.
+- **ssh-privkey-crack** `0.4` - A SSH private key cracker.
+- **sshatter** `1.2` - Password bruteforcer for SSH.
+- **sshprank** `1.4.2` - A fast SSH mass-scanner, login cracker and banner grabber tool using the python-masscan and shodan module.
+- **sshscan** `1.0` - A horizontal SSH scanner that scans large swaths of IPv4 space for a single SSH user and pass.
+- **sshtrix** `0.0.3` - A very fast multithreaded SSH login cracker.
+- **sslnuke** `5.c5faeaa` - Transparent proxy that decrypts SSL traffic and prints out IRC messages.
+- **sucrack** `1.2.3` - A multi-threaded Linux/UNIX tool for brute-force cracking local user accounts via su.
+- **talon** `v3.1.r1.g8acc175` - A password guessing tool that targets the Kerberos and LDAP services within the Windows Active Directory environment.
+- **tftp-bruteforce** `0.1` - A fast TFTP filename bruteforcer written in perl.
+- **thc-keyfinder** `1.0` - Finds crypto keys, encrypted data and compressed data in files by analyzing the entropy of parts of the file.
+- **thc-pptp-bruter** `0.1.4` - A brute force program that works against pptp vpn endpoints (tcp port 1723).
+- **thc-smartbrute** `1.0` - This tool finds undocumented and secret commands implemented in a smartcard.
+- **timeverter** `83.24b715e` - Bruteforce time-based tokens and to convert several time domains.
+- **trevorspray** `2.3.0` - A modular password sprayer with threading, clever proxying, loot modules, and more!
+- **truecrack** `35` - Password cracking for truecrypt(c) volumes.
+- **tweetshell** `21.47a415c` - Multi-thread Twitter BruteForcer in Shell Script.
+- **ufo-wardriving** `4` - Allows you to test the security of wireless networks by detecting their passwords based on the router model.
+- **vnc-bypauth** `0.0.1` - Multi-threaded bypass authentication scanner for VNC smaller than v4.1.1 servers.
+- **vncrack** `1.21` - What it looks like: crack VNC.
+- **wmat** `0.1` - Automatic tool for testing webmail accounts.
+- **wordbrutepress** `30.5165648` - Python script that performs brute forcing against WordPress installs using a wordlist.
+- **wpbf** `7.11b6ac1` - Multithreaded WordPress brute forcer.
+- **wpbrute-rpc** `3.e7d8145` - Tool for amplified bruteforce attacks on wordpress based website via xmlrcp API.
+- **wyd** `0.2` - Gets keywords from personal files. IT security/forensic tool.
+- **zulu** `0.1` - A light weight 802.11 wireless frame generation tool to enable fast and easy debugging and probing of 802.11 networks.
+
+---
+
+## WINDOWS (154 tools)
+
+- **3proxy-win32** `0.8.13` - Tiny free proxy server.
+- **adape-script** `43.4d0b9ff` - Active Directory Assessment and Privilege Escalation Script.
+- **adpeas** `1.3.0.r14.gbda3e0c` - winPEAS, but for Active Directory.
+- **agafi** `1.1` - A gadget finder and a ROP-Chainer tool for x86 platforms.
+- **analyzepesig** `0.0.0.5` - Analyze digital signature of PE file.
+- **antiransom** `5` - A tool capable of detect and stop attacks of Ransomware using honeypots.
+- **atstaketools** `0.1` - This is an archive of various @Stake tools that help perform vulnerability scanning and analysis, information gathering, password auditing, and forensics.
+- **backorifice** `1.0` - A remote administration system which allows a user to control a computer across a tcpip connection using a simple console or GUI application.
+- **breads** `131.2d97bcc` - BREaking Active Directory Security; focused on enumerating and attacking Active Directory environments through LDAP and SMB protocols.
+- **browselist** `1.4` - Retrieves the browse list ; the output list contains computer names, and the roles they play in the network.
+- **brute12** `1` - A tool designed for auditing the cryptography container security in PKCS12 format.
+- **brutus** `2` - One of the fastest, most flexible remote password crackers you can get your hands on.
+- **cachedump** `1.1` - A tool that demonstrates how to recover cache entry information: username and hashed password (called MSCASH).
+- **certi** `6.6cfa656` - Active Directory Certificate Services (ADCS) abuser. impacket copy of Certify.
+- **certipy** `5.0.3.r14.ga80fe7c` - Active Directory Certificate Services enumeration and abuse.
+- **chrome-decode** `0.1` - Chrome web browser decoder tool that demonstrates recovering passwords.
+- **chromensics** `1.0` - A Google chrome forensics tool.
+- **conpass** `0.1.1` - Password spraying in AD environment avoing account locking.
+- **crackmapexec-pingcastle** `9.16340d2` - NetExec & CrackMapExec module that execute PingCastle on a remote machine.
+- **dark-dork-searcher** `1.0` - Dark-Dork Searcher.
+- **darkarmour** `4.f10228a` - Store and execute an encrypted windows binary from inside memory, without a single bit touching disk.
+- **de4dot** `2090.b7d5728` - .NET deobfuscator and unpacker.
+- **directorytraversalscan** `1.0.1.0` - Detect directory traversal vulnerabilities in HTTP servers and web applications.
+- **dnspy** `6.1.8` - .NET debugger and assembly editor.
+- **donpapi** `V1.2.0.r40.g61db37a` - Dumping revelant information on compromised targets without AV detection with DPAPI.
+- **dotpeek** `2021.3.3` - Free .NET Decompiler and Assembly Browser.
+- **dumpacl** `0.1` - Dumps NTs ACLs and audit settings.
+- **dumpusers** `1.0` - Dumps account names and information even though RestrictAnonymous has been set to 1.
+- **eraser** `6.2.0.2992` - Windows tool which allows you to completely remove sensitive data from your hard drive by overwriting it several times with carefully selected patterns.
+- **etherchange** `1.1` - Can change the Ethernet address of the network adapters in Windows.
+- **etherflood** `1.1` - Floods a switched network with Ethernet frames with random hardware addresses.
+- **extractbitlockerkeys** `1.2.r19.g524c128` - Script to automatically extract the bitlocker recovery keys from a domain.
+- **filefuzz** `1.0` - A binary file fuzzer for Windows with several options.
+- **finduncommonshares** `3.2.r10.g665eb4c` - Python script allowing to quickly find uncommon shares in vast Windows Domains.
+- **fport** `2.0` - Identify unknown open ports and their associated applications.
+- **fred** `0.1.1` - Cross-platform M$ registry hive editor.
+- **fuzztalk** `1.0.0.0` - An XML driven fuzz testing framework that emphasizes easy extensibility and reusability.
+- **gene** `78.faf8cc0` - Signature Engine for Windows Event Logs.
+- **ghostpack** `123.20a5f0a` - Compiled Binaries for Ghostpack (.NET v4.8.1).
+- **gplist** `1.0` - Lists information about the applied Group Policies.
+- **gpowned** `19.a85bcf6` - GPOs manipulation tool.
+- **grabitall** `1.1` - Performs traffic redirection by sending spoofed ARP replies.
+- **gsd** `1.1` - Gives you the Discretionary Access Control List of any Windows NT service you specify as a command line option.
+- **gtalk-decode** `0.1` - Google Talk decoder tool that demonstrates recovering passwords from accounts.
+- **handle** `0.1` - An small application designed to analyze your system searching for global objects related to running process and display information for every found object, like tokens, semaphores, ports, files,..
+- **hekatomb** `107.bdd53cf` - Extract and decrypt all credentials from all domain computers using DPAPI.
+- **hollows-hunter** `0.4.1.1` - Scans all running processes. Recognizes and dumps a variety of potentially malicious implants (replaced/injected PEs, shellcodes, hooks, in-memory patches).
+- **hookanalyser** `3.4` - A hook tool which can be potentially helpful in reversing applications and analyzing malware. It can hook to an API in a process and search for a pattern in memory or dump the buffer.
+- **httpbog** `1.0.0.0` - A slow HTTP denial-of-service tool that works similarly to other attacks, but rather than leveraging request headers or POST data Bog consumes sockets by slowly reading responses.
+- **httprecon** `7.3` - Tool for web server fingerprinting, also known as http fingerprinting.
+- **httprint-win32** `301` - A web server fingerprinting tool (Windows binaries).
+- **hyperion-crypter** `2.3.1` - A runtime encrypter for 32-bit and 64-bit portable executables.
+- **ikeprobe** `0.1` - Determine vulnerabilities in the PSK implementation of the VPN server.
+- **intercepter-ng** `1.0` - A next generation sniffer including a lot of features: capturing passwords/hashes, sniffing chat messages, performing man-in-the-middle attacks, etc.
+- **inzider** `1.2` - This is a tool that lists processes in your Windows system and the ports each one listen on.
+- **juicy-potato** `53.744d321` - A sugared version of RottenPotatoNG, with a bit of juice.
+- **justdecompile** `22018` - The decompilation engine of JustDecompile.
+- **kekeo** `2.2.0_20211214` - A little toolbox to play with Microsoft Kerberos in C.
+- **kerbcrack** `1.3d3` - Kerberos sniffer and cracker for Windows.
+- **klogger** `1.0` - A keystroke logger for the NT-series of Windows.
+- **ldapmonitor** `1.4.r12.g498e048` - Monitor creation, deletion and changes to LDAP objects live during your pentest or system administration!
+- **lethalhta** `2.5602402` - Lateral Movement technique using DCOM and HTA.
+- **lolbas** `192.d148d27` - Living Off The Land Binaries And Scripts - (LOLBins and LOLScripts).
+- **malwareanalyser** `3.3` - A freeware tool to perform static and dynamic analysis on malware.
+- **mbenum** `1.5.0` - Queries the master browser for whatever information it has registered.
+- **memimager** `1.0` - Performs a memory dump using NtSystemDebugControl.
+- **mimikatz** `2.2.0_20220919` - A little tool to play with Windows security.
+- **mingsweeper** `1.00` - A network reconnaissance tool designed to facilitate large address space,high speed node discovery and identification.
+- **modifycerttemplate** `7.4c35708` - Aid operators in modifying ADCS certificate templates so that a created vulnerable state can be leveraged for privilege escalation.
+- **mrkaplan** `1.1.1` - Help red teamers to stay hidden by clearing evidence of execution.
+- **mssqlrelay** `11.bd764b9` - Microsoft SQL Relay is an offensive tool for auditing and abusing Microsoft SQL (MSSQL) services.
+- **msvpwn** `65.328921b` - Bypass Windows' authentication via binary patching.
+- **nbname** `1.0` - Decodes and displays all NetBIOS name packets it receives on UDP port 137 and more!
+- **nbtenum** `3.3` - A utility for Windows that can be used to enumerate NetBIOS information from one host or a range of hosts.
+- **netbus** `1.6` - NetBus remote administration tool
+- **netexec-pingcastle** `9.16340d2` - NetExec & CrackMapExec module that execute PingCastle on a remote machine.
+- **netripper** `84.c763bd0` - Smart traffic sniffing for penetration testers.
+- **netstumbler** `0.4.0` - Well-known wireless AP scanner and sniffer.
+- **nirsoft** `1.23.30` - Unique collection of small and useful freeware utilities.
+- **nishang** `0.7.6` - Using PowerShell for Penetration Testing.
+- **ntds-decode** `0.1` - This application dumps LM and NTLM hashes from active accounts stored in an Active Directory database.
+- **orakelcrackert** `1.00` - This tool can crack passwords which are encrypted using Oracle's latest SHA1 based password protection algorithm.
+- **osslsigncode** `699.c23f92c` - A small tool that implements part of the functionality of the Microsoft tool signtool.exe.
+- **pafish** `193.b497899` - A demonstration tool that employs several techniques to detect sandboxes and analysis environments in the same way as malware families do.
+- **pe-bear** `0.7.1` - A freeware reversing tool for PE files.
+- **pe-sieve** `0.4.1.1` - Scans a given process. Recognizes and dumps a variety of potentially malicious implants (replaced/injected PEs, shellcodes, hooks, in-memory patches).
+- **periscope** `3.2` - A PE file inspection tool.
+- **petools** `1.9.762` - Portable executable (PE) manipulation toolkit.
+- **pextractor** `0.18b` - A forensics tool that can extract all files from an executable file created by a joiner or similar.
+- **php-vulnerability-hunter** `1.4.0.20` - An whitebox fuzz testing tool capable of detected several classes of vulnerabilities in PHP web applications.
+- **pingcastle** `3.4.1.38` - Active Directory scanning tool.
+- **pmap** `1.10` - Passively discover, scan, and fingerprint link-local peers by the background noise they generate (i.e. their broadcast and multicast traffic).
+- **pmdump** `1.2` - A tool that lets you dump the memory contents of a process to a file without stopping the process.
+- **powercloud** `21.0928303` - Deliver powershell payloads via DNS TXT via CloudFlare using PowerShell.
+- **powerlessshell** `115.2a87166` - Run PowerShell command without invoking powershell.exe.
+- **powerops** `32.13fe55b` - PowerShell Runspace Portable Post Exploitation Tool aimed at making Penetration Testing with PowerShell "easier".
+- **powershdll** `72.62cfa17` - Run PowerShell with rundll32. Bypass software restrictions.
+- **ppee** `1.12` - A Professional PE file Explorer for reversers, malware researchers and those who want to statically inspect PE files in more details.
+- **pre2k** `24.ff51b3b` - Query for existence of pre-windows 2000 computer objects which can be leveraged to gain a foothold in a target domain.
+- **promiscdetect** `1.0` - Checks if your network adapter(s) is running in promiscuous mode, which may be a sign that you have a sniffer running on your computer.
+- **pstoreview** `1.0` - Lists the contents of the Protected Storage.
+- **pwdump** `7.1` - Extracts the binary SAM and SYSTEM file from the filesystem and then the hashes.
+- **pygpoabuse** `34.107c348` - RCE via GPO scheduled tasks.
+- **python2-minidump** `19.749e6da` - Python library to parse and read Microsoft minidump file format.
+- **python2-minikerberos** `17.e7e8d0a` - Kerberos manipulation library in pure Python.
+- **radiography** `2` - A forensic tool which grabs as much information as possible from a Windows system.
+- **rasenum** `1.0` - A small program which lists the information for all of the entries in any phonebook file (.pbk).
+- **regreport** `1.6` - Windows registry forensic analysis tool.
+- **regview** `1.3` - Open raw Windows NT 5 Registry files (Windows 2000 or higher).
+- **resourcehacker** `5.1.8` - Resource compiler and decompiler for Windows® applications.
+- **roadlib** `426.81e793b` - Azure AD and O365 exploration framework.
+- **roadoidc** `426.81e793b` - Azure AD and O365 exploration framework.
+- **roadrecon** `426.81e793b` - Azure AD and O365 exploration framework.
+- **roadtx** `426.81e793b` - Azure AD and O365 exploration framework.
+- **rpak** `1.0` - A collection of tools that can be useful for doing attacks on routing protocols.
+- **rpcsniffer** `7.9fab095` - Sniffs WINDOWS RPC messages in a given RPC server process.
+- **rpctools** `1.0` - Contains three separate tools for obtaining information from a system that is running RPC services
+- **sccmhunter** `v1.1.10.r3.gaa9fa44` - Identifying, profiling, and attacking SCCM related assets in an Active Directory domain.
+- **setowner** `1.1` - Allows you to set file ownership to any account, as long as you have the "Restore files and directories" user right.
+- **shad0w** `387.d35b9dc` - A modular C2 framework designed to successfully operate on mature environments.
+- **shed** `2.0.0` - .NET runtime inspector.
+- **sigspotter** `1.0` - A tool that search in your HD to find which publishers has been signed binaries in your PC.
+- **sipscan** `0.1` - A sip scanner.
+- **skype-dump** `0.1` - This is a tool that demonstrates dumping MD5 password hashes from the configuration file in Skype.
+- **smbrelay** `3` - SMB / HTTP to SMB replay attack toolkit.
+- **snitch** `1.2` - Turn back the asterisks in password fields to plaintext passwords.
+- **snowman** `0.1.3` - A native code to C/C++ decompiler, see the examples of generated code.
+- **snscan** `1.05` - A Windows based SNMP detection utility that can quickly and accurately identify SNMP enabled devices on a network.
+- **spade** `114` - A general-purpose Internet utility package, with some extra features to help in tracing the source of spam and other forms of Internet harassment.
+- **sqldict** `2.1` - A dictionary attack tool for SQL Server.
+- **sqlping** `4` - SQL Server scanning tool that also checks for weak passwords using wordlists.
+- **sqlpowerinjector** `1.2` - Application created in .Net 1.1 that helps the penetration tester to find and exploit SQL injections on a web page.
+- **streamfinder** `1.2` - Searches for Alternate Data Streams (ADS).
+- **sub7** `2.2` - A remote administration tool. No further comments ;-)
+- **superscan** `4.1` - Powerful TCP port scanner, pinger, resolver.
+- **sysinternals-suite** `6.4` - Sysinternals tools suite.
+- **targetedkerberoast** `27.ebed079` - Kerberoast with ACL abuse capabilities.
+- **uacme** `295.43d1b12` - Defeating Windows User Account Control.
+- **unsecure** `1.2` - Bruteforces network login masks.
+- **upnp-pentest-toolkit** `1.1` - UPnP Pentest Toolkit for Windows.
+- **wce** `1.41beta` - A security tool to list logon sessions and add, change, list and delete associated credentials (ex.: LM/NT hashes, plaintext passwords and Kerberos tickets).
+- **wifichannelmonitor** `1.70` - A utility for Windows that captures wifi traffic on the channel you choose, using Microsoft Network Monitor capture driver.
+- **windivert** `2.2.0` - A user-mode packet capture-and-divert package for Windows.
+- **windows-binaries** `20.7d272da` - A colleciton of pentesting Windows binaries.
+- **windows-privesc-check** `181.9f304fd` - Standalone Executable to Check for Simple Privilege Escalation Vectors on Windows Systems.
+- **windowsspyblocker** `4.38.0` - Block spying and tracking on Windows.
+- **winfo** `2.0` - Uses null sessions to remotely try to retrieve lists of and information about user accounts, workstation/interdomain/server trust accounts, shares (also hidden), sessions, logged in users, and password/lockout policy, from Windows NT/2000/XP.
+- **winhex** `20.4` - Hex Editor and Disk Editor.
+- **winpwn** `411.cba1769` - Automation for internal Windows Penetrationtest / AD-Security.
+- **winrelay** `2.0` - A TCP/UDP forwarder/redirector that works with both IPv4 and IPv6.
+- **wpsweep** `1.0` - A simple ping sweeper, that is, it pings a range of IP addresses and lists the ones that reply.
+- **wups** `1.4` - An UDP port scanner for Windows.
+- **x-scan** `3.3` - A general network vulnerabilities scanner for scanning network vulnerabilities for specific IP address scope or stand-alone computer by multi-threading method, plug-ins are supportable.
+- **x64dbg** `2025.07.04` - An open-source x64/x32 debugger for windows.
+
+---
+
+## FORENSIC (154 tools)
+
+- **afflib** `3.7.19` - An extensible open format for the storage of disk images and related forensic information.
+- **aimage** `3.2.5` - A program to create aff-images.
+- **air** `2.0.0` - A GUI front-end to dd/dc3dd designed for easily creating forensic images.
+- **analyzemft** `483.d82bc98` - Parse the MFT file from an NTFS filesystem.
+- **autopsy** `4.22.1` - The forensic browser. A GUI for the Sleuth Kit.
+- **bmap-tools** `3.7` - Tool for copying largely sparse files using information from a block map file.
+- **bmc-tools** `36.94037ce` - RDP Bitmap Cache parser.
+- **bulk-extractor** `1562.1c67a75` - Bulk Email and URL extraction tool.
+- **canari** `3.3.10` - Maltego rapid transform development and execution framework.
+- **captipper** `74.3fb2836` - Malicious HTTP traffic explorer tool.
+- **casefile** `1.0.1` - The little brother to Maltego without transforms, but combines graph and link analysis to examine links between manually added data to mind map your information
+- **chaosmap** `1.3` - An information gathering tool and dns / whois / web server scanner
+- **chromefreak** `24.12745b1` - A Cross-Platform Forensic Framework for Google Chrome
+- **dc3dd** `7.2.646` - A patched version of dd that includes a number of features useful for computer forensics.
+- **dcfldd** `1.7.1` - DCFL (DoD Computer Forensics Lab) dd replacement with hashing.
+- **dfir-ntfs** `1.1.19` - An NTFS parser for digital forensics & incident response.
+- **dftimewolf** `815.02c11b3a` - Framework for orchestrating forensic collection, processing and data export.
+- **disitool** `0.4` - Tool to work with Windows executables digital signatures.
+- **dmde** `4.2.2.816` - Disk Editor and Data Recovery Software.
+- **dmg2img** `1.6.7` - A CLI tool to uncompress Apple's compressed DMG files to the HFS+ IMG format.
+- **dshell** `142.695c891` - A network forensic analysis framework.
+- **dumpzilla** `03152013` - A forensic tool for firefox.
+- **eindeutig** `20050628_1` - Examine the contents of Outlook Express DBX email repository files (forensic purposes)
+- **emldump** `0.0.11` - Analyze MIME files.
+- **evtkit** `8.af06db3` - Fix acquired .evt - Windows Event Log files (Forensics).
+- **exiflooter** `39.0c9535f` - Find geolocation on all image urls and directories also integrates with OpenStreetMap.
+- **ext4magic** `0.3.2` - File carver used when recovering from disasters or in digital forensics activities.
+- **extractusnjrnl** `7.362d4290` - Tool to extract the $UsnJrnl from an NTFS volume.
+- **firefox-decrypt** `1.1.1.r5.g8a5fdeb` - Extract passwords from Mozilla Firefox, Waterfox, Thunderbird, SeaMonkey profiles.
+- **fridump** `23.3e64ee0` - A universal memory dumper using Frida.
+- **galleta** `20040505_1` - Examine the contents of the IE's cookie files for forensic purposes
+- **grokevt** `0.5.0` - A collection of scripts built for reading Windows® NT/2K/XP/2K eventlog files.
+- **guymager** `0.8.13` - A forensic imager for media acquisition.
+- **imagemounter** `413.383b30b` - Command line utility and Python package to ease the (un)mounting of forensic disk images.
+- **indx2csv** `17.129a411e` - An advanced parser for INDX records.
+- **indxcarver** `5.dee36608` - Carve INDX records from a chunk of data.
+- **indxparse** `198.a977192` - A Tool suite for inspecting NTFS artifacts.
+- **interrogate** `5.eb5f071` - A proof-of-concept tool for identification of cryptographic keys in binary material (regardless of target operating system), first and foremost for memory dump analysis and forensic usage.
+- **iosforensic** `1.0` - iOS forensic tool.
+- **ipba2** `95.c03bd85` - IOS Backup Analyzer.
+- **iphoneanalyzer** `2.1.0` - Allows you to forensically examine or recover date from in iOS device.
+- **jefferson** `v0.4.6.r0.g9e33796` - JFFS2 filesystem extraction tool.
+- **lazagne** `889.858ff6f` - An open source application used to retrieve lots of passwords stored on a local computer.
+- **ldsview** `47.d8bfcaa` - Offline search tool for LDAP directory dumps in LDIF format.
+- **lfle** `24.f28592c` - Recover event log entries from an image by heurisitically looking for record structures.
+- **libfvde** `207.03f12f5` - Library and tools to access FileVault Drive Encryption (FVDE) encrypted volumes.
+- **limeaide** `305.ce3c9b7` - Remotely dump RAM of a Linux client and create a volatility profile for later analysis on your local host.
+- **log-file-parser** `60.c7a0ae7e` - Parser for $LogFile on NTFS.
+- **loki-scanner** `1255.687e211` - Simple IOC and Incident Response Scanner.
+- **mac-robber** `1.02` - A digital investigation tool that collects data from allocated files in a mounted file system.
+- **magicrescue** `1.1.9` - Find and recover deleted files on block devices
+- **make-pdf** `0.1.7` - This tool will embed javascript inside a PDF document.
+- **malheur** `0.5.4` - A tool for the automatic analyze of malware behavior.
+- **maltego** `4.10.1` - An open source intelligence and forensics application, enabling to easily gather information about DNS, domains, IP addresses, websites, persons, etc.
+- **malwaredetect** `0.1` - Submits a file's SHA1 sum to VirusTotal to determine whether it is a known piece of malware
+- **mboxgrep** `0.7.9` - A small, non-interactive utility that scans mail folders for messages matching regular expressions. It does matching against basic and extended POSIX regular expressions, and reads and writes a variety of mailbox formats.
+- **mdbtools** `738.823b32f` - Utilities for viewing data and exporting schema from Microsoft Access Database files.
+- **memdump** `1.01` - Dumps system memory to stdout, skipping over holes in memory maps.
+- **memfetch** `0.05b` - Dumps any userspace process memory without affecting its execution.
+- **mft2csv** `40.164eb224` - Extract $MFT record info and log it to a csv file.
+- **mftcarver** `9.7bfcc0a2` - Carve $MFT records from a chunk of data (for instance a memory dump).
+- **mftrcrd** `16.35c3ac2f` - Command line $MFT record decoder.
+- **mftref2name** `6.7df9eebb` - Resolve file index number to name or vice versa on NTFS.
+- **mimipenguin** `153.ecb2ffc` - A tool to dump the login password from the current linux user.
+- **mobiusft** `1.12` - An open-source forensic framework written in Python/GTK that manages cases and case items, providing an abstract interface for developing extensions.
+- **mp3nema** `0.4` - A tool aimed at analyzing and capturing data that is hidden between frames in an MP3 file or stream, otherwise noted as "out of band" data.
+- **mxtract** `90.0b34376` - Memory Extractor & Analyzer.
+- **myrescue** `0.9.8` - A hard disk recovery tool that reads undamaged regions first.
+- **naft** `0.0.9` - Network Appliance Forensic Toolkit.
+- **netspionage** `99.c24f995` - Network Forensics CLI utility that performs Network Scanning, OSINT, and Attack Detection.
+- **networkminer** `3.0` - A Network Forensic Analysis Tool for advanced Network Traffic Analysis, sniffer and packet analyzer.
+- **nfex** `2.5` - A tool for extracting files from the network in real-time or post-capture from an offline tcpdump pcap savefile.
+- **ntdsxtract** `34.7fa1c8c` - Active Directory forensic framework.
+- **ntfs-file-extractor** `6.f2b23d72` - Extract files off NTFS.
+- **ntfs-log-tracker** `1.6` - This tool can parse $LogFile, $UsnJrnl of NTFS.
+- **parse-evtx** `3.a4b02b9` - A tool to parse the Windows XML Event Log (EVTX) format.
+- **pasco** `20040505_1` - Examines the contents of Internet Explorer's cache files for forensic purposes
+- **pcapxray** `274.1721645` - A Network Forensics Tool - To visualize a Packet Capture offline as a Network Diagram including device identification, highlight important communication and file extraction.
+- **pdblaster** `4.fc8abb3` - Extract PDB file paths from large sample sets of executable files.
+- **pdf-parser** `0.7.12` - Parses a PDF document to identify the fundamental elements used in the analyzed file.
+- **pdfbook-analyzer** `2` - Utility for facebook memory forensics.
+- **pdfid** `0.2.10` - Scan a file to look for certain PDF keywords.
+- **pdfresurrect** `0.12` - A tool aimed at analyzing PDF documents.
+- **peepdf** `0.4.2` - A Python tool to explore PDF files in order to find out if the file can be harmful or not.
+- **pev** `0.81` - Command line based tool for PE32/PE32+ file analysis.
+- **powermft** `5.76574543` - Powerful commandline $MFT record editor.
+- **python-acquire** `3.20.1.r2.g08e89c8` - Quickly gather forensic artifacts from disk images or a live system into a lightweight container.
+- **python-dissect.archive** `1.7.r1.ga842ff0` - A Dissect module implementing parsers for various archive and backup formats.
+- **python-dissect.btrfs** `1.8.r1.g291c41a` - A Dissect module implementing a parser for the btrfs file system.
+- **python-dissect.cim** `3.12.r1.g5642f99` - A Dissect module implementing a parser for the Windows Common Information Model (CIM) database, used in the Windows operating system.
+- **python-dissect.clfs** `1.10.r1.g7ec7b06` - A Dissect module implementing a parser for the CLFS (Common Log File System) file system of Windows.
+- **python-dissect.cstruct** `4.6.r1.g194b1b5` - A Dissect module implementing a parser for C-like structures.
+- **python-dissect.esedb** `3.17.r1.ge0d6bf4` - A Dissect module implementing a parser for Microsofts Extensible Storage Engine Database (ESEDB), used for example in Active Directory, Exchange and Windows Update.
+- **python-dissect.etl** `3.13.r1.gfa255a5` - A Dissect module implementing a parser for Event Trace Log (ETL) files, used by the Windows operating system to log kernel events.
+- **python-dissect.eventlog** `3.10.r1.ga298fbb` - A Dissect module implementing parsers for the Windows EVT, EVTX and WEVT log file formats.
+- **python-dissect.evidence** `3.11.r1.g971b899` - A Dissect module implementing a parsers for various forensic evidence file containers, currently: AD1, ASDF and EWF.
+- **python-dissect.executable** `1.10.r1.g01df4c2` - A Dissect module implementing parsers for various executable formats such as PE, ELF and Macho-O.
+- **python-dissect.extfs** `3.14.r1.gb6d907c` - A Dissect module implementing a parser for the ExtFS file system, the native filesystem for Linux operating systems.
+- **python-dissect.fat** `3.12.r1.g569637f` - A Dissect module implementing parsers for the FAT and exFAT file systems, commonly used on flash memory based storage devices and UEFI partitions.
+- **python-dissect.ffs** `3.11.r1.gbb30cb1` - A Dissect module implementing a parser for the FFS file system, commonly used by BSD operating systems.
+- **python-dissect.fve** `4.4.r3.g8d22bb6` - A Dissect module implementing a parsers for full volume encryption implementations, currently Microsoft's Bitlocker Disk Encryption (BDE) and Linux Unified Key Setup (LUKS1 and LUKS2).
+- **python-dissect.hypervisor** `3.19.r2.g0c89766` - A Dissect module implementing parsers for various hypervisor disk, backup and configuration files.
+- **python-dissect.jffs** `1.5.r2.g5101fae` - A Dissect module implementing a parser for the JFFS2 file system, commonly used by router operating systems.
+- **python-dissect.ntfs** `3.14.r2.gcce5fd7` - A Dissect module implementing a parser for the NTFS file system, used by the Windows operating system.
+- **python-dissect.ole** `3.11.r1.g1ef4a24` - A Dissect module implementing a parser for the Object Linking & Embedding (OLE) format, commonly used by document editors on Windows operating systems.
+- **python-dissect.regf** `3.13.r1.gc0fc829` - A Dissect module implementing a parser for Windows registry file format, used to store application and OS configuration on Windows operating systems.
+- **python-dissect.shellitem** `3.12.r1.g16bf53d` - A Dissect module implementing a parser for the Shellitem structures, commonly used by Microsoft Windows.
+- **python-dissect.sql** `3.12.r1.g49cc5d7` - A Dissect module implementing a parsers for the SQLite database file format, commonly used by applications to store configuration data.
+- **python-dissect.squashfs** `1.10.r1.g1629277` - A Dissect module implementing a parser for the SquashFS file system.
+- **python-dissect.target** `3.23.1.r22.gb9546a8` - The Dissect module tying all other Dissect modules together. It provides a programming API and command line tools which allow easy access to various data sources inside disk images or file collections (a.k.a. targets).
+- **python-dissect.thumbcache** `1.10.r1.g291100e` - A Dissect module implementing a parser for windows thumbcache.
+- **python-dissect.util** `3.22.r3.g98d9f1c` - A Dissect module implementing various utility functions for the other Dissect modules.
+- **python-dissect.vmfs** `3.12.r1.gabb0023` - A Dissect module implementing a parser for the VMFS file system, used by VMware virtualization software.
+- **python-dissect.volume** `3.16.r3.g3c1d863` - A Dissect module implementing a parser for different disk volume and partition systems, for example LVM2, GPT and MBR.
+- **python-dissect.xfs** `3.12.r1.g3f2d69d` - A Dissect module implementing a parser for the XFS file system, commonly used by RedHat Linux distributions.
+- **python-flow.record** `3.20.r14.gf2606d1` - Recordization library.
+- **python2-peepdf** `0.4.2` - A Python tool to explore PDF files in order to find out if the file can be harmful or not.
+- **rcrdcarver** `5.54507d21` - Carve RCRD records ($LogFile) from a chunk of data..
+- **recentfilecache-parser** `2.5e22518` - Python parser for the RecentFileCache.bcf on Windows.
+- **recoverdm** `0.20` - Recover damaged CD DVD and disks with bad sectors.
+- **recoverjpeg** `2.6.3` - Recover jpegs from damaged devices.
+- **recuperabit** `82.eed5b51` - A tool for forensic file system reconstruction.
+- **regipy** `2.2.2` - Library for parsing offline registry hives.
+- **reglookup** `1.0.1` - Command line utility for reading and querying Windows NT registries
+- **regripper** `109.bdf7ac2` - Open source forensic software used as a Windows Registry data extraction command line or GUI tool.
+- **regrippy** `2.0.0` - Framework for reading and extracting useful forensics data from Windows registry hives.
+- **rekall** `1409.55d1925f` - Memory Forensic Framework.
+- **replayproxy** `1.1` - Forensic tool to replay web-based attacks (and also general HTTP traffic) that were captured in a pcap file.
+- **rifiuti2** `0.7.0` - A rewrite of rifiuti, a great tool from Foundstone folks for analyzing Windows Recycle Bin INFO2 file.
+- **safecopy** `1.7` - A disk data recovery tool to extract data from damaged media.
+- **scalpel** `1.1687261` - A frugal, high performance file carver.
+- **scrounge-ntfs** `0.9` - Data recovery program for NTFS file systems
+- **secure2csv** `10.119eefb0` - Decode security descriptors in $Secure on NTFS.
+- **shadowexplorer** `0.9` - Browse the Shadow Copies created by the Windows Vista / 7 / 8 / 10 Volume Shadow Copy Service.
+- **skypefreak** `33.9347a65` - A Cross Platform Forensic Framework for Skype.
+- **swap-digger** `51.4d18ce0` - A tool used to automate Linux swap analysis during post-exploitation or forensics.
+- **tchunt-ng** `208.b8cf7fc` - Reveal encrypted files stored on a filesystem.
+- **tekdefense-automater** `88.42548cf` - IP URL and MD5 OSINT Analysis
+- **thumbcacheviewer** `1.0.3.7` - Extract Windows thumbcache database files.
+- **trid** `2.24` - An utility designed to identify file types from their binary signatures.
+- **truehunter** `14.0a2895d` - Detect TrueCrypt containers using a fast and memory efficient approach.
+- **unblob** `25.5.26.r147.g3c996b3` - Extract files from any kind of container formats.
+- **undbx** `0.21.r3.g5e31c75` - Extract e-mail messages from Outlook Express DBX files.
+- **usbrip** `291.5093c84` - USB device artifacts tracker.
+- **usnjrnl2csv** `29.1ecbddc` - Parser for $UsnJrnl on NTFS.
+- **usnparser** `4.1.5` - A Python script to parse the NTFS USN journal.
+- **vinetto** `0.07beta` - A forensics tool to examine Thumbs.db files
+- **vipermonkey** `1160.511ecd5` - A VBA parser and emulation engine to analyze malicious macros.
+- **volafox** `143.5b42987` - Mac OS X Memory Analysis Toolkit.
+- **volatility-extra** `92.d9fc072` - Volatility plugins developed and maintained by the community.
+- **windows-prefetch-parser** `88.bc1fa58` - Parse Windows Prefetch files.
+- **wmi-forensics** `11.0ab08dc` - Scripts used to find evidence in WMI repositories.
+- **xplico** `1.2.2` - Internet Traffic Decoder. Network Forensic Analysis Tool (NFAT).
+- **zipdump** `0.0.21` - ZIP dump utility.
+
+---
+
+## NETWORKING (146 tools)
+
+- **adassault** `0.0.3.r55.gfd9233e` - An Active Directory environments pentest tool complementary to existing ones like NetExec.
+- **aiengine** `2.0.1` - A packet inspection engine with capabilities of learning without any human intervention.
+- **apacket** `374.16e7036` - Sniffer syn and backscatter packets.
+- **argus** `3.0.8.2` - Network monitoring tool with flow control.
+- **argus-clients** `3.0.8.2` - Network monitoring client for Argus.
+- **arpalert** `2.0.12` - Monitor ARP changes in ethernet networks.
+- **arping-th** `2.25` - ARP Ping from Thomas Habets (aka Debian arping).
+- **arptools** `13.41cdb23` - A simple tool about ARP broadcast, ARP attack, and data transmission.
+- **arpwner** `26.f300fdf` - GUI-based python tool for arp poisoning and dns poisoning attacks.
+- **asnmap** `v1.1.1.r3.gd2b5b11` - Map organization network ranges using ASN information.
+- **autovpn** `18.28b1a87` - Easily connect to a VPN in a country of your choice.
+- **buttinsky** `138.1a2a1b2` - Provide an open source framework for automated botnet monitoring.
+- **bypass-firewall-dns-history** `33.c55b7ce` - Firewall bypass script based on DNS history records.
+- **chameleon** `29.4414287` - A tool for evading Proxy categorisation.
+- **chaosreader** `0.94` - A freeware tool to trace tcp, udp etc. sessions and fetch application data from snoop or tcpdump logs.
+- **chopshop** `444.8bdd393` - Protocol Analysis/Decoder Framework.
+- **cidr2range** `1.0` - Script for listing the IP addresses contained in a CIDR netblock.
+- **creak** `41.a6c011f` - Poison, reset, spoof, redirect MITM script.
+- **cyberscan** `75.ca85794` - A Network Pentesting Tool.
+- **dcdetector** `0.0.1.r52.g2e69244` - Spot all domain controllers in a Microsoft Active Directory environment. Find computer name, FQDN, and IP address(es) of all DCs.
+- **depdep** `2.0` - A merciless sentinel which will seek sensitive files containing critical info leaking through your network.
+- **det** `31.417cbce` - (extensible) Data Exfiltration Toolkit.
+- **dhcpoptinj** `123.58a12c6` - DHCP option injector.
+- **dinouml** `0.9.5` - A network simulation tool, based on UML (User Mode Linux) that can simulate big Linux networks on a single PC
+- **dnsdiag** `395.93324be` - DNS Diagnostics and Performance Measurement Tools.
+- **dnsfilexfer** `24.126edcd` - File transfer via DNS.
+- **dnsobserver** `5.f331482` - A handy DNS service written in Go to aid in the detection of several types of blind vulnerabilities.
+- **dnsteal** `28.1b09d21` - DNS Exfiltration tool for stealthily sending files over DNS requests..
+- **dnsvalidator** `82.146c9b0` - Maintains a list of IPv4 DNS servers by verifying them against baseline servers, and ensuring accurate responses.
+- **dripcap** `0.6.15` - Caffeinated Packet Analyzer.
+- **dtp-spoof** `5.3ae05fc` - Python script/security tool to test Dynamic Trunking Protocol configuration on a switch.
+- **dublin-traceroute** `348.ea3a974` - NAT-aware multipath tracerouting tool.
+- **dump1090** `386.bff92c4` - A simple Mode S decoder for RTLSDR devices.
+- **evillimiter** `36.46d2033` - Tool that limits bandwidth of devices on the same network without access.
+- **exabgp** `4.2.6.r811.gd150295` - The BGP swiss army knife of networking.
+- **filibuster** `167.c54ac80` - A Egress filter mapping application with additional functionality.
+- **firecat** `6.b5205c8` - A penetration testing tool that allows you to punch reverse TCP tunnels out of a compromised network.
+- **flowinspect** `97.34759ed` - A network traffic inspection tool.
+- **girsh** `v0.41.r0.gfc5b44e` - Automatically spawn a reverse shell fully interactive for Linux or Windows victim.
+- **gspoof** `3.2` - A simple GTK/command line TCP/IP packet generator.
+- **gwcheck** `0.1` - A simple program that checks if a host in an ethernet network is a gateway to Internet.
+- **haka** `0.2.2` - A collection of tool that allows capturing TCP/IP packets and filtering them based on Lua policy files.
+- **hharp** `1beta` - This tool can perform man-in-the-middle and switch flooding attacks. It has 4 major functions, 3 of which attempt to man-in-the-middle one or more computers on a network with a passive method or flood type method.
+- **http-traceroute** `0.5` - This is a python script that uses the Max-Forwards header in HTTP and SIP to perform a traceroute-like scanning functionality.
+- **hyde** `11.ec09462` - Just another tool in C to do DDoS (with spoofing).
+- **hyenae** `0.36_1` - Flexible platform independent packet generator.
+- **hyperfox** `121.1a8c26f` - A security tool for proxying and recording HTTP and HTTPs traffic.
+- **infection-monkey** `v2.2.0.r3599.ga55fc8dfe` - Automated security testing tool for networks.
+- **interlace** `356.b9eb99f` - Easily turn single threaded command line applications into a fast, multi-threaded application with CIDR and glob support.
+- **ipaudit** `1.1` - Monitors network activity on a network.
+- **ipdecap** `96.45d2a7d` - Can decapsulate traffic encapsulated within GRE, IPIP, 6in4, ESP (ipsec) protocols, and can also remove IEEE 802.1Q (virtual lan) header.
+- **ipv4bypass** `26.844d2d8` - Using IPv6 to Bypass Security.
+- **jnetmap** `0.5.5` - A network monitor of sorts.
+- **kickthemout** `212.861aea2` - Kick devices off your network by performing an ARP Spoof attack.
+- **krbjack** `1.2.0` - DNS dynamic update abuse in ADIDNS and MitM attack using Kerberos AP-REQ hijacking.
+- **latd** `1.31` - A LAT terminal daemon for Linux and BSD.
+- **ldapconsole** `2.1.0.r3.gf1ea067` - Script allows you to perform custom LDAP requests to a Windows domain.
+- **libparistraceroute** `380.455f5ef` - A library written in C dedicated to active network measurements with examples, such as paris-ping and paris-traceroute.
+- **libtins** `1305.fe22186` - High-level, multiplatform C++ network packet sniffing and crafting library.
+- **ligolo-mp** `v2.1.0.r7.gcfd378c` - Multiplayer pivoting solution.
+- **loic** `2.9.9.99` - An open source network stress tool for Windows.
+- **maclookup** `0.4` - Lookup MAC addresses in the IEEE MA-L/OUI public listing.
+- **maketh** `0.2.0` - A packet generator that supports forging ARP, IP, TCP, UDP, ICMP and the ethernet header as well.
+- **malcom** `708.02e55b9` - Analyze a system's network communication using graphical representations of network traffic.
+- **massdns** `315.70331f6` - A high-performance DNS stub resolver in C.
+- **middler** `1.0` - A Man in the Middle tool to demonstrate protocol middling attacks.
+- **mitm** `8.bd2b351` - A simple yet effective python3 script to perform DNS spoofing via ARP poisoning.
+- **moloch** `0.11.3` - An open source large scale IPv4 full PCAP capturing, indexing and database system.
+- **mptcp** `1.9.0` - A tool for manipulation of raw packets that allows a large number of options.
+- **mptcp-abuse** `6.b0eeb27` - A collection of tools and resources to explore MPTCP on your network. Initially released at Black Hat USA 2014.
+- **mylg** `659.faba867` - Network Diagnostic Tool.
+- **nacker** `23.b67bb39` - A tool to circumvent 802.1x Network Access Control on a wired LAN.
+- **nbtool** `2.bf90c76` - Some tools for NetBIOS and DNS investigation, attacks, and communication.
+- **ncpfs** `2.2.6` - Allows you to mount volumes of NetWare servers under Linux.
+- **nemesis** `331.5aee868` - A command-line network packet crafting and injection utility.
+- **netactview** `0.6.4` - A graphical network connections viewer similar in functionality to netstat.
+- **netcon** `0.1` - A network connection establishment and management script.
+- **netmap** `0.1.3` - Can be used to make a graphical representation of the surrounding network.
+- **netreconn** `1.78` - A collection of network scan/recon tools that are relatively small compared to their larger cousins.
+- **netsed** `1.3` - Small and handful utility design to alter the contents of packets forwarded thru network in real time.
+- **networkmap** `58.f5faf17` - Post-exploitation network mapper.
+- **nextnet** `3.c8dc7a6` - Pivot point discovery tool.
+- **nfdump** `1.6.23` - A set of tools to collect and process netflow data.
+- **nield** `38.0c0848d` - A tool to receive notifications from kernel through netlink socket, and generate logs related to interfaces, neighbor cache(ARP,NDP), IP address(IPv4,IPv6), routing, FIB rules, traffic control.
+- **nipper** `0.11.7` - Network Infrastructure Parser
+- **nsdtool** `0.1` - A netgear switch discovery tool. It contains some extra features like bruteoforce and setting a new password.
+- **nsoq** `1.9.5` - A Network Security Tool for packet manipulation that allows a large number of options.
+- **packet-o-matic** `351` - A real time packet processor. Reads the packet from an input module, match the packet using rules and connection tracking information and then send it to a target module.
+- **packetq** `310.e4fcdd3` - A tool that provides a basic SQL-frontend to PCAP-files.
+- **packetsender** `1185.c34d525` - An open source utility to allow sending and receiving TCP and UDP packets.
+- **packit** `1.0` - A network auditing tool. Its value is derived from its ability to customize, inject, monitor, and manipulate IP traffic.
+- **pcapfex** `60.c51055a` - Packet CAPture Forensic Evidence eXtractor.
+- **pcapfix** `1.1.7` - Tries to repair your broken pcap and pcapng files.
+- **phantap** `65.e8d10ea` - An 'invisible' network tap aimed at red teams.
+- **pivotsuite** `20.5640666` - A portable, platform independent and powerful network pivoting toolkit.
+- **pkt2flow** `69.868a2e8` - A simple utility to classify packets into flows.
+- **pmacct** `v1.7.6.r1545.g5824ef3` - Small set of multi-purpose passive network monitoring tools [NetFlow IPFIX sFlow libpcap BGP BMP IGP Streaming Telemetry].
+- **prometheus-firewall** `176.a316d66` - A Firewall analyzer written in ruby
+- **pwnat** `14.d3c2b05` - A tool that allows any number of clients behind NATs to communicate with a server behind a separate NAT with *no* port forwarding and *no* DMZ setup on any routers in order to directly communicate with each other.
+- **pyersinia** `49.73f4056` - Network attack tool like yersinia but written in Python.
+- **pyexfil** `81.2ef1b8c` - A couple of beta stage tools for data exfiltration.
+- **pyminifakedns** `0.1` - Minimal DNS server written in Python; it always replies with a 127.0.0.1 A-record.
+- **python-cymruwhois** `1.6` - Python client for the whois.cymru.com service
+- **python2-cymruwhois** `1.6` - Python client for the whois.cymru.com service
+- **rinetd** `0.62` - Internet redirection server.
+- **rtpbreak** `1.3a` - Detects, reconstructs and analyzes any RTP session.
+- **rustcat** `v3.0.0.r4.g245c791` - A modern port listener and reverse shell.
+- **samplicator** `175.ceeb1d2` - Send copies of (UDP) datagrams to multiple receivers, with optional sampling and spoofing.
+- **sdn-toolkit** `1.21` - Discover, Identify, and Manipulate SDN-Based Networks
+- **sessionlist** `6.3efc3b2` - Sniffer that intents to sniff HTTP packets and attempts to reconstruct interesting authentication data from websites that do not employ proper secure cookie auth.
+- **seth** `103.8b6e36c` - Perform a MitM attack and extract clear text credentials from RDP connections.
+- **silk** `3.19.2` - A collection of traffic analysis tools developed by the CERT NetSA to facilitate security analysis of large networks.
+- **skydive** `0.28.0` - An open source real-time network topology and protocols analyzer.
+- **smbclient-ng** `2.1.7.r71.gff6c762` - Interact with SMB shares.
+- **sniffer** `4.688854e` - Packet Trace Parser for TCP, SMTP Emails, and HTTP Cookies.
+- **sniffles** `469.118e93f` - A Packet Capture Generator for IDS and Regular Expression Evaluation.
+- **snmpattack** `1.8` - SNMP scanner and attacking tool.
+- **snmpcheck** `1.9` - A free open source utility to get information via SNMP protocols.
+- **sockstat** `0.4.1` - A tool to let you view information about open connections. It is similar to the tool of the same name that is included in FreeBSD, trying to faithfully reproduce as much functionality as is possible.
+- **sprayhound** `0.0.3` - Password spraying tool and Bloodhound integration.
+- **sps** `4.3` - A Linux packet crafting tool. Supports IPv4, IPv6 including extension headers, and tunneling IPv6 over IPv4.
+- **stunner** `v0.5.8.r103.g296308c` - Test and exploit STUN, TURN and TURN over TCP servers.
+- **tcpcopy** `1285.929511d` - A TCP stream replay tool to support real testing of Internet server applications.
+- **tcpdstat** `4.be5bd28` - Get protocol statistics from tcpdump pcap files.
+- **tcpextract** `1.1` - Extracts files from captured TCP sessions. Support live streams and pcap files.
+- **tcptrace** `6.6.7` - A TCP dump file analysis tool.
+- **tcptraceroute** `1.5beta7` - A traceroute implementation using TCP packets.
+- **tcpwatch** `1.3.1` - A utility written in Python that lets you monitor forwarded TCP connections or HTTP proxy connections.
+- **tgcd** `1.1.1` - TCP/IP Gender Changer Daemon utility.
+- **torpy** `60.ebf000c` - Pure python Tor client implementation.
+- **tunna** `41.cba006d` - a set of tools which will wrap and tunnel any TCP communication over HTTP. It can be used to bypass network restrictions in fully firewalled environments.
+- **turner** `32.fad9423` - Tunnels HTTP over a permissive/open TURN server; supports HTTP and SOCKS5 proxy.
+- **udpastcp** `29.683b5e3` - This program hides UDP traffic as TCP traffic in order to bypass certain firewalls.
+- **udptunnel** `19` - Tunnels TCP over UDP packets.
+- **umit** `1.0` - A powerful nmap frontend.
+- **uw-offish** `0.1` - Clear-text protocol simulator.
+- **websockify** `987.a02143c` - WebSocket to TCP proxy/bridge.
+- **wondershaper** `48.98792b5` - Limit the bandwidth of one or more network adapters.
+- **xerosploit** `38.e2c3c7b` - Efficient and advanced man in the middle framework.
+- **xxeserv** `14.2c7f444` - A mini webserver with FTP support for XXE payloads.
+- **yaf** `2.12.2` - Yet Another Flowmeter.
+- **yersinia** `0.8.2` - A network tool designed to take advantage of some weakness in different network protocols.
+- **zackattack** `5.1f96c14` - A new tool set to do NTLM Authentication relaying unlike any other tool currently out there.
+- **zdns** `718.c37042e` - Fast CLI DNS Lookup Tool.
+- **zeek** `v8.0.0.dev.r752.g7894d88461` - A powerful network analysis framework that is much different from the typical IDS you may know.
+- **zeek-aux** `738.3c5eb9b` - Handy auxiliary programs related to the use of the Zeek Network Security Monitor.
+
+---
+
+## MISC (144 tools)
+
+- **archivebox** `903.59da482` - The open source self-hosted web archive. Takes browser history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media, and more.
+- **arybo** `65.89d9a42` - Manipulation, canonicalization and identification of mixed boolean-arithmetic symbolic expressions.
+- **aspisec** `0.2.0` - Removes the traces left by offensive security tools.
+- **aurebeshjs** `77.75a8fc6` - Translate JavaScript to Other Alphabets.
+- **avml** `v0.15.0.r38.g66049b0` - A portable volatile memory acquisition tool for Linux.
+- **base64dump** `0.0.14` - Extract and decode base64 strings from files.
+- **bettercap-ui** `1.3.0` - Official Bettercap's Web UI.
+- **bloodhound-cli** `v0.1.8.r1.g379053a` - Command-line interface for BloodHound v5.
+- **bqm** `v1.5.1.r5.ge287280` - Download BloudHound query lists, deduplicate entries and merge them in one file.
+- **catana** `31.9ea1f0d` - Filter your wordlist according to the specified password policy.
+- **centry** `72.6de2868` - Cold boot & DMA protection
+- **checkiban** `0.2` - Checks the validity of an International Bank Account Number (IBAN).
+- **cisco-router-config** `1.1` - Tools to copy and merge Cisco Routers Configuration.
+- **cloakify** `117.f45c3b3` - Data Exfiltration In Plain Sight; Evade DLP/MLS Devices; Social Engineering of Analysts; Evade AV Detection.
+- **cracken** `v1.0.1.r0.g7a325ff` - A ast password wordlist generator, Smartlist creation and password hybrid-mask analysis tool written in pure safe Rust.
+- **credmap** `116.d862247` - The Credential mapper - Tool that was created to bring awareness to the dangers of credential reuse.
+- **ctf-party** `v4.0.0.r9.g4acacc1` - A CLI tool & library to enhance and speed up script/exploit writing for CTF players.
+- **cve-api** `170.8e9c247` - Unofficial api for cve.mitre.org.
+- **dbd** `61.8cf5350` - A Netcat-clone, designed to be portable and offer strong encryption. It runs on Unix-like operating systems and on Microsoft Win32.
+- **densityscout** `45` - Calculates density for files of any file-system-path to finally output an accordingly descending ordered list.
+- **depix** `38.f7d1850` - A tool for recovering passwords from pixelized screenshots.
+- **der-ascii** `99.679a302` - A reversible DER and BER pretty-printer.
+- **dhcdrop** `0.5` - Remove illegal dhcp servers with IP-pool underflow.
+- **dnsgen** `v1.0.4.r12.g7c98e7e` - Generate combination of domain names from the provided input.
+- **domlink** `37.1cabd5d` - A tool to link a domain with registered organisation names and emails, to other domains.
+- **dsd** `91.7ee04e5` - Digital Speech Decoder
+- **dsd-fme** `2024` - Digital Speech Decoder - Florida Man Edition.
+- **dumpsmbshare** `23.1e5ceb1` - A script to dump files and folders remotely from a Windows SMB share.
+- **duplicut** `2.2` - Remove duplicates from massive wordlist, without sorting it (for dictionnary-based password cracking).
+- **elettra** `1.0` - Encryption utility by Julia Identity
+- **elettra-gui** `1.0` - Gui for the elettra crypto application.
+- **ent** `1.0` - Pseudorandom number sequence test.
+- **evilgrade** `2.0.9` - Modular framework that takes advantage of poor upgrade implementations by injecting fake updates.
+- **exrex** `149.b91c075` - Irregular methods on regular expressions.
+- **extracthosts** `17.8fdff9e` - Extracts hosts (IP/Hostnames) from files.
+- **eyeballer** `143.5299227` - Convolutional neural network for analyzing pentest screenshots.
+- **fakemail** `1.0` - Fake mail server that captures e-mails as files for acceptance testing.
+- **ffuf-scripts** `1.2192bf7` - Scripts and snippets for ffuf payloads.
+- **find3** `604.5964026` - High-precision indoor positioning framework.
+- **firefox-security-toolkit** `17.d356ab8` - A tool that transforms Firefox browsers into a penetration testing suite.
+- **flare** `0.6` - Flare processes an SWF and extracts all scripts from it.
+- **genlist** `0.1` - Generates lists of IP addresses.
+- **geoipgen** `0.4` - GeoIPgen is a country to IP addresses generator.
+- **gf** `39.dcd4c36` - A wrapper around grep, to help you grep for things.
+- **gibberish-detector** `v0.1.1.r2.gecac969` - Train a model and detect gibberish strings with it.
+- **githubcloner** `36.20203e7` - A script that clones Github repositories of users and organizations automatically.
+- **gmsadumper** `18.e03187c` - A tool that Reads any gMSA password blobs the user can access and parses the values.
+- **goshs** `0.3.8` - A SimpleHTTPServer written in Go, enhanced with features and with a nice design.
+- **graffiti** `24.4af61b4` - A tool to generate obfuscated one liners to aid in penetration testing.
+- **gtfo** `17.873d862` - Search gtfobins and lolbas files from your terminal.
+- **gtfoblookup** `69.cc50e6e` - Offline command line lookup utility for GTFOBins and LOLBAS.
+- **h2spec** `2.6.0` - A conformance testing tool for HTTP/2 implementation.
+- **halcyon-ide** `2.0.2` - First IDE for Nmap Script (NSE) Development.
+- **http-put** `1.0` - Simple http put perl script.
+- **httpscreenshot** `70.f081c69` - A tool for grabbing screenshots and HTML of large numbers of websites.
+- **hurl-encoder** `20.afca9c5` - Hexadecimal & URL (en/de)coder.
+- **hxd** `2.5.0.0` - Freeware Hex Editor and Disk Editor.
+- **imagegrep** `8.1f14af2` - Grep word in pdf or image based on OCR.
+- **imhex** `nightly.r0.ga76eae2` - A Hex Editor for Reverse Engineers, Programmers and people that value their eye sight when working at 3 AM.
+- **intelmq** `3.4.0.r102.g481006b7c` - A tool for collecting and processing security feeds using a message queuing protocol.
+- **intensio-obfuscator** `280.f66a22b` - Obfuscate a python code 2 and 3.
+- **inundator** `0.5` - An ids evasion tool, used to anonymously inundate intrusion detection logs with false positives in order to obfuscate a real attack.
+- **ipcountry** `1.2` - Fetches IPv4 ranges of given country in host and cidr format.
+- **ipobfuscator** `27.f005262` - A simple tool to convert the IP to a DWORD IP.
+- **jsfuck** `242.6f8fdf3` - Write any JavaScript with 6 Characters: []()!+.
+- **laudanum** `1.0` - A collection of injectable files, designed to be used in a pentest when SQL injection flaws are found and are in multiple languages for different environments.
+- **leo** `36936.29edc0c8d` - Literate programmer's editor, outliner, and project manager.
+- **magictree** `1.3` - A penetration tester productivity tool designed to allow easy and straightforward data consolidation, querying, external command execution and report generation
+- **mapcidr** `v1.1.96.r3.g986510d` - Utility program to perform multiple operations for a given subnet/CIDR ranges.
+- **metaforge** `115.7b32693` - Auto Scanning to SSL Vulnerability.
+- **mibble** `2.10.1` - An open-source SNMP MIB parser (or SMI parser) written in Java. It can be used to read SNMP MIB files as well as simple ASN.1 files.
+- **minimodem** `353.bb2f34c` - A command-line program which decodes (or generates) audio modem tones at any specified baud rate, using various framing protocols.
+- **mkyara** `3.8147f91` - Tool to generate YARA rules based on binary code.
+- **mrtparse** `522.13cde30` - A module to read and analyze the MRT format data.
+- **msfdb** `16.09c603b` - Manage the metasploit framework database.
+- **narthex** `v1.2.r7.g8b78746` - Modular personalized dictionary generator.
+- **nmap-parse-output** `26.a8e31b3` - Converts/manipulates/extracts data from a nmap scan output.
+- **nsearch** `353.bd8205b` - Minimal script to help find script into the nse database.
+- **one-lin3r** `65.168bb6d` - Gives you one-liners that aids in penetration testing and more.
+- **openrisk** `v0.0.1.r22.gb536ea0` - Generates a risk score based on the results of a Nuclei scan using OpenAI's GPT model.
+- **osert** `97.8c515be` - Markdown Templates for Offensive Security exam reports.
+- **pass-station** `v2.0.0.r4.gbe184e9` - CLI & library to search for default credentials among thousands of Products / Vendors.
+- **passdetective** `1.0.6.r3.ge3aebf2` - Scans shell command history to detect mistakenly written passwords, API keys, and secrets.
+- **payloadsallthethings** `2121.d49faf9` - A list of useful payloads and bypass for Web Application Security and Pentest/CTF.
+- **pdfwalker** `7.64c17f0` - Frontend to explore the internals of a PDF document with Origami
+- **pencode** `39.07e33ef` - Complex payload encoder.
+- **plumber.py** `18.3f1be68` - A python implementation of a grep friendly ftrace wrapper.
+- **plutil** `1.6` - Converts .plist files between binary and UTF (editable) text formats.
+- **princeprocessor** `132.bffda8c` - Standalone password candidate generator using the PRINCE algorithm.
+- **pspy** `159.2312eed` - Monitor linux processes without root permissions.
+- **pulledpork** `397.5ccf5c5` - Snort rule management.
+- **pwdlogy** `14.8b92bcf` - A target specific wordlist generating tool for social engineers and security researchers.
+- **pwfuzz-rs** `v0.2.0.r1.gac56f42` - Rust-based password mutator for brute force attacks.
+- **pwnedpasswords** `3.0.0.r1.gf8cfb94` - Generate and verify pwnedpasswords check digits.
+- **pydictor** `100.4a77f0a` - A useful hacker dictionary builder for a brute-force attack.
+- **pyinstaller** `6.12.0` - Bundles a Python application and all its dependencies into a single package.
+- **pyinstaller-hooks-contrib** `2024.11` - PyInstaller community hooks.
+- **python-google-streetview** `1.2.9` - A command line tool and module for Google Street View Image API.
+- **python2-darts.util.lru** `7.5ef01b1` - Simple dictionary with LRU behaviour.
+- **python2-exrex** `149.b91c075` - Irregular methods on regular expressions.
+- **python2-google-streetview** `1.2.9` - A command line tool and module for Google Street View Image API.
+- **python2-utidylib** `0.6` - Python bindings for Tidy HTML parser/cleaner.
+- **qrgen** `37.82a015b` - Simple script for generating Malformed QRCodes.
+- **qsreplace** `3.0b053d2` - Accept URLs on stdin, replace all query string values with a user-supplied value, only output each combination of query string parameters once per host and path.
+- **rawsec-cli** `1.2.0.r7.gf7a08c6` - Rawsec Inventory search CLI to find security tools and resources.
+- **rbkb** `v0.7.3.r3.g4645025` - A miscellaneous collection of command-line tools related to pen-testing and reversing.
+- **redeye** `0.9.4` - Visual analytic tool supporting Red & Blue Team operations.
+- **redpoint** `123.23ef36b` - Digital Bond's ICS Enumeration Tools.
+- **reptor** `0.7` - CLI tool to automate pentest reporting with SysReptor.
+- **rogue-mysql-server** `2.78ebbfc` - A rogue MySQL server written in Python.
+- **rtfm** `95.a807a80` - A database of common, interesting or useful commands, in one handy referable form.
+- **rulesfinder** `42.cf8255b` - Machine-learn password mangling rules.
+- **sasm** `3.2.0` - A simple crossplatform IDE for NASM, MASM, GAS and FASM assembly languages.
+- **schnappi-dhcp** `0.1` - Can fuck network with no DHCP.
+- **sh00t** `214.8c7321f` - A Testing Environment for Manual Security Testers.
+- **shadowfinder** `0.5.0.r1.g19e3925` - Find possible locations of shadows around the world.
+- **shelling** `227.0a6c135` - An offensive approach to the anatomy of improperly written OS command injection sanitisers.
+- **sleuthql** `9.29fc878` - Python3 Burp History parsing tool to discover potential SQL injection points. To be used in tandem with SQLmap.
+- **sslcat** `1.0` - SSLCat is a simple Unix utility that reads and writes data across an SSL enable network connection.
+- **stompy** `0.0.4` - An advanced utility to test the quality of WWW session identifiers and other tokens that are meant to be unpredictable.
+- **suricata-verify** `1706.2a1114b5` - Suricata Verification Tests - Testing Suricata Output.
+- **tcpxtract** `1.0.1` - A tool for extracting files from network traffic.
+- **tempomail** `26.5600ec3` - Tool to create a temporary email address in 1 Second and receive emails.
+- **tnscmd** `1.3` - A lame tool to prod the oracle tnslsnr process (1521/tcp).
+- **token-reverser** `10.cbb4528` - Word list generator to crack security tokens.
+- **tpcat** `latest` - Tool based upon pcapdiff by the EFF.
+- **uatester** `1.06` - User Agent String Tester
+- **uberfile** `14.4414c2a` - CLI tool for the generation of downloader oneliners for UNIX-like or Windows systems.
+- **unfurl** `16.99ad735` - Pull out bits of URLs provided on stdin.
+- **unisec** `0.0.6` - Unicode Security Toolkit.
+- **urlview** `0.9` - A curses URL parser for text files.
+- **usernamer** `20.12983f8` - Pentest Tool to generate usernames/logins based on supplied names.
+- **verinice** `1.19.1.r1.gf82b192a6` - Tool for managing information security.
+- **vfeed** `81.fad17ae` - Open Source Cross Linked and Aggregated Local Vulnerability Database main repository.
+- **visualize-logs** `118.d2e370e` - A Python library and command line tools to provide interactive log visualization.
+- **web2ldap** `1.8.1` - Full-featured LDAP client running as web application.
+- **whapa** `385.548ca0d` - WhatsApp Parser Tool.
+- **whatportis** `54.59a1718` - A command to search port names and numbers.
+- **winexe** `1.00` - Remotely execute commands on Windows NT/2000/XP/2003 systems.
+- **winregfs** `161.209a5d6` - Windows Registry FUSE filesystem.
+- **wol-e** `2.0` - A suite of tools for the Wake on LAN feature of network attached computers.
+- **wordlistctl** `0.9.4` - Fetch, install and search wordlist archives from websites.
+- **wordlister** `56.7457c21` - A simple wordlist generator and mangler written in python.
+- **yay** `12.5.2` - Yet another yogurt. Pacman wrapper and AUR helper written in go.
+
+---
+
+## AUTOMATION (109 tools)
+
+- **apt2** `183.8075cdc` - Automated penetration toolkit.
+- **automato** `33.0561b59` - Should help with automating some of the user-focused enumeration tasks during an internal penetration test.
+- **autonessus** `24.7933022` - This script communicates with the Nessus API in an attempt to help with automating scans.
+- **autonse** `25.7c87f4c` - Massive NSE (Nmap Scripting Engine) AutoSploit and AutoScanner.
+- **autopwn** `190.fc80cef` - Specify targets and run sets of tools against them.
+- **autorecon** `288.fd87c99` - A multi-threaded network reconnaissance tool which performs automated enumeration of services.
+- **awsbucketdump** `82.4684670` - A tool to quickly enumerate AWS S3 buckets to look for loot.
+- **bashfuscator** `338.7487348` - Fully configurable and extendable Bash obfuscation framework.
+- **blueranger** `1.0` - A simple Bash script which uses Link Quality to locate Bluetooth device radios.
+- **bopscrk** `v2.4.7.r2.g7eede16` - Tool to generate smart wordlists, eg. based on lyrics.
+- **brutespray** `583.7a1692d` - Brute-Forcing from Nmap output - Automatically attempts default creds on found services.
+- **brutex** `114.eacd084` - Automatically brute force all services running on a target.
+- **byepass** `213.8cbfd9b` - Automates password cracking tasks using optimized dictionaries and mangling rules.
+- **cewl** `199.b4dd848` - A custom word list generator.
+- **cheat-sh** `6` - The only cheat sheet you need.
+- **cisco-snmp-enumeration** `10.ad06f57` - Automated Cisco SNMP Enumeration, Brute Force, Configuration Download and Password Cracking.
+- **clusterd** `143.d190b2c` - Automates the fingerprinting, reconnaissance, and exploitation phases of an application server attack.
+- **codeql** `2.22.4` - The CLI tool for GitHub CodeQL
+- **commonspeak** `36.f0aad23` - Leverages publicly available datasets from Google BigQuery to generate wordlists.
+- **cook** `v2.2.1.r13.gbabf5ba` - Easily create word's permutation and combination to generate complex wordlists and passwords.
+- **crunch** `3.6` - A wordlist generator for all combinations/permutations of a given character set.
+- **deathstar** `60.d7bcbfd` - Automate getting Domain Admin using Empire.
+- **dorkscout** `1.0.r13.gdd87daf` - Golang tool to automate google dork scan against the entire internet or specific targets.
+- **dracnmap** `69.09d3945` - Tool to exploit the network and gathering information with nmap help.
+- **dumb0** `19.1493e74` - A simple tool to dump users in popular forums and CMS.
+- **easy-creds** `45.bf9f00c` - A bash script that leverages ettercap and other tools to obtain credentials.
+- **easyda** `7.0867f9b` - Easy Windows Domain Access Script.
+- **emp3r0r** `v3.4.2.r1.gb1581579` - Linux post-exploitation framework made by linux user.
+- **empire** `v6.2.1.r0.gca8c963` - A PowerShell and Python post-exploitation agent.
+- **findsploit** `87.3e61d8d` - Find exploits in local and online databases instantly.
+- **fstealer** `0.1` - Automates file system mirroring through remote file disclosure vulnerabilities on Linux machines.
+- **glue** `380.8703380` - A framework for running a series of tools.
+- **go-exploitdb** `v0.6.2.r0.gfb3b4e4` - Tool for searching Exploits from Exploit Databases, etc.
+- **google-explorer** `140.0b21b57` - Google mass exploit robot - Make a google search, and parse the results for a especific exploit you define.
+- **gooscan** `1.0.9` - A tool that automates queries against Google search appliances, but with a twist.
+- **hackersh** `0.2.0` - A shell for with Pythonect-like syntax, including wrappers for commonly used security tools.
+- **harpoon** `386.52c1071` - CLI tool for open source and threat intelligence.
+- **hate-crack** `224.821ff60` - A tool for automating cracking methodologies through Hashcat.
+- **havoc-c2** `856.fb67b76` - Modern and malleable post-exploitation command and control framework.
+- **intersect** `2.5` - Post-exploitation framework.
+- **invoke-cradlecrafter** `19.3ff8bac` - PowerShell Remote Download Cradle Generator & Obfuscator.
+- **invoke-dosfuscation** `7.6260f5b` - Cmd.exe Command Obfuscation Generator & Detection Test Harness.
+- **invoke-obfuscation** `45.f20e7f8` - PowerShell Obfuscator.
+- **koadic** `3.457f9a3` - A Windows post-exploitation rootkit similar to other penetration testing tools such as Meterpreter and Powershell Empire.
+- **ldapscripts** `2.0.8` - Simple shell scripts to handle POSIX entries in an LDAP directory.
+- **linikatz** `48.d9cfdbf` - Tool to attack AD on UNIX.
+- **linset** `9.8746b1f` - Evil Twin Attack Bash script - An automated WPA/WPA2 hacker.
+- **lyricpass** `45.fd31d07` - Tool to generate wordlists based on lyrics.
+- **maskprocessor** `0.73` - A High-Performance word generator with a per-position configurable charset.
+- **masscan-automation** `26.a170abc` - Masscan integrated with Shodan API.
+- **massexpconsole** `v2.3.5.r1.g530c880` - A collection of tools and exploits with a cli ui for mass exploitation.
+- **mentalist** `6.953a07b` - Graphical tool for custom wordlist generation.
+- **merlin-server** `1.3.0` - Merlin is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in golang.
+- **metasploit-autopwn** `12.09320cc` - db_autopwn plugin of metasploit.
+- **mitmap-old** `0.1` - Shell Script for launching a Fake AP with karma functionality and launches ettercap for packet capture and traffic manipulation.
+- **morpheus** `165.5d81c9e` - Automated Ettercap TCP/IP Hijacking Tool.
+- **msf-mpc** `35.8007ef2` - Msfvenom payload creator.
+- **msfenum** `36.6c6b77e` - A Metasploit auto auxiliary script.
+- **mutator** `51.164132d` - This project aims to be a wordlist mutator with hormones, which means that some mutations will be applied to the result of the ones that have been already done, resulting in something like: corporation -> C0rp0r4t10n_2012
+- **nettacker** `0.4.0.r108.g0f305445` - Automated Penetration Testing Framework.
+- **nfspy** `1.0` - A Python library for automating the falsification of NFS credentials when mounting an NFS share.
+- **nfsshell** `19980519` - Userland NFS command tool.
+- **nosqlattack** `98.a5b0329` - Python tool to automate exploit MongoDB server IP on Internet anddisclose the database data by MongoDB default configuration weaknesses and injection attacks.
+- **nullscan** `1.0.1` - A modular framework designed to chain and automate security tests.
+- **octopwnweb** `14.e0f83ee` - Internal pentest framework running in your browser via WebAssembly, powerd by Pyodide
+- **openscap** `1.4.2.r41.ga02d3d184` - Open Source Security Compliance Solution.
+- **panoptic** `207.fbd10fd` - A tool that automates the process of search and retrieval of content for common log and config files through LFI vulnerability.
+- **pastejacker** `12.ed9f153` - Hacking systems with the automation of PasteJacking attacks.
+- **pasv-agrsv** `57.6bb54f7` - Passive recon / OSINT automation script.
+- **penbox** `81.3b77c69` - A Penetration Testing Framework - The Tool With All The Tools.
+- **pentestgpt** `v0.14.0.r7.g0f8e73a` - A penetration testing tool empowered by ChatGPT. It is designed to automate the penetration testing process.
+- **pentmenu** `220.0cd7b58` - A bash script for recon and DOS attacks.
+- **pin** `3.28.r98749` - A dynamic binary instrumentation tool.
+- **portia** `39.2e6e608` - Automate a number of techniques commonly performed on internal network penetration tests after a low privileged account has been compromised.
+- **pupy** `2988.4b78dc58` - Opensource, cross-platform (Windows, Linux, OSX, Android) remote administration and post-exploitation tool mainly written in python.
+- **pureblood** `37.2c5ce07` - A Penetration Testing Framework created for Hackers / Pentester / Bug Hunter.
+- **pyfuscation** `17.6d8d53f` - Obfuscate powershell scripts by replacing Function names, Variables and Parameters.
+- **recomposer** `2.90f85ed` - Randomly changes Win32/64 PE Files for 'safer' uploading to malware and sandbox sites.
+- **rhodiola** `4.8bc08a0` - Personalized wordlist generator with NLP, by analyzing tweets (A.K.A crunch2049).
+- **rsmangler** `1.4` - rsmangler takes a wordlist and mangle it
+- **sakis3g** `0.2.0e` - An all-in-one script for connecting with 3G.
+- **scap-security-guide** `0.1.60` - Security compliance content in SCAP, Bash, Ansible, and other formats.
+- **scap-workbench** `1.2.1` - SCAP Scanner And Tailoring Graphical User Interface.
+- **search1337** `11.bf03ec9` - 1337Day Online Exploit Scanner.
+- **shellerator** `34.c325e3d` - Simple command-line tool aimed to help pentesters quickly generate one-liner reverse/bind shells in multiple languages.
+- **shellpop** `148.a145349` - Generate easy and sophisticated reverse or bind shell commands.
+- **shellz** `161.0ed068f` - A script for generating common revshells fast and easy.
+- **simple-ducky** `20.f15079e` - A payload generator.
+- **sipvicious** `463.20fd851` - Tools for auditing SIP devices.
+- **sn00p** `0.8` - A modular tool written in bourne shell and designed to chain and automate security tools and tests.
+- **sn1per** `624.feeb5c6` - Automated Pentest Recon Scanner.
+- **sploitctl** `3.0.4` - Fetch, install and search exploit archives from exploit sites like exploit-db and packetstorm.
+- **spookflare** `24.19491b5` - Loader, dropper generator with multiple features for bypassing client-side and network-side countermeasures.
+- **statsprocessor** `0.11` - A high-performance word-generator based on per-position Markov-attack.
+- **thefatrat** `813.b0586d0` - TheFatRat a massive exploiting tool: easy tool to generate backdoor and easy tool to post exploitation attack.
+- **tiger** `3.2.3` - A security scanner, that checks computer for known problems. Can also use tripwire, aide and chkrootkit.
+- **tlssled** `1.3` - A Linux shell script whose purpose is to evaluate the security of a target SSL/TLS (HTTPS) web server implementation.
+- **torctl** `0.5.7` - Script to redirect all traffic through tor network including dns queries for anonymizing entire system.
+- **ttpassgen** `133.a06d99d` - Highly flexible and scriptable password dictionary generator based on Python.
+- **unix-privesc-check** `1.4` - Tries to find misconfigurations that could allow local unprivilged users to escalate privileges to other users or to access local apps (e.g. databases).
+- **username-anarchy** `72.e063191` - Tools for generating usernames when penetration testing.
+- **valhalla-api** `87.c010a48` - Valhalla API Client.
+- **veil** `297.d8acd4c` - A tool designed to generate metasploit payloads that bypass common anti-virus solutions.
+- **vlan-hopping** `21.a37ba4e` - Easy 802.1Q VLAN Hopping
+- **voiphopper** `2.04` - A security validation tool that tests to see if a PC can mimic the behavior of an IP Phone. It rapidly automates a VLAN Hop into the Voice VLAN.
+- **wifi-autopwner** `36.faa4d01` - Script to automate searching and auditing Wi-Fi networks with weak security.
+- **wikigen** `8.348aa99` - A script to generate wordlists out of wikipedia pages.
+- **wmd** `30.32e249a` - Python framework for IT security tools.
+- **wnmap** `0.1` - A shell script written with the purpose to automate and chain scans via nmap.
+
+---
+
+## FUZZER (84 tools)
+
+- **ajpfuzzer** `0.6` - A command-line fuzzer for the Apache JServ Protocol (ajp13).
+- **backfuzz** `1.b0648de` - A network protocol fuzzing toolkit.
+- **bfuzz** `60.fdaefc0` - Input based fuzzer tool for browsers.
+- **boofuzz** `v0.4.2.r34.gd9b0934` - 
+- **browser-fuzzer** `3` - Browser Fuzzer 3
+- **bunny** `0.93` - A closed loop, high-performance, general purpose protocol-blind fuzzer for C programs.
+- **choronzon** `4.d702c31` - An evolutionary knowledge-based fuzzer.
+- **cirt-fuzzer** `1.0` - A simple TCP/UDP protocol fuzzer.
+- **conscan** `1.2` - A blackbox vulnerability scanner for the Concre5 CMS.
+- **cookie-cadger** `1.08` - An auditing tool for Wi-Fi or wired Ethernet connections.
+- **crlf-injector** `9.bd6db06` - A python script for testing CRLF injecting issues.
+- **dharma** `98.6b1e511` - Generation-based, context-free grammar fuzzer.
+- **dizzy** `2.0` - A Python based fuzzing framework with many features.
+- **domato** `133.fadff39` - DOM fuzzer.
+- **doona** `145.7a4796c` - A fork of the Bruteforce Exploit Detector Tool (BED).
+- **easyfuzzer** `3.6` - A flexible fuzzer, not only for web, has a CSV output for efficient output analysis (platform independent).
+- **firewalk** `5.0` - An active reconnaissance network security tool.
+- **flyr** `76.4926ecc` - Block-based software vulnerability fuzzing framework.
+- **frisbeelite** `1.2` - A GUI-based USB device fuzzer.
+- **ftester** `1.0` - A tool designed for testing firewall filtering policies and Intrusion Detection System (IDS) capabilities.
+- **ftp-fuzz** `1337` - The master of all master fuzzing scripts specifically targeted towards FTP server software.
+- **fuddly** `0.30.dev.r251.g546a0a8` - Fuzzing and Data Manipulation Framework (for GNU/Linux).
+- **fusil** `1.5` - A Python library used to write fuzzing programs.
+- **fuzzball2** `0.7` - A little fuzzer for TCP and IP options. It sends a bunch of more or less bogus packets to the host of your choice.
+- **fuzzdb** `475.5656ab2` - Attack and Discovery Pattern Dictionary for Application Fault Injection Testing.
+- **fuzzdiff** `1.0` - A simple tool designed to help out with crash analysis during fuzz testing. It selectively 'un-fuzzes' portions of a fuzzed file that is known to cause a crash, re-launches the targeted application, and sees if it still crashes.
+- **fuzzowski** `41.e39f665` - A Network Protocol Fuzzer made by NCCGroup based on Sulley and BooFuzz.
+- **goofuzz** `1.2.6.r0.gf6fa9e5` - A Bash script that uses advanced Google search techniques to obtain sensitive information in files or directories without making requests to the web server.
+- **grammarinator** `455.a34191a` - A random test generator / fuzzer that creates test cases according to an input ANTLR v4 grammar.
+- **grr** `17.791ed5a` - High-throughput fuzzer and emulator of DECREE binaries.
+- **hexorbase** `6` - A database application designed for administering and auditing multiple database servers simultaneously from a centralized location. It is capable of performing SQL queries and bruteforce attacks against common database servers (MySQL, SQLite, Microsoft SQL Server, Oracle, PostgreSQL).
+- **hodor** `1.01be107` - A general-use fuzzer that can be configured to use known-good input and delimiters in order to fuzz specific locations.
+- **honggfuzz** `4142.7c495f83` - A general-purpose fuzzer with simple, command-line interface.
+- **http-fuzz** `0.1` - A simple http fuzzer.
+- **ifuzz** `1.0` - A binary file fuzzer with several options.
+- **ikeprober** `1.12` - Tool crafting IKE initiator packets and allowing many options to be manually set. Useful to find overflows, error conditions and identifiyng vendors
+- **jbrofuzz** `2.5` - Web application protocol fuzzer that emerged from the needs of penetration testing.
+- **kitty-framework** `352.cb07609` - Fuzzing framework written in python.
+- **malybuzz** `1.0` - A Python tool focused in discovering programming faults in network software.
+- **manul** `197.f525df9` - A coverage-guided parallel fuzzer for open-source and blackbox binaries on Windows, Linux and MacOS.
+- **melkor** `1.0` - An ELF fuzzer that mutates the existing data in an ELF sample given to create orcs (malformed ELFs), however, it does not change values randomly (dumb fuzzing), instead, it fuzzes certain metadata with semi-valid values through the use of fuzzing rules (knowledge base).
+- **notspikefile** `0.1` - A Linux based file format fuzzing tool
+- **oat** `1.3.1` - A toolkit that could be used to audit security within Oracle database servers.
+- **ohrwurm** `1.7a1182a` - A small and simple RTP fuzzer.
+- **oscanner** `1.0.6` - An Oracle assessment framework developed in Java.
+- **peach** `3.0.202` - A SmartFuzzer that is capable of performing both generation and mutation based fuzzing.
+- **peach-fuzz** `55.404e8ee` - Simple vulnerability scanning framework.
+- **pentbox** `1.8` - A security suite that packs security and stability testing oriented tools for networks and systems.
+- **portmanteau** `1.0` - An experimental unix driver IOCTL security tool that is useful for fuzzing and discovering device driver attack surface.
+- **powerfuzzer** `1_beta` - Powerfuzzer is a highly automated web fuzzer based on many other Open Source fuzzers available (incl. cfuzzer, fuzzled, fuzzer.pl, jbrofuzz, webscarab, wapiti, Socket Fuzzer). It can detect XSS, Injections (SQL, LDAP, commands, code, XPATH) and others.
+- **profuzz** `9.aa6dded` - Simple PROFINET fuzzer based on Scapy.
+- **pulsar** `55.3c61178` - Protocol Learning and Stateful Fuzzing.
+- **pyjfuzz** `157.f777067` - Python JSON Fuzzer.
+- **ratproxy** `1.58` - A passive web application security assessment tool
+- **s3-fuzzer** `4.0a2a6f0` - A concurrent, command-line AWS S3 Fuzzer.
+- **samesame** `68.a9bcd7b` - Command line tool to generate crafty homograph strings.
+- **sandsifter** `2.8375e61` - The x86 processor fuzzer.
+- **sfuzz** `200.e1b62bd` - A simple fuzzer.
+- **sharpfuzz** `v2.2.0.r4.g3f6373c` - AFL-based fuzz testing for .NET.
+- **sloth-fuzzer** `39.9f7f59a` - A smart file fuzzer.
+- **smtp-fuzz** `1.0` - Simple smtp fuzzer.
+- **snmp-fuzzer** `0.1.1` - SNMP fuzzer uses Protos test cases with an entirely new engine written in Perl.
+- **socketfuzz** `26.089add2` - Simple socket fuzzer.
+- **spiderpig-pdffuzzer** `0.1` - A javascript pdf fuzzer.
+- **spike-fuzzer** `2.9` - IMMUNITYsec's fuzzer creation kit in C.
+- **sploitego** `153.d9568dc` - Maltego Penetration Testing Transforms.
+- **sqlbrute** `1.0` - Brute forces data out of databases using blind SQL injection.
+- **sshfuzz** `1.0` - A SSH Fuzzing utility written in Perl that uses Net::SSH2.
+- **sulley** `1.0.bff0dd1` - A pure-python fully automated and unattended fuzzing framework.
+- **taof** `0.3.2` - A GUI cross-platform Python generic network protocol fuzzer.
+- **tcpcontrol-fuzzer** `0.1` - 2^6 TCP control bit fuzzer (no ECN or CWR).
+- **termineter** `210.a802f94` - Smart meter testing framework.
+- **tftp-fuzz** `1337` - Master TFTP fuzzing script as part of the ftools series of fuzzers.
+- **thefuzz** `160.b4c2c80` - CLI fuzzing tool.
+- **trinity** `5192.e7187245` - A Linux System call fuzzer.
+- **uff** `45.c52abba` - Unleashed ffuf. A fork of ffuf with more functions & a modified HTTP stack.
+- **unifuzzer** `5.3385a3b` - A fuzzing tool for closed-source binaries based on Unicorn and LibFuzzer.
+- **uniofuzz** `1337` - The universal fuzzing tool for browsers, web services, files, programs and network services/ports
+- **uniscan** `6.3` - A simple Remote File Include, Local File Include and Remote Command Execution vulnerability scanner.
+- **w3af** `1.6.49` - Web Application Attack and Audit Framework.
+- **webscarab** `20120422.001828` - Framework for analysing applications that communicate using the HTTP and HTTPS protocols
+- **webshag** `1.10` - A multi-threaded, multi-platform web server audit tool.
+- **wfuzz** `1155.1b695ee` - Utility to bruteforce web applications to find their not linked resources.
+- **wsfuzzer** `1.9.5` - A Python tool written to automate SOAP pentesting of web services.
+
+---
+
+## CRYPTO (81 tools)
+
+- **aespipe** `2.4f` - Reads data from stdin and outputs encrypted or decrypted results to stdout.
+- **auto-xor-decryptor** `7.2eb176d` - Automatic XOR decryptor tool.
+- **bletchley** `0.0.1` - A collection of practical application cryptanalysis tools.
+- **c7decrypt** `0.3.3` - Cisco password type encryptor and decryptor.
+- **ciphertest** `22.e33eb4a` - A better SSL cipher checker using gnutls.
+- **ciphr** `127.5da7137` - A CLI tool for encoding, decoding, encryption, decryption, and hashing streams of data.
+- **codetective** `45.52b91f1` - A tool to determine the crypto/encoding algorithm used according to traces of its representation.
+- **cribdrag** `5.2d27dbf` - An interactive crib dragging tool for cryptanalysis on ciphertext generated with reused or predictable stream cipher keys.
+- **crypthook** `18.690dcae` - TCP/UDP symmetric encryption tunnel wrapper.
+- **cryptonark** `0.5.7` - SSL security checker.
+- **dagon** `244.f065d7b` - Advanced Hash Manipulation.
+- **daredevil** `42.81cb57f` - A tool to perform (higher-order) correlation power analysis attacks (CPA).
+- **decodify** `63.4f82883` - Tool that can detect and decode encoded strings, recursively.
+- **deen** `601.fd9aebe` - Generic data encoding/decoding application built with PyQt5.
+- **demiguise** `11.58d5681` - HTA encryption tool for RedTeams.
+- **dislocker** `v0.7.3.r46.g4572dc7` - Read BitLocker encrypted volumes under Linux.
+- **factordb-pycli** `1.3.0` - CLI for factordb and Python API Client.
+- **featherduster** `191.9229158` - An automated, modular cryptanalysis tool.
+- **findmyhash** `1.1.2` - Crack different types of hashes using free online services.
+- **foresight** `57.6f48984` - A tool for predicting the output of random number generators.
+- **gcrypt** `32.d3f9f06` - Simple, secure and performance file encryption tool written in C
+- **gdir.pl** `9.d2cc05d` - Perl wrapper on gcrypt for directory encryption/decryption.
+- **gnutls2** `2.12.23` - A library which provides a secure layer over a reliable transport layer (Version 2)
+- **gpp-decrypt** `v1.1.r2.g801b9d5` - Parse the Group Policy Preferences XML file which extracts the username and decrypts the cpassword attribute.
+- **haiti** `v3.0.0.r44.g2835a64` - Hash type identifier (CLI & lib).
+- **hash-buster** `50.befb02a` - A python script which scraps online hash crackers to find cleartext of a hash.
+- **hash-extender** `161.f00b1a0` - A hash length extension attack tool.
+- **hash-identifier** `6.0e08a97` - Software to identify the different types of hashes used to encrypt data and especially passwords.
+- **hashcheck** `2.72b0c6e` - Search for leaked passwords while maintaining a high level of privacy using the k-anonymity method.
+- **hashdb** `1089.1da1b9f` - A block hash toolkit.
+- **hashdeep** `4.4` - Cross-platform tools to message digests for any number of files.
+- **hashfind** `8.e9a9a14` - A tool to search files for matching password hash types and other interesting data.
+- **hashid** `397.7e8473a` - Software to identify the different types of hashes used to encrypt data.
+- **hashpeek** `v0.2.2.r1.gd8fa678` - A fast Go-based CLI tool to identify, extract, and classify hash types from structured data/files with JSON/CSV output and Hashcat/John formatting details (a hash identifier).
+- **hashpump** `49.314268e` - A tool to exploit the hash length extension attack in various hashing algorithms.
+- **hashrat** `1.15` - Hashing tool supporting MD5, SHA1, SHA256, SHA512, Whirlpool, JH and their HMAC.
+- **hdcp-genkey** `18.e8d342d` - Generate HDCP source and sink keys from the leaked master key.
+- **hlextend** `17.be21920` - Pure Python hash length extension module.
+- **ja3** `117.cb29184` - Standard for creating SSL client fingerprints in an easy to produce and shareable way.
+- **jwt-key-recovery** `11.094df95` - Recovers the public key used to sign JWT tokens.
+- **kh2hc** `0.0.1.r60.gc9377e2` - Convert OpenSSH known_hosts file hashed with HashKnownHosts to hashes crackable by Hashcat.
+- **kraken** `32.368a837` - A project to encrypt A5/1 GSM signaling using a Time/Memory Tradeoff Attack.
+- **libbde** `338.3628220` - A library to access the BitLocker Drive Encryption (BDE) format.
+- **luksipc** `0.01` - A tool to convert unencrypted block devices to encrypted LUKS devices in-place.
+- **morxkeyfmt** `1.0` - Read a private key from stdin and output formatted data values.
+- **nomorexor** `2.84489f9` - Tool to help guess a files 256 byte XOR key by using frequency analysis.
+- **ntlmv1-multi** `97.0ba97e3` - NTLMv1 Multitool.
+- **omnihash** `70.870e9ae` - Hash files, strings, input streams and network resources in various common algorithms simultaneously.
+- **openstego** `0.8.6` - A tool implemented in Java for generic steganography, with support for password-based encryption of the data.
+- **outguess** `0.4` - A universal steganographic tool.
+- **pacumen** `1.92a0884` - Packet Acumen - Analyse encrypted network traffic and more (side-channel attacks).
+- **padbuster** `11.50e4a3e` - Automated script for performing Padding Oracle attacks.
+- **padoracle** `v0.1.1.r26.g2aa6c99` - Padding Oracle Attack with Node.js.
+- **padre** `v2.2.0.r15.g9a2e1f2` - Padding Oracle attack tool.
+- **pax-oracle** `v0.2.2.r1.g38ac0d8` - CLI tool for PKCS7 padding oracle attacks.
+- **pip3line** `92.5e27195` - The Swiss army knife of byte manipulation.
+- **poracle** `68.dcc00b0` - A tool for demonstrating padding oracle attacks.
+- **posttester** `0.1` - A jar file that will send POST requests to servers in order to test for the hash collision vulnerability discussed at the Chaos Communication Congress in Berlin.
+- **pwd-hash** `2.0` - A password hashing tool that use the crypt function to generate the hash of a string given on standard input.
+- **pwdlyser** `136.483b9bc` - Python-based CLI Password Analyser (Reporting Tool).
+- **rsactftool** `1157.b0b176f` - RSA tool for ctf - retrieve private key from weak public key and/or uncipher data.
+- **rsatool** `33.c7ef31d` - Tool that can be used to calculate RSA and RSA-CRT parameters.
+- **rshack** `64.cf197e3` - Python tool which allows to carry out some attacks on RSA, and offer a few tools to manipulate RSA keys.
+- **rupture** `1383.131c61a` - A framework for BREACH and other compression-based crypto attacks.
+- **rustpad** `v1.8.1.r1.g11ce343` - Multi-threaded Padding Oracle attacks against any service.
+- **sbd** `1.36` - Netcat-clone, portable, offers strong encryption - features AES-CBC + HMAC-SHA1 encryption, program execution (-e), choosing source port, continuous reconnection with delay + more
+- **sha1collisiondetection** `105.b4a7b0b` - Library and command line tool to detect SHA collision in a file
+- **snow** `20130616` - Steganography program for concealing messages in text files.
+- **sslyze** `6.1.0` - Python tool for analyzing the configuration of SSL servers and for identifying misconfigurations.
+- **tls-attacker** `8440.f6f08283c` - A Java-based framework for analyzing TLS libraries.
+- **tls-map** `v3.1.0.r36.g7ee5cc9` - CLI & library for TLS cipher suites manipulation.
+- **tlsenum** `78.787c88b` - A command line tool to enumerate TLS cipher-suites supported by a server.
+- **tlsfuzzer** `1926.7bc070f` - SSL and TLS protocol test suite and fuzzer.
+- **tlshelpers** `27.1305e9d` - A collection of shell scripts that help handling X.509 certificate and TLS issues.
+- **tlspretense** `v0.6.2.r22.g0a5faf4` - SSL/TLS client testing framework.
+- **untwister** `119.a42b8f8` - Seed recovery tool for PRNGs.
+- **x-rsa** `166.291d4c7` - Contains a many of attack types in RSA such as Hasted, Common Modulus, Chinese Remainder Theorem.
+- **xorbruteforcer** `0.1` - Script that implements a XOR bruteforcing of a given file, although a specific key can be used too.
+- **xorsearch** `1.11.4` - Program to search for a given string in an XOR, ROL or ROT encoded binary file.
+- **zipexec** `19.f8d661f` - A unique technique to execute binaries from a password protected zip.
+- **zulucrypt** `7.1.0` - Front end to cryptsetup and tcplay and it allows easy management of encrypted block devices.
+
+---
+
+## WIRELESS (67 tools)
+
+- **airflood** `0.1` - A modification of aireplay that allows for a DoS of the AP. This program fills the table of clients of the AP with random MACs doing impossible new connections. [Tool in Spanish]
+- **airgeddon** `v11.52.r0.g3f7cfa3` - Multi-use bash script for Linux systems to audit wireless networks.
+- **airopy** `5.b83f11d` - Get (wireless) clients and access points.
+- **airoscript** `45.0a122ee` - A script to simplify the use of aircrack-ng tools.
+- **airpwn** `1.4` - A tool for generic packet injection on an 802.11 network.
+- **aphopper** `0.3` - A program that automatically hops between access points of different wireless networks.
+- **apnbf** `0.1` - A small python script designed for enumerating valid APNs (Access Point Name) on a GTP-C speaking device.
+- **atear** `139.245ec8d` - Wireless Hacking, WiFi Security, Vulnerability Analyzer, Pentestration.
+- **auto-eap** `18.ee36d37` - Automated Brute-Force Login Attacks Against EAP Networks.
+- **batman-adv** `2019.2` - Batman kernel module, (included upstream since .38)
+- **batman-alfred** `2025.2` - Almighty Lightweight Fact Remote Exchange Daemon.
+- **beholder** `0.8.10` - A wireless intrusion detection tool that looks for anomalies in a wifi environment.
+- **boopsuite** `170.16c902f` - A Suite of Tools written in Python for wireless auditing and security testing.
+- **create_ap** `265.462c09f` - A shell script to create a NATed/Bridged Software Access Point.
+- **eapeak** `130.9550d1c` - Analysis Suite For EAP Enabled Wireless Networks.
+- **eaphammer** `v1.14.1.r0.g91e8956` - Targeted evil twin attacks against WPA2-Enterprise networks. Indirect wireless pivots using hostile portal attacks.
+- **fern-wifi-cracker** `301.eff2eb7` - WEP, WPA wifi cracker for wireless penetration testing.
+- **freewifi** `30.1cb752b` - How to get free wifi.
+- **fuzzap** `17.057002b` - A python script for obfuscating wireless networks.
+- **g72x++** `1` - Decoder for the g72x++ codec.
+- **gerix-wifi-cracker** `1.1c3cd73` - A graphical user interface for aircrack-ng and pyrit.
+- **giskismet** `20110805` - A program to visually represent the Kismet data in a flexible manner.
+- **hashcatch** `52.8145660` - Capture handshakes of nearby WiFi networks automatically.
+- **hoover** `4.9bda860` - Wireless Probe Requests Sniffer.
+- **hostapd-mana** `2.6.5.r20.g8853d5a` - Modified hostapd for Wi-Fi attacks to create a rogue access point.
+- **hostapd-wpe** `2.11` - Modified hostapd to facilitate AP impersonation attacks.
+- **hotspotter** `0.4` - Hotspotter passively monitors the network for probe request frames to identify the preferred networks of Windows XP clients, and will compare it to a supplied list of common hotspot network names.
+- **jcrack** `0.3.6` - A utility to create dictionary files that will crack the default passwords of select wireless gateways
+- **kismet-earth** `0.1` - Various scripts to convert kismet logs to kml file to be used in Google Earth.
+- **kismet2earth** `1.0` - A set of utilities that convert from Kismet logs to Google Earth .kml format
+- **kismon** `1.0.3` - GUI client for kismet (wireless scanner/sniffer/monitor).
+- **mana** `68.56bcfcd` - A toolkit for rogue access point (evilAP) attacks first presented at Defcon 22.
+- **mdk3** `v6` - WLAN penetration tool.
+- **mfcuk** `0.3.8` - MIFARE Classic Universal toolKit.
+- **mitmap** `89.b590f9a` - A python program to create a fake AP and sniff data.
+- **mousejack** `5.58b69c1` - Wireless mouse/keyboard attack with replay/transmit poc.
+- **mtscan** `167.099482e` - Mikrotik RouterOS wireless scanner.
+- **netattack** `24.230b856` - Python script to scan and attack wireless networks.
+- **nzyme** `1.2.2` - WiFi defense system.
+- **pidense** `29.ef26704` - Monitor illegal wireless network activities. (Fake Access Points)
+- **python-trackerjacker** `2.0.5` - Finds and tracks wifi devices through raw 802.11 monitoring.
+- **rfidiot** `107.88f2ef9` - An open source python library for exploring RFID devices.
+- **rfidtool** `0.01` - A opensource tool to read / write rfid tags
+- **roguehostapd** `78.381b373` - Hostapd fork including Wi-Fi attacks and providing Python bindings with ctypes.
+- **rtl8814au-dkms-git** `5.8.5.1.r190.g8d82854` - RTL8814AU and RTL8813AU chipset driver with firmware v5.8.5.1.
+- **sniff-probe-req** `419.f513828` - Wi-Fi Probe Requests Sniffer.
+- **spectools** `2010_04_R1` - Spectrum-Tools is a set of utilities for using the Wi-Spy USB spectrum analyzer hardware. Stable version.
+- **timegen** `0.4` - This program generates a *.wav file to "send" an own time signal to DCF77 compatible devices.
+- **ubitack** `0.3` - Tool, which automates some of the tasks you might need on a (wireless) penetration test or while you are on the go.
+- **waidps** `16.ff8d270` - Wireless Auditing, Intrusion Detection & Prevention System.
+- **wepbuster** `1.0_beta_0.7` - script for automating aircrack-ng
+- **wi-feye** `1.1` - An automated wireless penetration testing tool written in python, its designed to simplify common attacks that can be performed on wifi networks so that they can be executed quickly and easily.
+- **wifi-pumpkin** `v1.1.7.r2.g344a475` - Framework for Rogue Wi-Fi Access Point Attack.
+- **wifibroot** `84.d0cd2cc` - A WiFi Pentest Cracking tool for WPA/WPA2 (Handshake, PMKID, Cracking, EAPOL, Deauthentication).
+- **wificurse** `0.3.9` - WiFi jamming tool.
+- **wifijammer** `100.be05dab` - A python script to continuously jam all wifi clients within range.
+- **wifiphisher** `799.b11da35` - Fast automated phishing attacks against WPA networks.
+- **wifiscanmap** `135.9adcd08` - Another wifi mapping tool.
+- **wifitap** `2b16088` - WiFi injection tool through tun/tap device.
+- **wireless-ids** `24.b132071` - Ability to detect suspicious activity such as (WEP/WPA/WPS) attack by sniffing the air for wireless packets.
+- **wirouter-keyrec** `1.1.2` - A platform independent software to recover the default WPA passphrases of the supported router models
+- **wlan2eth** `1.3` - Re-writes 802.11 captures into standard Ethernet frames.
+- **wpa-bruteforcer** `4.d5f8586` - Attacking WPA/WPA encrypted access point without client.
+- **wpa2-halfhandshake-crack** `29.3f42124` - A POC to show it is possible to capture enough of a handshake with a user from a fake AP to crack a WPA2 network without knowing the passphrase of the actual AP.
+- **wpsik** `8.8d3856b` - WPS scan and pwn tool.
+- **zizzania** `124.8f2062f` - Automated DeAuth attack.
+- **zykeys** `0.1` - Demonstrates how default wireless settings are derived on some models of ZyXEL routers.
+
+---
+
+## BINARY (64 tools)
+
+- **amber** `256.f6eb2dc` - Reflective PE packer.
+- **amoco** `v2.9.11.r4.g3e36c52` - Yet another tool for analysing binaries.
+- **androguard** `3.3.5` - Reverse engineering, Malware and goodware analysis of Android applications and more.
+- **angr** `9.1.11752` - The next-generation binary analysis platform from UC Santa Barbaras Seclab.
+- **angr-management** `9.1.11752` - This is the GUI for angr.
+- **angr-py2** `7.8.9.26` - The next-generation binary analysis platform from UC Santa Barbaras Seclab.
+- **avet** `560.6da43bf` - AntiVirus Evasion Tool.
+- **barf** `923.9547ef8` - A multiplatform open source Binary Analysis and Reverse engineering Framework.
+- **bgrep** `27.38b746f` - Binary grep.
+- **binaryninja-python** `13.83f59f7` - Binary Ninja prototype written in Python.
+- **bindead** `4504.67019b97b` - A static analysis tool for binaries
+- **bindiff** `6.0.0` - A comparison tool for binary files, that assists vulnerability researchers and engineers to quickly find differences and similarities in disassembled code.
+- **binflow** `5.7fb02a9` - POSIX function tracing. Much better and faster than ftrace.
+- **binwally** `4.0aabd8b` - Binary and Directory tree comparison tool using the Fuzzy Hashing concept (ssdeep).
+- **bsdiff** `4.3` - Tools for building and applying patches to binary files.
+- **bvi** `1.4.2` - A display-oriented editor for binary files operate like "vi" editor.
+- **bytecode-viewer** `2.12` - A Java 8/Android APK Reverse Engineering Suite.
+- **cminer** `25.d766f7e` - A tool for enumerating the code caves in PE files.
+- **cpp2il** `2022.0.7.r17.g20ccab2` - A tool to reverse unity's IL2PP toolchain
+- **detect-it-easy** `3.10` - A program for determining types of files.
+- **dissector** `1` - This code dissects the internal data structures in ELF files. It supports x86 and x86_64 archs and runs under Linux.
+- **dutas** `10.37fa3ab` - Analysis PE file or Shellcode.
+- **dwarf** `1084.fd859ae` - Full featured multi arch/os debugger built on top of PyQt5 and frida.
+- **dynamorio** `9.0.19046` - A dynamic binary instrumentation framework.
+- **ecfs** `305.1758063` - Extended core file snapshot format.
+- **elfparser** `7.39d21ca` - Cross Platform ELF analysis.
+- **eresi** `1291.4769c175` - The ERESI Reverse Engineering Software Interface.
+- **exescan** `1.ad993e3` - A tool to detect anomalies in PE (Portable Executable) files.
+- **expimp-lookup** `4.79a96c7` - Looks for all export and import names that contain a specified string in all Portable Executable in a directory tree.
+- **expose** `1110.30264af` - A Dynamic Symbolic Execution (DSE) engine for JavaScript
+- **haystack** `1823.c178b5a` - A Python framework for finding C structures from process memory - heap analysis - Memory structures forensics.
+- **hercules-payload** `222.2607a3a` - A special payload generator that can bypass all antivirus software.
+- **hex2bin** `2.5` - Converts Motorola and Intel hex files to binary.
+- **imagejs** `56.a442f94` - Small tool to package javascript into a valid image file.
+- **jpegdump** `0.0.7` - Tool to analyzse JPEG images Reads binary files and parses the JPEG markers inside them.
+- **klee** `2.1` - A symbolic virtual machine built on top of the LLVM compiler infrastructure.
+- **leena** `2.5119f56` - Symbolic execution engine for JavaScript
+- **loadlibrary** `104.c40033b` - Porting Windows Dynamic Link Libraries to Linux.
+- **manticore** `0.3.7.r82.gfe2ac403` - Symbolic execution tool.
+- **metame** `14.8d583a0` - A simple metamorphic code engine for arbitrary executables.
+- **objdump2shellcode** `28.c2d6120` - A tool I have found incredibly useful whenever creating custom shellcode.
+- **oledump** `0.0.81` - Analyze OLE files (Compound File Binary Format). These files contain streams of data. This tool allows you to analyze these streams.
+- **packerid** `16.bc54e6d` - Script which uses a PEiD database to identify which packer (if any) is being used by a binary.
+- **patchkit** `37.95dc699` - Powerful binary patching from Python.
+- **pixd** `9.f49add4` - Colourful visualization tool for binary files.
+- **powerstager** `14.0149dc9` - A payload stager using PowerShell.
+- **procdump** `3.4.1.r16.g384cb54` - Generate coredumps based off performance triggers.
+- **proctal** `482.67bf7e8` - Provides a command line interface and a C library to manipulate the address space of a running program on Linux.
+- **python-oletools** `0.60.2` - Tools to analyze Microsoft OLE2 files.
+- **python-peid** `2.2.1` - Python implementation of the Packed Executable iDentifier (PEiD).
+- **python2-oletools** `0.60.2` - Tools to analyze Microsoft OLE2 files.
+- **qbdi** `v0.11.0.r81.g45fa16a` - A Dynamic Binary Instrumentation framework based on LLVM.
+- **quickscope** `533.7c12231` - Statically analyze windows, linux, osx, executables and also APK files.
+- **rbasefind** `41.a661118` - A firmware base address search tool.
+- **redress** `v1.2.2.r0.gfe38d96` - A tool for analyzing stripped Go binaries.
+- **saruman** `2.4be8db5` - ELF anti-forensics exec, for injecting full dynamic executables into process image (With thread injection).
+- **sgn** `36.f54fa65` - Shikata ga nai encoder ported into go with several improvements.
+- **soot** `3.4.0` - A Java Bytecode Analysis and Transformation Framework.
+- **stringsifter** `39.33c0cd5` - Machine learning tool that automatically ranks strings based on their relevance for malware analysis.
+- **triton** `4324.4f7ddb77` - A Dynamic Binary Analysis (DBA) framework.
+- **veles** `637.e65de5a` - New open source tool for binary data analysis.
+- **wcc** `v0.0.11.r34.gdced7e9` - The Witchcraft Compiler Collection.
+- **wxhexeditor** `733.f439d8f` - A free hex editor / disk editor for Linux, Windows and MacOSX.
+- **zelos** `272.506554d` - A comprehensive binary emulation and instrumentation platform.
+
+---
+
+## SOCIAL (59 tools)
+
+- **anontwi** `1.1b` - A free software python client designed to navigate anonymously on social networks. It supports Identi.ca and Twitter.com.
+- **blackeye** `v2.5.r8.gbdc11a2` - Ultimate phishing tool with ngrok and serveo.
+- **buster** `92.131437e` - Find emails of a person and return info associated with them.
+- **cardpwn** `32.166abf9` - OSINT Tool to find Breached Credit Cards Information.
+- **catphish** `44.768d213` - For phishing and corporate espionage.
+- **chameleonmini** `613.ad0eece` - Official repository of ChameleonMini, a freely programmable, portable tool for NFC security analysis that can emulate and clone contactless cards, read RFID tags and sniff/log RF data.
+- **credsniper** `21.f52461b` - Phishing framework written with the Python micro-framework Flask and Jinja2 templating which supports capturing 2FA tokens.
+- **crosslinked** `49.2ae8d7b` - LinkedIn enumeration tool to extract valid employee names from an organization through search engine scraping.
+- **email2phonenumber** `29.9df9dbe` - A OSINT tool to obtain a target's phone number just by having his email address.
+- **facebash** `17.95c3c25` - Facebook Brute Forcer in shellscript using TOR.
+- **facebookosint** `21.656a04a` - OSINT tool to replace facebook graph search.
+- **facebrok** `33.0f6fe8d` - Social Engineering Tool Oriented to facebook.
+- **fbi** `28.0f94e99` - An accurate facebook account information gathering.
+- **fluxion** `1571.78e6d3d` - A security auditing and social-engineering research tool.
+- **genisys** `53.d53bb0c` - Powerful Telegram Members Scraping and Adding Toolkit.
+- **gg-images** `35.b2dd863` - The application was created to allow anyone to easily download profile pictures from GG.
+- **gocabrito** `4.33ac59a` - Super organized and flexible script for sending phishing campaigns.
+- **gophish** `815.95618469` - Open-Source Phishing Framework.
+- **hemingway** `8.9c70a13` - A simple and easy to use spear phishing helper.
+- **hiddeneye** `1228.7a3deaf` - Modern phishing tool with advanced functionality.
+- **hiddeneye-legacy** `RC1.r226.g7a3deaf` - Modern Phishing Tool With Advanced Functionality.
+- **holehe** `434.14da70f` - A tool for Efficiently finding registered accounts from emails.
+- **instagramosint** `21.30b5735` - An Instagram Open Source Intelligence Tool.
+- **linkedin2username** `144.8889f30` - OSINT Tool: Generate username lists for companies on LinkedIn.
+- **linkedint** `1.1.FIX.r8.g89ab1d3` - LinkedIn Recon Tool.
+- **maigret** `main.r46.gb90cdb1` - OSINT username checker. Collect a dossier on a person by username from a huge number of sites.
+- **muraena** `230.9a535ba` - Almost-transparent reverse proxy to automate phishing and post-phishing activities.
+- **nexfil** `43.4d93c57` - OSINT tool for finding profiles by username.
+- **osi.ig** `101.4debaa2` - Instagram OSINT Tool gets a range of information from an Instagram account.
+- **pepe** `13.b81889b` - Collect information about email addresses from Pastebin.
+- **phemail** `28.302b24d` - A python open source phishing email tool that automates the process of sending phishing emails as part of a social engineering test.
+- **phishingkithunter** `20.ac9bd1e` - Find phishing kits which use your brand/organization's files and image'.
+- **phoneinfoga** `v2.11.0.r0.g5f6156f` - Information gathering & OSINT framework for phone numbers.
+- **phonia** `593.8ae14ff` - Advanced toolkits to scan phone numbers using only free resources.
+- **qrljacker** `222.defd5e3` - QRLJacker is a highly customizable exploitation framework to demonstrate "QRLJacking Attack Vector".
+- **raven** `33.8646a58` - A Linkedin information gathering tool that can be used by pentesters to gather information about an organization employees using Linkedin.
+- **reelphish** `5.dc1be33` - A Real-Time Two-Factor Phishing Tool.
+- **seeker** `379.abbbf80` - Accurately Locate People using Social Engineering.
+- **sees** `67.cd741aa` - Increase the success rate of phishing attacks by sending emails to company users as if they are coming from the very same company's domain.
+- **set** `8.0.3` - Social-engineer toolkit. Aimed at penetration testing around Social-Engineering.
+- **sherlock** `0.15.0` - Find usernames across social networks.
+- **simpleemailspoofer** `54.7075f0c` - A simple Python CLI to spoof emails.
+- **skiptracer** `123.ca40957` - OSINT python2 webscraping framework. Skipping the needs of API keys.
+- **slackpirate** `148.99e470f` - Slack Enumeration and Extraction Tool - extract sensitive information from a Slack Workspace.
+- **social-analyzer** `0.45` - Analyzing & finding a person's profile across social media websites.
+- **social-mapper** `190.92be8da` - A social media enumeration and correlation tool.
+- **social-vuln-scanner** `11.91794c6` - Gathers public information on companies to highlight social engineering risk.
+- **socialfish** `250.a22b58d` - Ultimate phishing tool with Ngrok integrated.
+- **socialpwned** `v2.0.1.r7.g333d759` - OSINT tool that allows to get the emails, from a target, published in social networks.
+- **spf** `85.344ac2f` - A python tool designed to allow for quick recon and deployment of simple social engineering phishing exercises.
+- **token-hunter** `343.3358a33` - OSINT Tool - Search the group and group members' snippets, issues, and issue discussions for sensitive data that may be included in these assets.
+- **trape** `132.6baae24` - People tracker on the Internet: OSINT analysis and research tool by Jose Pino.
+- **tweets-analyzer** `55.8d6bd3c` - Tweets metadata scraper & activity analyzer.
+- **twint** `845.e7c8a0c7` - An advanced Twitter scraping & OSINT tool written in Python that doesn't use Twitter's API, allowing you to scrape a user's followers, following, Tweets and more while evading most API limitations.
+- **ultimate-facebook-scraper** `236.5661bdc` - A bot which scrapes almost everything about a Facebook user's profile.
+- **userrecon-py** `15.eebd422` - Recognition usernames in 187 social networks.
+- **weeman** `91.53c2efa` - HTTP Server for phishing in python.
+- **whatbreach** `42.dad6b9f` - OSINT tool to find breached emails and databases.
+- **whatsmyname** `2713.37ff1c1` - Tool to perform user and username enumeration on various websites.
+
+---
+
+## BACKDOOR (51 tools)
+
+- **aesshell** `0.7` - A backconnect shell for Windows and Unix written in python and uses AES in CBC mode in conjunction with HMAC-SHA256 for secure transport.
+- **azazel** `15.a41fbb5` - A userland rootkit based off of the original LD_PRELOAD technique from Jynx rootkit.
+- **backcookie** `51.6dabc38` - Small backdoor using cookie.
+- **backdoor-factory** `210.0c53045` - Patch win32/64 binaries with shellcode.
+- **backdoorme** `308.f9755ca` - A powerful utility capable of backdooring Unix machines with a slew of backdoors.
+- **backdoorppt** `88.d0e7f91` - Transform your payload.exe into one fake word doc (.ppt).
+- **cymothoa** `1` - A stealth backdooring tool, that inject backdoor's shellcode into an existing process.
+- **debinject** `43.d884309` - Inject malicious code into *.debs.
+- **donut** `529.47758d7` - Generates x86, x64 or AMD64+x86 P.I. shellcode loading .NET Assemblies from memory.
+- **dr0p1t-framework** `44.db9bc2d` - A framework that creates a dropper that bypass most AVs, some sandboxes and have some tricks.
+- **dragon-backdoor** `7.c7416b7` - A sniffing, non binding, reverse down/exec, portknocking service Based on cd00r.c.
+- **eggshell** `157.eaeeea7` - iOS/macOS/Linux Remote Administration Tool.
+- **enyelkm** `1.2` - Rootkit for Linux x86 kernels v2.6.
+- **evilpdf** `5.43696a8` - Embedding executable files in PDF Documents.
+- **exe2image** `1.1` - A simple utility to convert EXE files to JPEG images and vice versa.
+- **gobd** `82.3bbd17c` - A Golang covert backdoor.
+- **harness** `19.ed2a6aa` - Interactive remote PowerShell Payload.
+- **hoaxshell** `150.e1bba89` - A Windows reverse shell payload generator and handler that abuses the http(s) protocol to establish a beacon-like reverse shell.
+- **hotpatch** `90.fd2baf1` - Hot patches executables on Linux using .so file injection.
+- **icmpsh** `12.82caf34` - Simple reverse ICMP shell.
+- **jinjector** `25.c1578da` - Joomla modules backdoor injector.
+- **jynx2** `2.0` - An expansion of the original Jynx LD_PRELOAD rootkit
+- **k55** `86.b3c4aa9` - Linux x86_64 Process Injection Utility.
+- **kimi** `28.e7cafda` - Script to generate malicious debian packages (debain trojans).
+- **kwetza** `26.0e50272` - Python script to inject existing Android applications with a Meterpreter payload.
+- **ld-shatner** `4.5c215c4` - ld-linux code injector.
+- **linux-inject** `100.268d4e4` - Tool for injecting a shared object into a Linux process.
+- **meterssh** `18.9a5ed19` - A way to take shellcode, inject it into memory then tunnel whatever port you want to over SSH to mask any type of communications as a normal SSH connection.
+- **microsploit** `9.441e132` - Fast and easy create backdoor office exploitation using module metasploit packet, Microsoft Office, Open Office, Macro attack, Buffer Overflow.
+- **ms-sys** `2.8.0` - A tool to write Win9x- master boot records (mbr) under linux - RTM!
+- **nxcrypt** `32.6ae06b5` - Python backdoor framework.
+- **phishery** `14.5743953` - An SSL Enabled Basic Auth Credential Harvester with a Word Document Template URL Injector.
+- **pwncat** `0.1.2` - Bind and reverse shell handler with FW/IDS/IPS evasion, self-inject and port-scanning.
+- **pyrasite** `2.0` - Code injection and introspection of running Python processes.
+- **revsh** `215.174e309` - A reverse shell with terminal support, data tunneling, and advanced pivoting capabilities.
+- **rrs** `1.70` - A reverse (connecting) remote shell. Instead of listening for incoming connections it will connect out to a listener (rrs in listen mode). With tty support and more.
+- **rubilyn** `0.0.1` - 64bit Mac OS-X kernel rootkit that uses no hardcoded address to hook the BSD subsystem in all OS-X Lion & below. It uses a combination of syscall hooking and DKOM to hide activity on a host.
+- **shellinabox** `428.98e6eeb` - Implements a web server that can export arbitrary command line tools to a web based terminal emulator.
+- **shootback** `83.cab462c` - A reverse TCP tunnel let you access target behind NAT or firewall.
+- **silenttrinity** `293.08b1c61` - An asynchronous, collaborative post-exploitation agent powered by Python and .NET's DLR.
+- **sliver** `v1.5.39.r1500.gc5556f9` - Opensource C2 framework.
+- **syringe** `12.79a703e` - A General Purpose DLL & Code Injection Utility.
+- **trixd00r** `0.0.1` - An advanced and invisible userland backdoor based on TCP/IP for UNIX systems.
+- **tsh** `0.6` - An open-source UNIX backdoor that compiles on all variants, has full pty support, and uses strong crypto for communication.
+- **tsh-sctp** `2.850a2da` - An open-source UNIX backdoor.
+- **u3-pwn** `2.0` - A tool designed to automate injecting executables to Sandisk smart usb devices with default U3 software install.
+- **unicorn-powershell** `212.5421d46` - A simple tool for using a PowerShell downgrade attack and inject shellcode straight into memory.
+- **villain** `V2.2.1.r3.g87e5dd1` - C2 framework that can handle multiple TCP socket & HoaxShell-based reverse shells, enhance their functionality with additional features and share them among connected sibling servers.
+- **vlany** `255.9ef014a` - Linux LD_PRELOAD rootkit (x86 and x86_64 architectures).
+- **webacoo** `0.2.3` - Web Backdoor Cookie Script-Kit.
+- **webspa** `0.8` - A web knocking tool, sending a single HTTP/S to run O/S commands.
+
+---
+
+## MOBILE (44 tools)
+
+- **androbugs** `1.7fd3a2c` - An efficient Android vulnerability scanner that helps developers or hackers find potential security vulnerabilities in Android applications.
+- **androick** `8.522cfb4` - A python tool to help in forensics analysis on android.
+- **android-ndk** `r27` - Android C/C++ developer kit
+- **android-sdk** `26.1.1` - Google Android SDK
+- **android-udev-rules** `548.b3799e7` - Android udev rules.
+- **androidpincrack** `2.ddaf307` - Bruteforce the Android Passcode given the hash and salt.
+- **androidsniffer** `0.1` - A perl script that lets you search for 3rd party passwords, dump the call log, dump contacts, dump wireless configuration, and more.
+- **androwarn** `135.626c02d` - Yet another static code analyzer for malicious Android applications.
+- **apkid** `2.1.5` - Android Application Identifier for Packers, Protectors, Obfuscators and Oddities.
+- **apkleaks** `v2.6.3.r2.gdd5271a` - Scanning APK file for URIs, endpoints & secrets.
+- **apkstat** `18.81cdad3` - Automated Information Retrieval From APKs For Initial Analysis.
+- **apkurlgrep** `8.a188a98` - Extract endpoints from APK files.
+- **appmon** `177.f753c4d` - A runtime security testing & profiling framework for native apps on macOS, iOS & android and it is built using Frida.
+- **arcane** `2.750cb9f` - Backdoor iOS packages and create the necessary resources for APT repositories.
+- **backdoor-apk** `141.2710126` - Shell script that simplifies the process of adding a backdoor to any Android APK file
+- **backhack** `39.561ec86` - Tool to perform Android app analysis by backing up and extracting apps, allowing you to analyze and modify file system contents for apps.
+- **bagbak** `316.d35754c` - Yet another frida based App decryptor.
+- **bandicoot** `0.6.0` - A toolbox to analyze mobile phone metadata.
+- **cnamulator** `5.4667c68` - A phone CNAM lookup utility using the OpenCNAM API.
+- **dexpatcher** `1.7.0` - Modify Android DEX/APK files at source-level using Java.
+- **drozer** `2.4.4` - A security testing framework for Android - Precompiled binary from official repository.
+- **findmyiphone** `19.aef3ac8` - Locates all devices associated with an iCloud account
+- **firebaseenum** `19.1cbd19c` - Tool to mass analyse potentially exposed Firebase databases on Android apps.
+- **frida-ios-dump** `53.56e99b2` - Pull decrypted ipa from jailbreak device.
+- **idb** `2.10.3` - A tool to simplify some common tasks for iOS pentesting and research.
+- **kalibrate-rtl** `69.340003e` - Fork of http://thre.at/kalibrate/ for use with rtl-sdr devices.
+- **lazydroid** `25.0f559ec` - Tool written as a bash script to facilitate some aspects of an Android Assessment
+- **mara-framework** `176.ac4ac88` - A Mobile Application Reverse engineering and Analysis Framework.
+- **mobsf** `v4.4.2.r4.g9b6e0f0` - An intelligent, all-in-one open source mobile application (Android/iOS) automated pen-testing framework capable of performing static, dynamic analysis and web API testing.
+- **needle** `579.891b660` - The iOS Security Testing Framework.
+- **objection** `1.11.0` - Instrumented Mobile Pentest Framework.
+- **phonesploit** `51.0193f9e` - Adb exploiting tools.
+- **pyaxmlparser** `v0.3.31.r13.g446bf7c` - A simple parser to parse Android XML file.
+- **python-frida-tools** `14.4.5` - Frida CLI tools.
+- **python2-frida-tools** `11.0.0` - Frida CLI tools.
+- **qark** `301.ba1b265` - Tool to look for several security related Android application vulnerabilities.
+- **quark-engine** `21.6.2` - An Obfuscation-Neglect Android Malware Scoring System.
+- **sign** `10.2dc4018` - Automatically signs an apk with the Android test certificate.
+- **simplify** `1.3.0` - Generic Android Deobfuscator.
+- **smali-cfgs** `6.4450418` - Smali Control Flow Graph's.
+- **smalisca** `58.1aa7a16` - Static Code Analysis for Smali files.
+- **smartphone-pentest-framework** `104.fc45347` - Repository for the Smartphone Pentest Framework (SPF).
+- **stacoan** `0.90` - Crossplatform tool which aids developers, bugbounty hunters and ethical hackers performing static code analysis on mobile applications.
+- **truegaze** `117.c3f26bc` - Static analysis tool for Android/iOS apps focusing on security issues outside the source code.
+
+---
+
+## DEFENSIVE (43 tools)
+
+- **arpon** `2.7` - A portable handler daemon that make ARP protocol secure in order to avoid the Man In The Middle (MITM) attack through ARP Spoofing, ARP Cache Poisoning or ARP Poison Routing (APR) attacks.
+- **arpstraw** `27.ab40e13` - Arp spoof detection tool.
+- **artillery** `357.805a5d8` - A combination of a honeypot, file-system monitoring, system hardening, and overall health of a server to create a comprehensive way to secure a system.
+- **artlas** `154.e5fdd8d` - Apache Real Time Logs Analyzer System.
+- **capa** `7.4.0` - The FLARE team's open-source tool to identify capabilities in executable files.
+- **chainsaw** `v2.7.3.r6.g5d908fd` - A powerful ‘first-response’ capability to quickly identify threats within Windows event logs.
+- **chkrootkit** `0.58b` - Checks for rootkits on a system.
+- **detect-sniffer** `159.a359262` - Tool that detects sniffers in the network.
+- **fastnetmon** `v1.2.8.r33.gf2d8d31b` - High performance DoS/DDoS load analyzer built on top of multiple packet capture engines.
+- **fssb** `73.51d2ac2` - A low-level filesystem sandbox for Linux using syscall intercepts.
+- **honeycreds** `26.eaeb401` - Network credential injection to detect responder and other network poisoners.
+- **ifchk** `1.1.2` - A network interface promiscuous mode detection tool.
+- **inetsim** `1.3.2` - A software suite for simulating common internet services in a lab environment, e.g. for analyzing the network behaviour of unknown malware samples.
+- **jeopardize** `5.34f1d07` - A low(zero) cost threat intelligence & response tool against phishing domains.
+- **lorg** `98.aa4f1a3` - Apache Logfile Security Analyzer.
+- **malice** `0.3.28` - VirusTotal Wanna Be - Now with 100% more Hipster.
+- **malmon** `0.3` - Hosting exploit/backdoor detection daemon.
+- **maltrail** `125428.ecfe72e3fb` - Malicious traffic detection system.
+- **mat** `0.6.1` - Metadata Anonymisation Toolkit composed of a GUI application, a CLI application and a library.
+- **munin-hashchecker** `242.95ac249` - Online hash checker for Virustotal and other services
+- **nipe** `302.9e628df` - A script to make Tor Network your default gateway.
+- **orjail** `200.ae38ba2` - A more secure way to force programs to exclusively use tor network.
+- **osfooler-ng** `2.c0b20d6` - Prevents remote active/passive OS fingerprinting by tools like nmap or p0f.
+- **persistencesniper** `v1.17.1.r0.g13006aa` - Hunt persistences implanted in Windows machines.
+- **portspoof** `152.89d5ecc` - This program's primary goal is to enhance OS security through a set of new techniques.
+- **prowler** `6872.fba2854f65` - Tool for AWS security assessment, auditing and hardening.
+- **quicksand-lite** `33.c3edf92` - Command line tool for scanning streams within office documents plus xor db attack.
+- **sentrypeer** `v3.0.0.r14.g02173c8` - Protect SIP Servers from bad actors.
+- **sigma** `0.20` - Generic Signature Format for SIEM Systems
+- **sniffjoke** `772.434bfb1` - Injects packets in the transmission flow that are able to seriously disturb passive analysis like sniffing, interception and low level information theft.
+- **snort** `2.9.20` - A lightweight network intrusion detection system.
+- **sooty** `335.6236fd1` - The SOC Analysts all-in-one CLI tool to automate and speed up workflow.
+- **suricata** `6.0.20` - An Open Source Next Generation Intrusion Detection and Prevention Engine.
+- **tabi** `13.068a406` - BGP Hijack Detection.
+- **tfsec** `v0.63.1.r408.gb692c20b6` - Security scanner for your Terraform code.
+- **threatspec** `0.5.0` - Project to integrate threat modelling into development process.
+- **tor-autocircuit** `0.2` - Tor Autocircuit was developed to give users a finer control over Tor circuit creation. The tool exposes the functionality of TorCtl library which allows its users to control circuit length, speed, geolocation, and other parameters.
+- **tor-browser** `14.5.8` - Tor Browser Bundle: anonymous browsing using Firefox and Tor.
+- **tor-router** `22.5b79c1c` - A tool that allow you to make TOR your default gateway and send all internet connections under TOR (as transparent proxy) for increase privacy/anonymity without extra unnecessary code.
+- **tyton** `80.56494f3` - Kernel-Mode Rootkit Hunter.
+- **usb-canary** `31.bb23552` - A Linux or OSX tool that uses psutil to monitor devices while your computer is locked. In the case it detects someone plugging in or unplugging devices it can be configured to send you an SMS or alert you via Slack or Pushover.
+- **yeti** `3427.42c9e28c` - A platform meant to organize observables, indicators of compromise, TTPs, and knowledge on threats in a single, unified repository.
+- **zeus** `111.97db152` - AWS Auditing & Hardening Tool.
+
+---
+
+## SNIFFER (40 tools)
+
+- **above** `v2.8.r1.g1f4ff3e` - Network Protocols Sniffer.
+- **bittwist** `2.0` - A simple yet powerful libpcap-based Ethernet packet generator. It is designed to complement tcpdump, which by itself has done a great job at capturing network traffic.
+- **capfuzz** `34.97ac312` - Capture, fuzz and intercept web traffic.
+- **cdpsnarf** `0.1.6` - Cisco discovery protocol sniffer.
+- **cottontail** `93.b7f5222` - Capture all RabbitMQ messages being sent through a broker.
+- **creds** `17.1ec8297` - Harvest FTP/POP/IMAP/HTTP/IRC credentials along with interesting data from each of the protocols.
+- **dnswatch** `dnswatch.1.r18.g7ee12c9` - DNS Traffic Sniffer and Analyzer.
+- **eigrp-tools** `0.1` - This is a custom EIGRP packet generator and sniffer developed to test the security and overall operation quality of this brilliant Cisco routing protocol.
+- **espionage** `48.2d57edd` - A Network Packet and Traffic Interceptor For Linux. Sniff All Data Sent Through a Network.
+- **firstorder** `8.107eb6a` - A traffic analyzer to evade Empire communication from Anomaly-Based IDS.
+- **hexinject** `1.6` - A very versatile packet injector and sniffer that provides a command-line framework for raw network access.
+- **httpry** `0.1.8` - A specialized packet sniffer designed for displaying and logging HTTP traffic.
+- **httpsniff** `0.4` - Tool to sniff HTTP responses from TCP/IP based networks and save contained files locally for later review.
+- **hubbit-sniffer** `74.460ecf8` - Simple application that listens for WIFI-frames and records the mac-address of the sender and posts them to a REST-api.
+- **hungry-interceptor** `391.1aea7f3` - Intercepts data, does something with it, stores it.
+- **issniff** `294.79c6c2a` - Internet Session Sniffer.
+- **junkie** `1365.70a83d6` - A modular packet sniffer and analyzer.
+- **katsnoop** `0.1` - Utility that sniffs HTTP Basic Authentication information and prints the base64 decoded form.
+- **mfsniffer** `0.1` - A python script for capturing unencrypted TSO login credentials.
+- **mitmer** `22.b01c7fe` - A man-in-the-middle and phishing attack tool that steals the victim's credentials of some web services like Facebook.
+- **mots** `5.34017ca` - Man on the Side Attack - experimental packet injection and detection.
+- **net-creds** `87.07a25e1` - Sniffs sensitive data from interface or pcap.
+- **nsntrace** `82.ed3532e` - Perform network trace of a single process by using network namespaces.
+- **ofp-sniffer** `230.4b79b6c` - An OpenFlow sniffer to help network troubleshooting in production networks.
+- **ostinato** `0.9` - An open-source, cross-platform packet/traffic generator and analyzer with a friendly GUI. It aims to be "Wireshark in Reverse" and thus become complementary to Wireshark.
+- **passivedns** `297.be48a8e` - A network sniffer that logs all DNS server replies for use in a passive DNS setup.
+- **pcapteller** `1.1` - A tool designed for traffic manipulation and replay.
+- **pth-toolkit** `7.3641cdc` - Modified version of the passing-the-hash tool collection made to work straight out of the box.
+- **pyrdp** `2094.2147093` - Python 3 RDP MITM and library.
+- **pytacle** `alpha2` - Automates the task of sniffing GSM frames
+- **rvi-capture** `14.a2e129b` - Capture packets sent or received by iOS devices.
+- **sipffer** `29.efc3ff1` - SIP protocol command line sniffer.
+- **snapception** `8.c156f9e` - Intercept and decrypt all snapchats received over your network.
+- **ssl-phuck3r** `2.0` - All in one script for Man-In-The-Middle attacks.
+- **ssldump** `1.7` - An SSLv3/TLS network protocol analyzer.
+- **sslsniff** `0.8` - A tool to MITM all SSL connections on a LAN and dynamically generate certs for the domains that are being accessed on the fly.
+- **stenographer** `486.355604b` - A packet capture solution which aims to quickly spool all packets to disk, then provide simple, fast access to subsets of those packets.
+- **tcpick** `0.2.1` - TCP stream sniffer and connection tracker
+- **wifi-monitor** `30.0657e48` - Prints the IPs on your local network that're sending the most packets.
+- **xcavator** `5.bd9e2d8` - Man-In-The-Middle and phishing attack tool that steals the victim's credentials of some web services like Facebook.
+
+---
+
+## REVERSING (34 tools)
+
+- **android-apktool** `2.7.0` - A tool for reverse engineering Android apk files.
+- **apkstudio** `100.9e114ca` - An IDE for decompiling/editing & then recompiling of android application binaries.
+- **binaryninja** `5.1.8104` - A new kind of reversing platform (demo version).
+- **ctypes-sh** `158.b79e401` - Allows you to call routines in shared libraries from within bash.
+- **elidecode** `48.38fa5ba` - A tool to decode obfuscated shellcodes using the unicorn-engine for the emulation and the capstone-engine to print the asm code.
+- **flasm** `1.62` - Disassembler tool for SWF bytecode
+- **frida-extract** `13.abb3f14` - Frida.re based RunPE (and MapViewOfSection) extraction tool.
+- **ghidriff** `v1.0.0.r2.g53e16cf` - Python Command-Line Ghidra Binary Diffing Engine.
+- **gostringsr2** `1.1.2` - Extract strings from a Go binary using radare2.
+- **hopper** `5.19.4` - Reverse engineering tool that lets you disassemble, decompile and debug your applications.
+- **ida-free** `8.4.240527` - Freeware version of the world's smartest and most feature-full disassembler.
+- **innounp** `0.50` - Inno Setup Unpacker.
+- **javasnoop** `1.1` - A tool that lets you intercept methods, alter data and otherwise hack Java applications running on your computer
+- **jeb-android** `3.7.0.201909272058` - Android decompiler.
+- **jeb-arm** `5.20.0.202411121942` - Arm decompiler.
+- **jeb-intel** `3.7.0.201909272058` - Intel decompiler.
+- **jeb-mips** `5.20.0.202411121942` - Mips decompiler.
+- **jeb-webasm** `3.7.0.201909272058` - WebAssembly decompiler.
+- **jwscan** `7.874b3a5` - Scanner for Jar to EXE wrapper like Launch4j, Exe4j, JSmooth, Jar2Exe.
+- **libc-database** `45.69815cd` - Database of libc offsets to simplify exploitation.
+- **malwasm** `0.2` - Offline debugger for malware's reverse engineering.
+- **mikrotik-npk** `11.d54e97c` - Python tools for manipulating Mikrotik NPK format.
+- **netzob** `1.0.2` - An open source tool for reverse engineering, traffic generation and fuzzing of communication protocols.
+- **pintool** `24.d538a79` - This tool can be useful for solving some reversing challenges in CTFs events.
+- **pintool2** `5.1c1af91` - Improved version of pintool.
+- **pyinstxtractor** `2025.02.r1.g9f005dd` - PyInstaller Extractor.
+- **python-frida** `17.3.2` - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.
+- **python2-frida** `15.2.2` - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.
+- **radare2-keystone** `920.1cf5851` - Keystone assembler plugins for radare2.
+- **seccomp-tools** `1.6.1` - Seccomp analysis toolkit.
+- **swfintruder** `0.9.1` - First tool for testing security in Flash movies. A runtime analyzer for SWF external movies. It helps to find flaws in Flash.
+- **swftools** `0.9.2` - A collection of SWF manipulation and creation utilities.
+- **syms2elf** `12.329c2ce` - A plugin for Hex-Ray's IDA Pro and radare2 to export the symbols recognized to the ELF symbol table.
+- **udis86** `1.7.2` - A minimalistic disassembler library.
+
+---
+
+## MALWARE (32 tools)
+
+- **balbuzard** `67.d6349ef1bc55` - A package of malware analysis tools in python to extract patterns of interest from suspicious files (IP addresses, domain names, known file headers, interesting strings, etc).
+- **bamf-framework** `35.30d2b4b` - A modular framework designed to be a platform to launch attacks against botnets.
+- **bdlogparser** `2` - This is a utility to parse a Bit Defender log file, in order to sort them into a malware archive for easier maintenance of your malware collection.
+- **box-js** `703.a3bb0c8` - A tool for studying JavaScript malware.
+- **clamscanlogparser** `1` - This is a utility to parse a Clam Anti Virus log file, in order to sort them into a malware archive for easier maintanence of your malware collection.
+- **cuckoo** `2.0.7` - Automated malware analysis system.
+- **damm** `32.60e7ec7` - Differential Analysis of Malware in Memory.
+- **fakenet-ng** `313.de99b0b` - Next Generation Dynamic Network Analysis Tool.
+- **fileintel** `33.a0bff38` - A modular Python application to pull intelligence about malicious files.
+- **flare-floss** `v3.1.1.r122.ge13cfe7` - Obfuscated String Solver - Automatically extract obfuscated strings from malware.
+- **fprotlogparser** `1` - This is a utility to parse a F-Prot Anti Virus log file, in order to sort them into a malware archive for easier maintanence of your collection.
+- **gcat** `29.39b266c` - A fully featured backdoor that uses Gmail as a C&C server.
+- **malboxes** `449.f9f310e` - Builds malware analysis Windows VMs so that you don't have to.
+- **malscan** `5.773505a` - A Simple PE File Heuristics Scanner.
+- **maltrieve** `342.b9e7560` - Originated as a fork of mwcrawler. It retrieves malware directly from the sources as listed at a number of sites.
+- **malware-check-tool** `1.2` - Python script that detects malicious files via checking md5 hashes from an offline set or via the virustotal site. It has http proxy support and an update feature.
+- **noriben** `198.35327a6` - Portable, Simple, Malware Analysis Sandbox.
+- **origami** `2.1.0` - Aims at providing a scripting tool to generate and analyze malicious PDF files.
+- **peframe** `135.70683b6` - Tool to perform static analysis on (portable executable) malware.
+- **pepper** `18.9dfcade` - An open source script to perform malware static analysis on Portable Executable.
+- **pftriage** `79.d7ad183` - Python tool and library to help analyze files during malware triage and analysis.
+- **polyswarm** `3.14.0` - An interface to the public and private PolySwarm APIs.
+- **pyew** `109.8eb3e49` - A python tool to analyse malware.
+- **python-mmbot** `78.f5f5478` - Powerful malicious file triage tool for cyber responders.
+- **sea** `103.9aca1c8` - A tool to help to create exploits of binary programs.
+- **ssma** `215.2a2b6bd` - Simple Static Malware Analyzer.
+- **thezoo** `226.1aa1bb7` - A project created to make the possibility of malware analysis open and available to the public.
+- **vba2graph** `29.fcf96ef` - Generate call graphs from VBA code, for easier analysis of malicious documents.
+- **virustotal** `4.9aea023` - Command-line utility to automatically lookup on VirusTotal all files recursively contained in a directory.
+- **vmcloak** `955.fae1f29` - Automated Virtual Machine Generation and Cloaking for Cuckoo Sandbox.
+- **vt-cli** `0.13.0` - VirusTotal Command Line Interface.
+- **zerowine** `0.0.2` - Malware Analysis Tool - research project to dynamically analyze the behavior of malware
+
+---
+
+## PROXY (31 tools)
+
+- **3proxy** `0.9.5` - Tiny free proxy server.
+- **bdfproxy** `107.276c367` - Patch Binaries via MITM: BackdoorFactory + mitmProxy
+- **binproxy** `8.d02fce9` - A proxy for arbitrary TCP connections.
+- **cntlm** `4.b35d55c` - An NTLM, NTLM2SR, and NTLMv2 authenticating HTTP proxy.
+- **datajackproxy** `42.f75f3a3` - A proxy which allows you to intercept TLS traffic in native x86 applications across platform.
+- **dns-reverse-proxy** `44.5a53ae3` - A reverse DNS proxy written in Go.
+- **dnschef** `17.a395411` - A highly configurable DNS proxy for pentesters.
+- **elite-proxy-finder** `51.1ced3be` - Finds public elite anonymity proxies and concurrently tests them.
+- **fakedns** `118.39609da` - A regular-expression based python MITM DNS server with correct DNS request passthrough and "Not Found" responses.
+- **fireprox** `51.a6e1300` - AWS API Gateway management tool for creating on the fly HTTP pass-through proxies for unique IP rotation.
+- **jondo** `00.20.001` - Redirects internet traffic trough a mix of proxy servers to hide the origin of the requests.
+- **mallory** `134.47094fb` - HTTP/HTTPS proxy over SSH.
+- **mitm-relay** `40.1b74741` - Hackish way to intercept and modify non-HTTP protocols through Burp & others.
+- **modlishka** `v.1.1.1.r3.g0348d52` - A powerful and flexible HTTP reverse proxy.
+- **mubeng** `254.a77f2d5` - An incredibly fast proxy checker & IP rotator with ease.
+- **obfs4proxy** `0.0.13` - A pluggable transport proxy written in Go.
+- **pr0cks** `20.bcfcf2d` - python script setting up a transparent proxy to forward all TCP and DNS traffic through a SOCKS / SOCKS5 or HTTP(CONNECT) proxy using iptables -j REDIRECT target.
+- **proxify** `904.cb35116` - Swiss Army knife Proxy tool for HTTP/HTTPS traffic capture, manipulation, and replay on the go.
+- **proxyp** `2013` - Small multithreaded Perl script written to enumerate latency, port numbers, server names, & geolocations of proxy IP addresses.
+- **redsocks** `211.19b822e` - Transparent redirector of any TCP connection to proxy.
+- **rpivot** `5.4963487` - Socks4 reverse proxy for penetration testing.
+- **sergio-proxy** `20.8a91bb4` - A multi-threaded transparent HTTP proxy for manipulating web traffic.
+- **soapui** `5.8.0` - The Swiss-Army Knife for SOAP Testing.
+- **sslstrip** `0.9` - Python tool to hijack HTTPS connections during a MITM attack.
+- **ssrf-proxy** `293.e79da7a` - Facilitates tunneling HTTP communications through servers vulnerable to Server-Side Request Forgery.
+- **starttls-mitm** `7.b257756` - A mitm proxy that will transparently proxy and dump both plaintext and TLS traffic.
+- **stowaway** `v2.2.r42.gc22010f` - A Multi-hop proxy tool for security researchers and pentesters.
+- **striptls** `55.5ec712c` - Proxy PoC implementation of STARTTLS stripping attacks.
+- **tftp-proxy** `0.1` - This tool accepts connection on tftp and reloads requested content from an upstream tftp server.
+- **trevorproxy** `1.0.6` - A SOCKS proxy written in Python that randomizes your source IP address.
+- **webfixy** `25.5d477b0` - On-the-fly decryption proxy for MikroTik RouterOS WebFig sessions.
+
+---
+
+## FINGERPRINT (30 tools)
+
+- **asp-audit** `2BETA` - An ASP fingerprinting tool and vulnerability scanner.
+- **blindelephant** `7` - A web application fingerprinter. Attempts to discover the version of a (known) web application by comparing static files at known locations
+- **cms-explorer** `15.23b58cd` - Designed to reveal the specific modules, plugins, components and themes that various cms driven websites are running.
+- **complemento** `0.7.6` - A collection of tools for pentester: LetDown is a powerful tcp flooder ReverseRaider is a domain scanner that use wordlist scanning or reverse resolution scanning Httsquash is an http server scanner, banner grabber and data retriever
+- **detectem** `276.bc5f073` - Detect software and its version on websites.
+- **dhcpf** `3.a770b20` - Passive DHCP fingerprinting implementation.
+- **dnsmap** `19.6d34014` - Passive DNS network mapper.
+- **fl0p** `0.1` - A passive L7 flow fingerprinter that examines TCP/UDP/ICMP packet sequences, can peek into cryptographic tunnels, can tell human beings and robots apart, and performs a couple of other infosec-related tricks.
+- **fpdns** `109.655bfa7` - Program that remotely determines DNS server versions.
+- **ftpmap** `52.cbeabbe` - Scans remote FTP servers to identify what software and what versions they are running.
+- **htrosbif** `134.9dc3f86` - Active HTTP server fingerprinting and recon tool.
+- **httprint** `301` - A web server fingerprinting tool.
+- **lbmap** `147.2d15ace` - Proof of concept scripts for advanced web application fingerprinting, presented at OWASP AppSecAsia 2012.
+- **mercury** `2.9.0.r0.g868137f` - Network metadata capture and analysis.
+- **mwebfp** `16.a800b98` - Mass Web Fingerprinter.
+- **neighbor-cache-fingerprinter** `83.f1e596f` - An ARP based Operating System version scanner.
+- **nimbostratus** `54.c7c206f` - Tools for fingerprintinging and exploiting Amazon cloud infrastructures.
+- **ntp-fingerprint** `0.1` - An active fingerprinting utility specifically designed to identify the OS the NTP server is running on.
+- **operative** `148.163acdf` - Framework based on fingerprint action, this tool is used for get information on a website or a enterprise target with multiple modules (Viadeo search,Linkedin search, Reverse email whois, Reverse ip whois, SQL file forensics ...).
+- **propecia** `2` - A fast class scanner that scans for a specified open port with banner grabbing
+- **scannerl** `76.8133065` - The modular distributed fingerprinting engine.
+- **sinfp** `1.24` - A full operating system stack fingerprinting suite.
+- **smtpmap** `0.8.234_BETA` - Tool to identify the running smtp software on a given host.
+- **smtpscan** `0.5` - An SMTP scanner
+- **spartan** `23.babdd7d` - Frontpage and Sharepoint fingerprinting and attack tool.
+- **thcrut** `1.2.5` - Network discovery and OS Fingerprinting tool.
+- **tls-fingerprinting** `257.4b6e878` - Tool and scripts to perform TLS Fingerprinting.
+- **tls-prober** `286.72b1029` - A tool to fingerprint SSL/TLS servers.
+- **xprobe2** `0.3` - An active OS fingerprinting tool.
+- **zgrab2** `884.4a7bd0b` - Fast Application Layer Scanner.
+
+---
+
+## CODE AUDIT (30 tools)
+
+- **bof-detector** `19.e08367d` - A simple detector of BOF vulnerabilities by source-code-level check.
+- **brakeman** `v7.1.0.r7.g3dbbdd3d7` - A static analysis security vulnerability scanner for Ruby on Rails applications.
+- **cflow** `1.7` - A C program flow analyzer.
+- **checkov** `3.2.483.r0.g8220455d0` - Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages.
+- **cpptest** `2.0.0` - A portable and powerful, yet simple, unit testing framework for handling automated tests in C++.
+- **dependency-check** `10.0.2` - A tool that attempts to detect publicly disclosed vulnerabilities contained within a project's dependencies.
+- **detect-secrets** `v1.5.0.r49.g50119d6` - An enterprise friendly way of detecting and preventing secrets in code.
+- **devaudit** `803.ca0a68e` - An open-source, cross-platform, multi-purpose security auditing tool targeted at developers and teams.
+- **githound** `v1.7.1.r15.g1d20536` - Find secret information in git repositories.
+- **graudit** `678.a0ec268` - Grep rough source code auditing tool.
+- **horusec** `v2.9.0.beta.2.r1.g873d4104` - Static code analysis to identify security flaws for many languages.
+- **local-php-security-checker** `v2.1.3.r1.g1d1fdac` - A command line tool that checks your PHP application packages with known security vulnerabilities.
+- **mosca** `130.a7e725d` - Static analysis tool to find bugs like a grep unix command.
+- **njsscan** `0.3.1` - A static application testing (SAST) tool that can find insecure code patterns in your node.js applications.
+- **phpstan** `13125.54a5bd6c7` - PHP Static Analysis Tool - discover bugs in your code without running it.
+- **pscan** `1.3` - A limited problem scanner for C source files
+- **rats** `6.4ba54ce` - A rough auditing tool for security in source code files.
+- **semgrep** `1.139.0` - Lightweight static analysis for many languages.
+- **slither** `4851.f9710ded1` - Solidity static analysis framework written in Python 3.
+- **snyk** `1.1283.0` - CLI and build-time tool to find and fix known vulnerabilities in open-source dependencies.
+- **sonar-scanner** `6.2.1.4610` - Generic CLI tool to launch project analysis on SonarQube servers.
+- **spotbugs** `17817.eaabea0287` - A tool for static analysis to look for bugs in Java code.
+- **stoq** `769.8bfc78b` - An open source framework for enterprise level automated analysis.
+- **tell-me-your-secrets** `v2.4.2.r3.g5434b9d` - Find secrets on any machine from over 120 Different Signatures.
+- **trufflehog** `v3.90.8.r6.gb140e2b58` - Searches through git repositories for high entropy strings, digging deep into commit history.
+- **whispers** `2.4.0.r0.g24ee0f0` - Identify hardcoded secrets in static structured text.
+- **wpbullet** `34.6185112` - A static code analysis for WordPress (and PHP).
+- **wscript** `201.0410be2` - Emulator/tracer of the Windows Script Host functionality.
+- **yasca** `2.1` - Multi-Language Static Analysis Toolset.
+- **zarn** `0.0.9.r76.ge8c757a` - A lightweight static security analysis tool for modern Perl Apps.
+
+---
+
+## DOS (28 tools)
+
+- **42zip** `42` - Recursive Zip archive bomb.
+- **blacknurse** `9.d2a2b23` - A low bandwidth ICMP attack that is capable of doing denial of service to well known firewalls.
+- **bonesi** `12.733c9e9` - The DDoS Botnet Simulator.
+- **davoset** `1.3.7` - A tool for using Abuse of Functionality and XML External Entities vulnerabilities on some websites to attack other websites.
+- **ddosify** `v2.6.0.r31.g0131056` - High-performance load testing tool, written in Golang.
+- **dnsdrdos** `0.1` - Proof of concept code for distributed DNS reflection DoS.
+- **goldeneye** `28.792862f` - A HTTP DoS test tool. Attack Vector exploited: HTTP Keep Alive + NoCache.
+- **hulk** `27.ed2b11c` - A webserver DoS tool (Http Unbearable Load King) ported to Go with some additional features.
+- **hwk** `0.4` - Collection of packet crafting and wireless network flooding tools
+- **iaxflood** `0.1` - IAX flooder.
+- **impulse** `79.592a91b` - Modern Denial-of-service ToolKit.
+- **inviteflood** `2.0` - Flood a device with INVITE requests.
+- **mausezahn** `0.40` - A free fast traffic generator written in C which allows you to send nearly every possible and impossible packet.
+- **network-app-stress-tester** `19.df75391` - Network Application Stress Testing Yammer.
+- **nkiller2** `2.0` - A TCP exhaustion/stressing tool.
+- **ntpdos** `4.3fe389b` - PoC for distributed NTP reflection DoS (CVE-5211)
+- **phpstress** `5.f987a7e` - A PHP denial of service / stress test for Web Servers running PHP-FPM or PHP-CGI.
+- **pwnloris** `14.7ad1486` - An improved slowloris DOS tool which keeps attacking until the server starts getting exhausted.
+- **shitflood** `14.e74fc42` - A Socks5 clone flooder for the Internet Relay Chat (IRC) protocol.
+- **slowloris** `0.7` - A tool which is written in perl to test http-server vulnerabilities for connection exhaustion denial of service (DoS) attacks so you can enhance the security of your webserver.
+- **slowloris-py** `30.eb7f632` - Low bandwidth DoS tool.
+- **synflood** `0.1` - A very simply script to illustrate DoS SYN Flooding attack.
+- **t50** `5.8.7c` - Experimental Multi-protocol Packet Injector Tool.
+- **tcgetkey** `0.1` - A set of tools that deal with acquiring physical memory dumps via FireWire and then scan the memory dump to locate TrueCrypt keys and finally decrypt the encrypted TrueCrypt container using the keys.
+- **thc-ssl-dos** `1.4` - A tool to verify the performance of SSL. To be used in your authorized and legitimate area ONLY. You need to accept this to make use of it, no use for bad intentions, you have been warned!
+- **torshammer** `1.0` - A slow POST Denial of Service testing tool written in Python.
+- **ufonet** `84.aea21b3` - A tool designed to launch DDoS attacks against a target, using 'Open Redirect' vectors on third party web applications, like botnet.
+- **wreckuests** `75.69b6c27` - Yet another one hard-hitting tool to run DDoS attacks with HTTP-flood.
+
+---
+
+## RADIO (27 tools)
+
+- **airspyhf** `1.6.8.r59.g87cf12a` - Host code for AirspyHF+ SDR.
+- **csdr** `0.18.2.r68.g1f15b8c` - A simple DSP library and command-line tool for Software Defined Radio.
+- **cubicsdr** `0.2.7` - Cross-Platform Software-Defined Radio Application.
+- **gpredict** `1659.34af48e` - A real-time satellite tracking and orbit prediction application.
+- **gps-sdr-sim** `224.28ca29a` - Software-Defined GPS Signal Simulator.
+- **gqrx-scanner** `1.0.5` - A frequency scanner for Gqrx Software Defined Radio receiver.
+- **gr-air-modes** `396.0b6c383` - Gnuradio tools for receiving Mode S transponder signals, including ADS-B.
+- **gr-dect2** `39.0d973fe` - Real-time DECT voice channel decoding by Gnuradio.
+- **gr-gsm** `1194.a77cf59` - Gnuradio blocks and tools for receiving GSM transmissions.
+- **gr-paint** `50.3806b20` - An OFDM Spectrum Painter for GNU Radio.
+- **gsmevil2** `12.eb96b4f` - Python web-based tool which use for capturing imsi numbers and sms.
+- **hacktv** `540.95b3997` - Analogue TV transmitter for the HackRF.
+- **libosmocore** `1.10.0.r47.g38eb428` - Collection of common code used in various sub-projects inside the Osmocom family of projects.
+- **lte-cell-scanner** `26.e7f71cb` - An OpenCL accelerated TDD/FDD LTE Scanner.
+- **openwebrx** `1.2.2.r389.g640c5b0` - Open source, multi-user SDR receiver software with a web interface.
+- **qradiolink** `0.9.0.1.r25.gf1006a2` - Multimode SDR transceiver for GNU radio, ADALM-Pluto, LimeSDR, USRP.
+- **rfcat** `v2.0.1.r5.g07f99bb` - Swiss-army knife of ISM band radio.
+- **rtl** `25.02+46.r3672.20251008.25e47f89` - A generic software defined radio data receiver, mainly for the 433.92 MHz, 868 MHz (SRD), 315 MHz, 345 MHz, and 915 MHz ISM bands.
+- **rtl-wmbus** `d2be82c.r25.g34684e6` - Software defined receiver for wireless M-Bus with RTL-SDR.
+- **rtlamr** `197.03369d1` - An rtl-sdr receiver for smart meters operating in the 900MHz ISM band.
+- **sdrpp** `nightly.r304.g4658a1a` - The bloat-free SDR receiver.
+- **sdrsharp** `1.0.0.1457` - The most popular SDR program.
+- **sdrtrunk** `0.6.0` - A cross-platform java application for decoding, monitoring, recording and streaming trunked mobile and related radio protocols using SDR.
+- **simtrace2** `1079.e6e7739` - Host utilities to communicate with SIMtrace2 USB Devices.
+- **spektrum** `2.1.0` - rtl-sdr spectrum analyzer.
+- **wmbusmeters** `1.17.1` - Read the wired or wireless mbus protocol to acquire utility meter readings.
+- **yate-bts** `6.1.0` - An open source GSM Base Station software.
+
+---
+
+## BLUETOOTH (26 tools)
+
+- **blue-hydra** `710.1c2372d` - A Bluetooth device discovery service built on top of the bluez library.
+- **bluebugger** `0.1` - An implementation of the bluebug technique which was discovered by Martin Herfurt.
+- **bluediving** `0.9` - A Bluetooth penetration testing suite.
+- **bluefog** `0.0.4` - A tool that can generate an essentially unlimited number of phantom Bluetooth devices.
+- **bluelog** `1.1.2` - A Bluetooth scanner and sniffer written to do a single task, log devices that are in discoverable mode.
+- **bluepot** `0.2` - A Bluetooth Honeypot written in Java, it runs on Linux.
+- **blueprint** `0.1_3` - A perl tool to identify Bluetooth devices.
+- **bluescan** `1.0.6` - A Bluetooth Device Scanner.
+- **bluesnarfer** `0.1` - A bluetooth attacking tool.
+- **bluphish** `9.a7200bd` - Bluetooth device and service discovery tool that can be used for security assessment and penetration testing.
+- **braces** `0.4` - A Bluetooth Tracking Utility.
+- **bss** `0.8` - Bluetooth stack smasher / fuzzer.
+- **bt_audit** `0.1.1` - Bluetooth audit
+- **btcrack** `1.1` - The world's first Bluetooth Pass phrase (PIN) bruteforce tool. Bruteforces the Passkey and the Link key from captured Pairing exchanges.
+- **btlejack** `88.c487859` - Bluetooth Low Energy Swiss-army knife.
+- **btproxy-mitm** `71.cd1c906` - Man in the Middle analysis tool for Bluetooth.
+- **btscanner** `2.1` - Bluetooth device scanner.
+- **carwhisperer** `0.2` - Intends to sensibilise manufacturers of carkits and other Bluetooth appliances without display and keyboard for the possible security threat evolving from the use of standard passkeys.
+- **ghettotooth** `1.0` - Ghettodriving for bluetooth.
+- **hidattack** `0.1` - HID Attack (attacking HID host implementations)
+- **obexstress** `0.1` - Script for testing remote OBEX service for some potential vulnerabilities.
+- **redfang** `2.5` - Finds non-discoverable Bluetooth devices by brute-forcing the last six bytes of the devices' Bluetooth addresses and calling read_remote_name().
+- **sparrow-wifi** `197.60e9ce7` - Next-Gen GUI-based WiFi and Bluetooth Analyzer.
+- **spooftooph** `0.5.2` - Designed to automate spoofing or cloning Bluetooth device Name, Class, and Address. Cloning this information effectively allows Bluetooth device to hide in plain sight.
+- **tbear** `1.5` - Transient Bluetooth Environment Auditor includes an ncurses-based Bluetooth scanner (a bit similar to kismet), a Bluetooth DoS tool, and a Bluetooth hidden device locator.
+- **ubertooth** `2020.12.R1` - A 2.4 GHz wireless development board suitable for Bluetooth experimentation. Open source hardware and software. Tools only.
+
+---
+
+## VOIP (22 tools)
+
+- **ace** `1.10` - Automated Corporate Enumerator. A simple yet powerful VoIP Corporate Directory enumeration tool that mimics the behavior of an IP Phone in order to download the name and extension entries that a given phone can display on its screen interface
+- **bluebox-ng** `1.1.0` - A GPL VoIP/UC vulnerability scanner.
+- **erase-registrations** `1.0` - An IAX flooder.
+- **ilty** `1.0` - An interception phone system for VoIP network.
+- **isip** `2.fad1f10` - Interactive sip toolkit for packet manipulations, sniffing, man in the middle attacks, fuzzing, simulating of dos attacks.
+- **isme** `0.12` - Scans a VOIP environment, adapts to enterprise VOIP, and exploits the possibilities of being connected directly to an IP Phone VLAN.
+- **mrsip** `110.bdd98ad` - SIP-Based Audit and Attack Tool.
+- **pcapsipdump** `0.2` - A tool for dumping SIP sessions (+RTP traffic, if available) to disk in a fashion similar to 'tcpdump -w' (format is exactly the same), but one file per sip session (even if there is thousands of concurrent SIP sessions).
+- **protos-sip** `2` - SIP test suite.
+- **redirectpoison** `1.1` - A tool to poison a targeted issuer of SIP INVITE requests with 301 (i.e. Moved Permanently) redirection responses.
+- **rtp-flood** `1.0` - RTP flooder
+- **siparmyknife** `11232011` - A small command line tool for developers and administrators of Session Initiation Protocol (SIP) applications.
+- **sipbrute** `11.5be2fdd` - A utility to perform dictionary attacks against the VoIP SIP Register hash.
+- **sipp** `1554.3ab688f` - A free Open Source test tool / traffic generator for the SIP protocol.
+- **sippts** `v4.1.2.r4.g57d7f8d` - Set of tools to audit SIP based VoIP Systems.
+- **sipsak** `0.9.8.1` - A small command line tool for developers and administrators of Session Initiation Protocol (SIP) applications.
+- **storm-ring** `0.1` - This simple tool is useful to test a PABX with "allow guest" parameter set to "yes" (in this scenario an anonymous caller could place a call).
+- **teardown** `1.0` - Command line tool to send a BYE request to tear down a call.
+- **vnak** `1.cf0fda7` - Aim is to be the one tool a user needs to attack multiple VoIP protocols.
+- **voiper** `0.07` - A VoIP security testing toolkit incorporating several VoIP fuzzers and auxiliary tools to assist the auditor.
+- **voipong** `2.0` - A utility which detects all Voice Over IP calls on a pipeline, and for those which are G711 encoded, dumps actual conversation to separate wave files.
+- **vsaudit** `21.2cbc47b` - VOIP Security Audit Framework.
+
+---
+
+## SPOOF (18 tools)
+
+- **admid-pack** `0.1` - ADM DNS spoofing tools - Uses a variety of active and passive methods to spoof DNS packets. Very powerful.
+- **aranea** `6.469b9ee` - A fast and clean dns spoofing tool.
+- **arpspoof-smikims** `31.ef5f0b1` - Performs an ARP spoofing attack using the Linux kernel's raw sockets.
+- **cisco-snmp-slap** `5.daf0589` - IP address spoofing tool in order to bypass an ACL protecting an SNMP service on Cisco IOS devices.
+- **dns-spoof** `13.81ba29f` - Yet another DNS spoof utility.
+- **evil-ssdp** `96.0d41a11` - Spoof SSDP replies to phish for NetNTLM challenge/response on a network.
+- **fakenetbios** `7.b83701e` - A family of tools designed to simulate Windows hosts (NetBIOS) on a LAN.
+- **lans** `148.9f8ef2d` - A Multithreaded asynchronous packet parsing/injecting arp spoofer.
+- **lsrtunnel** `0.2` - Spoofs connections using source routed packets.
+- **mailsend-go** `136.1a197e0` - A multi-platform command line tool to send mail via SMTP protocol.
+- **motsa-dns-spoofing** `2.6ac6980` - ManOnTheSideAttack-DNS Spoofing.
+- **multimac** `1.0.3` - Multiple MACs on an adapter
+- **nbnspoof** `1.0` - NetBIOS Name Service Spoofer.
+- **netcommander** `1.3` - An easy-to-use arp spoofing tool.
+- **rbndr** `9.a189ffd` - Simple DNS Rebinding Service.
+- **spoofy** `v1.0.2.r15.g96499b7` - Check if a list of domains can be spoofed based on SPF and DMARC records.
+- **sylkie** `0.0.4.r3.g1cf170f` - IPv6 address spoofing with the Neighbor Discovery Protocol.
+- **synner** `1.1` - A custom eth->ip->tcp packet generator (spoofer) for testing firewalls and dos attacks.
+
+---
+
+## DECOMPILER (18 tools)
+
+- **avaloniailspy** `v7.2.rc.r11.g21d4939` - .NET Decompiler (port of ILSpy)
+- **beebug** `25.cddb375` - A tool for checking exploitability.
+- **cafebabe** `0.1.2` - Java bytecode editor & decompiler.
+- **fernflower** `802.c03cae7a` - An analytical decompiler for Java.
+- **gadgetinspector** `6.ac7832d` - A byte code analyzer for finding deserialization gadget chains in Java applications.
+- **jbe** `0.1.1` - Java bytecode editor suitable for viewing and modifying java class files.
+- **jd-cli** `1.2.0` - Command line Java Decompiler.
+- **jd-gui** `1.6.6` - A standalone graphical utility that displays Java source codes of .class files.
+- **jpexs-decompiler** `15.1.0` - JPEXS Free Flash Decompiler.
+- **luyten** `0.5.4` - An Open Source Java Decompiler Gui for Procyon.
+- **pcode2code** `6.65ae983` - VBA p-code decompiler.
+- **procyon** `0.6` - A suite of Java metaprogramming tools focused on code generation and analysis.
+- **python-uncompyle6** `3.9.2` - A Python cross-version decompiler.
+- **recaf** `4.0.0.alpha.r22.g709b3f9` - Modern Java bytecode editor.
+- **recstudio** `4.1` - Cross platform interactive decompiler.
+- **rej** `0.7` - An API and a graphical tool for inspection and manipulation of classfiles for the Java platform.
+- **retdec** `2161.04df6def` - Retargetable machine-code decompiler based on LLVM.
+- **shuji** `v0.8.0.r88.g6496b72` - Reverse engineering JavaScript and CSS sources from sourcemaps.
+
+---
+
+## TUNNEL (18 tools)
+
+- **chisel** `244.d56938d` - A fast TCP tunnel over HTTP.
+- **chownat** `0.08b` - Allows two peers behind two separate NATs with no port forwarding and no DMZ setup on their routers to directly communicate with each other
+- **ctunnel** `0.7` - Tunnel and/or proxy TCP or UDP connections via a cryptographic tunnel.
+- **dns2tcp** `0.5.2` - A tool for relaying TCP connections over DNS.
+- **fraud-bridge** `10.775c563` - ICMP and DNS tunneling via IPv4 and IPv6.
+- **icmptx** `0.2.r12.g2235866` - IP over ICMP tunnel.
+- **ip-https-tools** `7.170691f` - Tools for the IP over HTTPS (IP-HTTPS) Tunneling Protocol.
+- **ligolo-ng** `v0.8.2.r0.g82bec5b` - An advanced, yet simple, tunneling tool that uses a TUN interface.
+- **matahari** `0.1.30` - A reverse HTTP shell to execute commands on remote machines behind firewalls.
+- **morxtunel** `1.0` - Network Tunneling using TUN/TAP interfaces over TCP tool.
+- **multitun** `1.319a134` - Tunnel arbitrary traffic through an innocuous WebSocket.
+- **neo-regeorg** `v5.2.1.r9.g2b4498e` - Improved version of reGeorg, HTTP tunneling pivot tool
+- **ngrok** `3.2.2` - A tunneling, reverse proxy for developing and understanding networked, HTTP services.
+- **oniongrok** `v1.1.11.r0.gcbae9e7` - Onion addresses for anything.
+- **regeorg** `30.1ca54c2` - The successor to reDuh, pwn a bastion webserver and create SOCKS proxies through the DMZ. Pivot and pwn.
+- **stegosip** `11.5cda6d6` - TCP tunnel over RTP/SIP.
+- **vstt** `0.5.3` - VSTT is a multi-protocol tunneling tool. It accepts input by TCP stream sockets and FIFOs, and can send data via TCP, POP3, and ICMP tunneling.
+- **xfltreat** `270.17d4ec8` - Tunnelling framework.
+
+---
+
+## DISASSEMBLER (17 tools)
+
+- **abcd** `4.2738809` - ActionScript ByteCode Disassembler.
+- **binnavi** `6.1.0` - A binary analysis IDE that allows to inspect, navigate, edit and annotate control flow graphs and call graphs of disassembled code.
+- **chiasm-shell** `33.e20ed9f` - Python-based interactive assembler/disassembler CLI, powered byKeystone/Capstone.
+- **exe2hex** `1.5.1.r6.ge563b35` - Inline file transfer using in-built Windows tools (DEBUG.exe or PowerShell).
+- **libdisasm** `0.23` - A disassembler library.
+- **lief** `0.15.1` - Library to instrument executable formats.
+- **marc4dasm** `6.f11860f` - A disassembler for the Atmel MARC4 (a 4 bit Harvard micro).
+- **plasma-disasm** `922.ec7df9b` - An interactive disassembler for x86/ARM/MIPS. It can generates indented pseudo-code with colored syntax.
+- **python-lief** `0.15.1` - Library to instrument executable formats.
+- **python-pcodedmp** `1.2.6` - A VBA p-code disassembler.
+- **python2-capstone** `4.0.1` - A disassembly framework with the target of becoming the ultimate disasm engine for binary analysis and reversing in the security community.
+- **python2-pcodedmp** `1.2.6` - A VBA p-code disassembler.
+- **radare2-unicorn** `920.1cf5851` - Unicorn Emulator Plugin for radare2.
+- **redasm** `1667.5ab6be9` - Interactive, multiarchitecture disassembler written in C++ using Qt5 as UI Framework.
+- **scratchabit** `571.e52ba4b` - Easily retargetable and hackable interactive disassembler with IDAPython-compatible plugin API.
+- **unstrip** `13.05e00c2` - ELF Unstrip Tool.
+- **viper** `2099.fdd7855` - A Binary analysis framework.
+
+---
+
+## HONEYPOT (16 tools)
+
+- **beeswarm** `1183.db51ea0` - Honeypot deployment made easy.
+- **conpot** `0.6.0` - ICS honeypot with the goal to collect intelligence about the motives and methods of adversaries targeting industrial control systems.
+- **fakeap** `0.3.2` - Black Alchemy's Fake AP generates thousands of counterfeit 802.11b access points. Hide in plain sight amongst Fake AP's cacophony of beacon frames.
+- **fiked** `0.0.5` - Fake IDE daemon.
+- **heartbleed-honeypot** `0.1` - Script that listens on TCP port 443 and responds with completely bogus SSL heartbeat responses, unless it detects the start of a byte pattern similar to that used in Jared Stafford's
+- **honeyd** `337.a0f3d64` - A small daemon that creates virtual hosts on a network.
+- **honeypy** `600.6ca3d6e` - A low interaction Honeypot.
+- **honssh** `204.821ce87` - A high-interaction Honey Pot solution designed to log all SSH communications between a client and server.
+- **hpfeeds** `414.34bf4d4` - Honeynet Project generic authenticated datafeed protocol.
+- **kippo** `287.b9eb06a` - A medium interaction SSH honeypot designed to log brute force attacks and most importantly, the entire shell interaction by the attacker.
+- **pshitt** `23.dae7931` - A lightweight fake SSH server designed to collect authentication data sent by intruders.
+- **python2-hpfeeds** `414.34bf4d4` - Honeynet Project generic authenticated datafeed protocol.
+- **snare** `188.b17fdfe` - Super Next generation Advanced Reactive honeypot.
+- **ssh-honeypot** `113.4bda71c` - Fake sshd that logs ip addresses, usernames, and passwords.
+- **wifi-honey** `1.0` - A management tool for wifi honeypots.
+- **wordpot** `44.e96889b` - A Wordpress Honeypot.
+
+---
+
+## STEGO (13 tools)
+
+- **matroschka** `58.2f026a4` - Python steganography tool to hide images or text in images.
+- **openpuff** `4.01` - Yet not another steganography SW.
+- **pngcheck** `3.0.3` - Verifies the integrity of PNG, JNG and MNG files by checking the CRCs and decompressing the image data.
+- **silenteye** `21.a53a7ff` - A cross-platform application design for an easy use of steganography.
+- **stegcracker** `2.1.0` - Steganography brute-force utility to uncover hidden data inside files.
+- **stegdetect** `20.28a4f07` - An automated tool for detecting steganographic content in images.
+- **steghide** `0.5.1` - Embeds a message in a file by replacing some of the least significant bits.
+- **stegolego** `8.85354f6` - Simple program for using stegonography to hide data within BMP images.
+- **stegoveritas** `1.10` - Automatic image steganography analysis tool.
+- **stegseek** `v0.6.r10.g5896978` - Lightning fast steghide cracker.
+- **stegsolve** `1.3` - Steganography Solver.
+- **stepic** `0.4` - A python image steganography tool.
+- **zsteg** `v0.2.13.r6.g5f49baa` - Detect stegano-hidden data in PNG and BMP.
+
+---
+
+## DEBUGGER (10 tools)
+
+- **edb** `3337.eedd97a0` - A cross platform AArch32/x86/x86 debugger.
+- **electric-fence** `2.2.5` - A malloc(3) debugger that uses virtual memory hardware to detect illegal memory accesses.
+- **gdbgui** `438.773b916` - Browser-based gdb frontend using Flask and JavaScript to visually debug C, C++, Go, or Rust.
+- **heaptrace** `2.2.8.2.r20.g06f43fc` - Helps visualize heap operations for pwn and debugging.
+- **ollydbg** `201g` - A 32-bit assembler-level analysing debugger.
+- **rr** `6869.556551e4` - A Record and Replay Framework.
+- **saleae-logic** `2.3.47` - Debug happy.
+- **shellnoob** `37.6586133` - A toolkit that eases the writing and debugging of shellcode.
+- **vivisect** `v1.2.1.r4.gd04e5193` - A Python based static analysis and reverse engineering framework.
+- **voltron** `629.be9e54b` - UI for GDB, LLDB and Vivisect's VDB.
+
+---
+
+## WORDLIST (5 tools)
+
+- **assetnote-wordlists** `178.34fd91e` - Assetnote generated wordlists.
+- **country-ip-blocks** `5689.b46ce3c` - CIDR country-level IP data, straight from the Regional Internet Registries, updated hourly.
+- **ldapwordlistharvester** `1.2.r18.g60c619d` - Tool to generate wordlist from information present in LDAP, in order to crack passwords of domain accounts.
+- **seclists** `2025.3.r134.g71313d0` - A collection of multiple types of lists used during security assessments.
+- **wdict** `v0.1.19.r0.g6e65a75` - Create dictionaries by scraping webpages or crawling local files.
+
+---
+
+## DATABASE (5 tools)
+
+- **blindsql** `1.0` - Set of bash scripts for blind SQL injection attacks.
+- **getsids** `0.0.1` - Getsids tries to enumerate Oracle Sids by sending the services command to the Oracle TNS listener. Like doing ‘lsnrctl service’.
+- **metacoretex** `0.8.0` - MetaCoretex is an entirely JAVA vulnerability scanning framework for databases.
+- **mysql2sqlite** `14.e5b2c31` - Converts a mysqldump file into a Sqlite 3 compatible file.
+- **pgdbf** `113.4e84775` - Convert XBase / FoxPro databases to PostgreSQL
+
+---
+
+## HARDWARE (5 tools)
+
+- **chipsec** `1.13.16.r5.g9b49d85` - Platform Security Assessment Framework.
+- **dex2jar** `2.1` - A tool for converting Android's .dex format to Java's .class format
+- **hdmi-sniff** `5.f7fbc0e` - HDMI DDC (I2C) inspection tool. It is designed to demonstrate just how easy it is to recover HDCP crypto keys from HDMI devices.
+- **kautilya** `52.1c9d5b0` - Pwnage with Human Interface Devices using Teensy++2.0 and Teensy 3.0 devices.
+- **pcileech** `4.18.0` - Tool, which uses PCIe hardware devices to read and write from the target system memory.
+
+---
+
+## AUTOMOBILE (4 tools)
+
+- **can-utils** `1246.8bf5f88` - Linux-CAN / SocketCAN user space applications.
+- **canalyzat0r** `41.6bc251e` - Security analysis toolkit for proprietary car protocols.
+- **cantoolz** `425.82d330b` - Framework for black-box CAN network analysis.
+- **savvycan** `continuous.r0.g4d6d68f` - QT-based CAN bus analysis tool.
+
+---
+
+## DRONE (4 tools)
+
+- **crozono** `5.6a51669` - A modular framework designed to automate the penetration testing of wireless networks from drones and such unconventional devices.
+- **missionplanner** `1.3.83` - A GroundControl Station for Ardupilot.
+- **skyjack** `16.24e3878` - Takes over Parrot drones, deauthenticating their true owner and taking over control, turning them into zombie drones under your own control.
+- **snoopy-ng** `128.eac73f5` - A distributed, sensor, data collection, interception, analysis, and visualization framework.
+
+---
+
+## FIRMWARE (4 tools)
+
+- **firmwalker** `101.23ff299` - Script for searching the extracted firmware file system for goodies.
+- **firmware-mod-kit** `149.8403a17` - Modify firmware images without recompiling.
+- **meanalyzer** `1.273.0` - Intel Engine Firmware Analysis Tool.
+- **uefi-firmware-parser** `193.0c5fb74` - Parse BIOS/Intel ME/UEFI firmware related structures: Volumes, FileSystems, Files, etc.
+
+---
+
+## KEYLOGGER (3 tools)
+
+- **logkeys** `97.98aac72` - A GNU/Linux keylogger that worked.
+- **python-keylogger** `2.7.3` - Simple keystroke logger.
+- **xspy** `1.0c` - A utility for monitoring keypresses on remote X servers
+
+---
+
+## ANTI FORENSIC (2 tools)
+
+- **ropeadope** `1.1` - A linux log cleaner.
+- **secure-delete** `1.b63d814` - Secure file, disk, swap, memory erasure utilities.
+
+---
+
+## PACKER (2 tools)
+
+- **sherlocked** `1.f190c2b` - Universal script packer-- transforms any type of script into a protected ELF executable, encrypted with anti-debugging.
+- **vbsmin** `v1.1.0.r122.ga9db7a0` - VBScript minifier.
+
+---
+
+## NFC (1 tools)
+
+- **nfcutils** `0.3.2` - Provides a simple 'lsnfc' command that list tags which are in your NFC device field
+
+---
+
+## CHECKER (1 tools)
+
+- **proxybroker2** `548.f807088` - Proxy [Finder
+
+---
+
+## IDS (1 tools)
+
+- **sagan** `2.0.2` - A snort-like log analysis engine.
+
+---
+
+## THREAT MODEL (1 tools)
+
+- **threat-dragon** `2.2.0` - Electron Threat Modelling and diagramming tool.
+
+---
+

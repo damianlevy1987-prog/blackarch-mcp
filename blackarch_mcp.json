@@ -1,0 +1,16 @@
+{
+  "name": "blackarch-tools-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for BlackArch penetration testing tools organized by category",
+  "categories": [
+    "WEBAPP", "RECON", "CRACKER", "SCANNER", "EXPLOITATION", "WINDOWS", 
+    "WIRELESS", "BINARY", "MOBILE", "DEFENSIVE", "SNIFFER", "REVERSING", 
+    "MALWARE", "PROXY", "FINGERPRINT", "CODE_AUDIT", "DOS", "RADIO", 
+    "BLUETOOTH", "VOIP", "SPOOF", "DECOMPILER", "TUNNEL", "DISASSEMBLER", 
+    "HONEYPOT", "STEGO", "DEBUGGER", "DATABASE", "HARDWARE", "AUTOMOBILE", 
+    "DRONE", "FIRMWARE", "KEYLOGGER", "ANTI_FORENSIC", "PACKER", "NFC",
+    "CODE_AUDIT", "CRYPTO", "FORENSIC", "NETWORKING", "AUTOMATION",
+    "BACKDOOR", "CRYPTO", "MISC", "RECON", "SOCIAL", "AUTOMATION",
+    "WORDLIST", "BINARY", "MISC", "CODE_AUDIT", "CRYPTO", "FORENSIC"
+  ]
+}

@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  blackarch-mcp:
+    build: .
+    container_name: blackarch-mcp-server
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./blackarch_full_db.json:/app/blackarch_full_db.json:ro
+    environment:
+      - BLACKARCH_PATH=/app
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import json; open('/app/blackarch_full_db.json').read()"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+  blackarch-web:
+    build: .
+    container_name: blackarch-web
+    ports:
+      - "8081:8080"
+    command: ["python3", "/app/blackarch_web.py"]
+    volumes:
+      - ./blackarch_full_db.json:/app/blackarch_full_db.json:ro
+    environment:
+      - PORT=8080
+    restart: unless-stopped
+
+networks:
+  default:
+    name: blackarch-network

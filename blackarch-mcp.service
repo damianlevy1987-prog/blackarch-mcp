@@ -1,0 +1,28 @@
+[Unit]
+Description=BlackArch MCP Server
+Documentation=https://blackarch.org
+After=network.target
+
+[Service]
+Type=simple
+User=%u
+WorkingDirectory=/run/media/phoenix0/Ventoy/New%20Folder
+ExecStart=/usr/bin/python3 /run/media/phoenix0/Ventoy/New%20Folder/blackarch_mcp_v2.py
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Environment
+Environment=BLACKARCH_PATH=/run/media/phoenix0/Ventoy/New%20Folder
+Environment=PYTHONUNBUFFERED=1
+
+# Security
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadOnlyPaths=/
+ReadWritePaths=/run/media/phoenix0/Ventoy/New%20Folder
+
+[Install]
+WantedBy=multi-user.target
