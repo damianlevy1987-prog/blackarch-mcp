@@ -5,14 +5,13 @@ MCP client configuration and integration guide.
 """
 
 import json
-import os
 from pathlib import Path
 
 class BlackArchMCPConfig:
     """Configuration generator for Claude Code MCP integration"""
     
     def __init__(self):
-        self.tools_path = Path("/run/media/phoenix0/Ventoy/New Folder")
+        self.tools_path = Path(__file__).resolve().parent
         self.config = {
             "mcpServers": {
                 "blackarch": {
@@ -48,28 +47,28 @@ class BlackArchMCPConfig:
     
     def generate_nvim_config(self) -> str:
         """Generate Neovim MCP config"""
-        return """Add to ~/.config/nvim/mcp.json:
-{
-  "mcpServers": {
-    "blackarch": {
+        return f"""Add to ~/.config/nvim/mcp.json:
+{{
+  "mcpServers": {{
+    "blackarch": {{
       "command": "python3",
-      "args": ["/run/media/phoenix0/Ventoy/New Folder/blackarch_mcp_v2.py"]
-    }
-  }
-}
+      "args": ["{self.tools_path / "blackarch_mcp_v2.py"}"]
+    }}
+  }}
+}}
 """
     
     def generate_vscode_config(self) -> str:
         """Generate VS Code MCP config"""
-        return """Add to .vscode/mcp.json:
-{
-  "ervers": {
-    "blackarch": {
+        return f"""Add to .vscode/mcp.json:
+{{
+  "mcpServers": {{
+    "blackarch": {{
       "command": "python3",
-      "args": ["/run/media/phoenix0/Ventoy/New Folder/blackarch_mcp_v2.py"]
-    }
-  }
-}
+      "args": ["{self.tools_path / "blackarch_mcp_v2.py"}"]
+    }}
+  }}
+}}
 """
     
     def test_mcp_connection(self) -> bool:
@@ -110,15 +109,18 @@ def main():
     print("\n📄 For Neovim, add to ~/.config/nvim/mcp.json:")
     print(config.generate_nvim_config())
     
+    print("\n📄 For VS Code, add to .vscode/mcp.json:")
+    print(config.generate_vscode_config())
+    
     # Write config file
-    config_path = Path("/run/media/phoenix0/Ventoy/New Folder/mcp_config.json")
+    config_path = Path(__file__).resolve().parent / "mcp_config.json"
     with open(config_path, 'w') as f:
         json.dump({
             "blackarch": {
                 "server_path": str(config.tools_path / "blackarch_mcp_v2.py"),
                 "database_path": str(config.tools_path / "blackarch_full_db.json"),
                 "protocol": "json-rpc",
-                "version": "1.0"
+                "version": "2.0.1"
             }
         }, f, indent=2)
     

@@ -7,6 +7,10 @@ CYAN='\033[0;36m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
+# Resolve install location; DB overridable via BLACKARCH_DB
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export BLACKARCH_DB="${BLACKARCH_DB:-$BASE_DIR/blackarch_full_db.json}"
+
 # Banner
 show_banner() {
     echo -e "${CYAN}"
@@ -25,8 +29,8 @@ show_banner() {
 # Show categories
 show_categories() {
     python3 << EOF
-import json
-with open("/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json") as f:
+import json, os
+with open(os.environ["BLACKARCH_DB"]) as f:
     data = json.load(f)
     cats = sorted(data['categories'].items(), key=lambda x: -len(x[1]))
     print("\n${GREEN}Available Categories:${NC}")
@@ -44,11 +48,10 @@ search_tools() {
         echo "Usage: blackarch search <query>"
         return
     fi
-    python3 << EOF
-import json
-import sys
-query = "$query".lower()
-with open("/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json") as f:
+    BA_ARG="$query" python3 << EOF
+import json, os
+query = os.environ["BA_ARG"].lower()
+with open(os.environ["BLACKARCH_DB"]) as f:
     data = json.load(f)
     results = []
     for cat, tools in data['categories'].items():
@@ -70,11 +73,10 @@ show_tool() {
         echo "Usage: blackarch tool <name>"
         return
     fi
-    python3 << EOF
-import json
-import sys
-name = "$name".lower()
-with open("/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json") as f:
+    BA_ARG="$name" python3 << EOF
+import json, os
+name = os.environ["BA_ARG"].lower()
+with open(os.environ["BLACKARCH_DB"]) as f:
     data = json.load(f)
     for cat, tools in data['categories'].items():
         for t in tools:
@@ -83,7 +85,7 @@ with open("/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json") as f:
                 print(f"${GREEN}Version:${NC} {t['version']}")
                 print(f"${GREEN}Category:${NC} {cat}")
                 print(f"${GREEN}Description:${NC} {t['description']}")
-                return
+                raise SystemExit
     print("Tool not found")
 EOF
 }
@@ -91,13 +93,13 @@ EOF
 # Random tools
 random_tools() {
     local count="${1:-5}"
-    python3 << EOF
-import json
-import random
-with open("/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json") as f:
+    [[ "$count" =~ ^[0-9]+$ ]] || count=5
+    BA_COUNT="$count" python3 << EOF
+import json, os, random
+with open(os.environ["BLACKARCH_DB"]) as f:
     data = json.load(f)
     all_tools = [(cat, t) for cat, tools in data['categories'].items() for t in tools]
-    for cat, t in random.sample(all_tools, min($count, len(all_tools))):
+    for cat, t in random.sample(all_tools, min(int(os.environ["BA_COUNT"]), len(all_tools))):
         print(f"[{cat:12}] ${GREEN}{t['name']}${NC}")
         print(f"  {t['description'][:60]}...")
 EOF
@@ -106,8 +108,8 @@ EOF
 # Stats
 show_stats() {
     python3 << EOF
-import json
-with open("/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json") as f:
+import json, os
+with open(os.environ["BLACKARCH_DB"]) as f:
     data = json.load(f)
     total = sum(len(v) for v in data['categories'].values())
     cats = len(data['categories'])
@@ -126,7 +128,7 @@ cheat_sheet() {
     local category="$1"
     if [ -z "$category" ]; then
         echo "Usage: blackarch cheat <category>"
-        echo "Categories: scanner, webapp, exploitation, cracker, wireless, forensic, recon, mobile"
+        echo "Categories: scanner, webapp, exploitation, cracker, wireless, recon, forensic"
         return
     fi
     
@@ -166,10 +168,55 @@ cheat_sheet() {
             echo "  airodump-ng wlan0mon"
             echo "  aircrack-ng capture.cap -w wordlist.txt"
             ;;
+        recon)
+            echo -e "${GREEN}THEHARVESTER:${NC}"
+            echo "  theHarvester -d target.com -b google"
+            echo -e "\n${GREEN}AMASS:${NC}"
+            echo "  amass enum -passive -d target.com"
+            echo -e "\n${GREEN}RECON-NG:${NC}"
+            echo "  recon-ng"
+            ;;
+        forensic)
+            echo -e "${GREEN}BINWALK:${NC}"
+            echo "  binwalk firmware.bin"
+            echo -e "\n${GREEN}AUTOPSY:${NC}"
+            echo "  autopsy"
+            echo -e "\n${GREEN}VOLATILITY:${NC}"
+            echo "  volatility -f memory.dmp --profile=Win10x64 pslist"
+            ;;
         *)
-            echo "Available cheat sheets: scanner, webapp, exploitation, cracker, wireless"
+            echo "Available cheat sheets: scanner, webapp, exploitation, cracker, wireless, recon, forensic"
             ;;
     esac
+}
+
+# Search by tags
+search_tags() {
+    if [ $# -eq 0 ]; then
+        echo "Usage: blackarch tags <tag> [tag...]"
+        return
+    fi
+    BA_TAGS="$*" python3 << EOF
+import json, os
+tags = [t.lower() for t in os.environ["BA_TAGS"].split() if t]
+with open(os.environ["BLACKARCH_DB"]) as f:
+    data = json.load(f)
+    results = []
+    for cat, tools in data['categories'].items():
+        for t in tools:
+            hay = (t['name'] + ' ' + t['description'] + ' ' + cat).lower()
+            if any(tag in hay for tag in tags):
+                results.append((cat, t['name'], t['description']))
+                if len(results) >= 30:
+                    break
+        if len(results) >= 30:
+            break
+    for cat, name, desc in results:
+        print(f"[{cat:12}] ${GREEN}{name}${NC}")
+        print(f"  {desc[:70]}...")
+    if not results:
+        print("No results found")
+EOF
 }
 
 # Help
@@ -184,6 +231,7 @@ show_help() {
     echo "  tool <name>       Show tool details"
     echo "  random [n]        Get random tools (default: 5)"
     echo "  stats             Show database statistics"
+    echo "  tags <tag>...     Find tools by tags/keywords"
     echo "  cheat <category>  Show command cheat sheet"
     echo "  web               Open web interface"
     echo "  mcp               Start MCP server"
@@ -205,9 +253,10 @@ case "$1" in
     tool|info) show_tool "$2" ;;
     random) random_tools "$2" ;;
     stats) show_stats ;;
+    tags) shift; search_tags "$@" ;;
     cheat|commands) cheat_sheet "$2" ;;
-    web) python3 /run/media/phoenix0/Ventoy/New\ Folder/blackarch_web.py ;;
-    mcp) python3 /run/media/phoenix0/Ventoy/New\ Folder/blackarch_mcp_v2.py ;;
+    web) python3 "$BASE_DIR/blackarch_web.py" ;;
+    mcp) python3 "$BASE_DIR/blackarch_mcp_v2.py" ;;
     help|--help|-h) show_help ;;
     *) show_help ;;
 esac

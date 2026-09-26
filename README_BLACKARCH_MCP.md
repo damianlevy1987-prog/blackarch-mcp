@@ -7,20 +7,19 @@
 ### Core Database
 | File | Size | Description |
 |------|------|-------------|
-| `blackarch` | 316KB | Original BlackArch package list |
 | `blackarch_full_db.json` | 485KB | Complete JSON database |
 
 ### MCP Server (Model Context Protocol)
 | File | Size | Description |
 |------|------|-------------|
 | `blackarch_mcp_v2.py` | 18KB | **Main MCP server** |
-| `blackarch_client.py` | 7KB | Python MCP client |
+| `blackarch_client.py` | 10KB | Python MCP client |
 | `blackarch_mcp_config.py` | 4KB | Claude Code integration |
 
 ### CLI Tools
 | File | Size | Description |
 |------|------|-------------|
-| `blackarch.sh` | 7KB | Bash CLI (colored output) |
+| `blackarch.sh` | 9KB | Bash CLI (colored output) |
 | `blackarch_api.py` | 5KB | Python API library |
 | `blackarch_assistant.py` | 7KB | Phase-based recommendations |
 | `blackarch_manager.py` | 8KB | Tool installer/manager |
@@ -28,7 +27,7 @@
 ### Web Interface
 | File | Size | Description |
 |------|------|-------------|
-| `blackarch_web.py` | 14KB | HTTP server (port 8080) |
+| `blackarch_web.py` | 16KB | HTTP server (port 8080) |
 
 ### Documentation
 | File | Size | Description |
@@ -43,7 +42,7 @@
 
 ### 1. CLI (Bash)
 ```bash
-cd /run/media/phoenix0/Ventoy/New\ Folder
+cd blackarch-mcp   # the directory you cloned this repo into
 
 # Show stats
 ./blackarch.sh stats
@@ -52,10 +51,10 @@ cd /run/media/phoenix0/Ventoy/New\ Folder
 ./blackarch.sh list
 
 # Search tools
-./blackarch.sh search nmap
+./blackarch.sh search burp
 
 # Show tool details
-./blackarch.sh tool sqlmap
+./blackarch.sh tool burpsuite
 
 # Command cheat sheet
 ./blackarch.sh cheat scanner
@@ -68,8 +67,8 @@ python3 blackarch_mcp_v2.py
 
 # In another terminal - use client
 python3 blackarch_client.py categories
-python3 blackarch_client.py search sqlmap
-python3 blackarch_client.py tool nmap
+python3 blackarch_client.py search burp
+python3 blackarch_client.py tool nuclei
 ```
 
 ### 3. Web Interface
@@ -89,7 +88,7 @@ api = BlackArchAPI()
 print(api.categories())
 
 # Search tools
-for tool in api.search("nmap"):
+for tool in api.search("burp"):
     print(f"{tool.name} - {tool.description}")
 
 # Get stats
@@ -147,7 +146,7 @@ Add to your MCP config:
   "mcpServers": {
     "blackarch": {
       "command": "python3",
-      "args": ["/run/media/phoenix0/Ventoy/New Folder/blackarch_mcp_v2.py"]
+      "args": ["/path/to/blackarch-mcp/blackarch_mcp_v2.py"]
     }
   }
 }
@@ -159,15 +158,15 @@ Add to your MCP config:
 
 ### Environment Variables
 ```bash
-export BLACKARCH_PATH=/run/media/phoenix0/Ventoy/New\ Folder
-export PATH=$PATH:/run/media/phoenix0/Ventoy/New\ Folder
+export BLACKARCH_DB=/path/to/blackarch-mcp/blackarch_full_db.json
+export PATH=$PATH:/path/to/blackarch-mcp
 ```
 
 ### Aliases
 ```bash
 # Add to ~/.bashrc
-alias blackarch='/run/media/phoenix0/Ventoy/New\ Folder/blackarch.sh'
-alias ba='python3 /run/media/phoenix0/Ventoy/New\ Folder/blackarch_client.py'
+alias blackarch='/path/to/blackarch-mcp/blackarch.sh'
+alias ba='python3 /path/to/blackarch-mcp/blackarch_client.py'
 ```
 
 ---
@@ -212,23 +211,32 @@ aircrack-ng capture.cap -w wordlist.txt
 ## 📁 Directory Structure
 
 ```
-/run/media/phoenix0/Ventoy/New Folder/
-├── blackarch                    # Original data
-├── blackarch_full_db.json       # JSON database
-├── blackarch_categorized.md     # Markdown reference
-├── blackarch_cheatsheet.md      # Quick reference
+blackarch-mcp/                     # repo root (clone directory)
+├── blackarch_full_db.json         # JSON database (2,863 tools)
+├── blackarch_categorized.md       # Markdown reference
+├── blackarch_cheatsheet.md        # Quick reference
+├── blackarch_mcp.json             # Category metadata (generated)
 │
-├── blackarch_mcp_v2.py          # MCP Server (main)
-├── blackarch_client.py          # Python client
-├── blackarch_mcp_config.py      # Config generator
+├── blackarch_mcp_v2.py            # MCP Server (main, stdio)
+├── blackarch_mcp_server.py        # MCP Server (legacy v1)
+├── blackarch_client.py            # Python client
+├── blackarch_mcp_config.py        # Config generator
 │
-├── blackarch.sh                 # Bash CLI
-├── blackarch_api.py             # Python API
-├── blackarch_assistant.py       # Phase recommendations
-├── blackarch_manager.py         # Tool installer
-├── blackarch_web.py             # Web interface
+├── blackarch.sh                   # Bash CLI
+├── blackarch_api.py               # Python API
+├── blackarch_assistant.py         # Phase recommendations
+├── blackarch_manager.py           # Tool installer/manager
+├── blackarch_web.py               # Web interface
 │
-└── README_BLACKARCH_MCP.md      # This file
+├── install.sh                     # Installation wizard
+├── blackarch-mcp.service          # systemd unit template
+├── Dockerfile                     # Docker image
+├── docker-compose.yml             # Compose (web UI + stdio server)
+├── test_blackarch.py              # Test suite (16 checks)
+├── verify_mcp.py                  # MCP handshake test (9 checks)
+│
+├── README.md                      # Project README
+└── README_BLACKARCH_MCP.md        # This file
 ```
 
 ---
@@ -248,6 +256,6 @@ python3 -c "from blackarch_api import BlackArchAPI; api = BlackArchAPI(); print(
 
 ---
 
-**Total:** 2,863 tools | 48 categories | 12 files
+**Total:** 2,863 tools | 48 categories | 23 files
 
 *Generated: 2025-05-10*

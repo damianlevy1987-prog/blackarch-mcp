@@ -3,26 +3,22 @@ Description=BlackArch MCP Server
 Documentation=https://blackarch.org
 After=network.target
 
+# Template: install.sh renders @BASE_DIR@ and @USER@ before installing.
 [Service]
 Type=simple
-User=%u
-WorkingDirectory=/run/media/phoenix0/Ventoy/New%20Folder
-ExecStart=/usr/bin/python3 /run/media/phoenix0/Ventoy/New%20Folder/blackarch_mcp_v2.py
+User=@USER@
+WorkingDirectory=@BASE_DIR@
+ExecStart="/usr/bin/python3" "@BASE_DIR@/blackarch_mcp_v2.py"
 Restart=on-failure
 RestartSec=10
 StandardOutput=journal
 StandardError=journal
 
-# Environment
-Environment=BLACKARCH_PATH=/run/media/phoenix0/Ventoy/New%20Folder
+Environment="BLACKARCH_DB=@BASE_DIR@/blackarch_full_db.json"
 Environment=PYTHONUNBUFFERED=1
 
-# Security
 NoNewPrivileges=true
-ProtectSystem=strict
-ProtectHome=true
-ReadOnlyPaths=/
-ReadWritePaths=/run/media/phoenix0/Ventoy/New%20Folder
+ProtectSystem=full
 
 [Install]
 WantedBy=multi-user.target

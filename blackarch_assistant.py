@@ -4,12 +4,11 @@ BlackArch MCP Server - CLI Integration with Claude Code
 Provides tool suggestions and examples based on security phase.
 """
 
-import json
 import sys
 from pathlib import Path
 
 # Import the main MCP server
-sys.path.insert(0, '/run/media/phoenix0/Ventoy/New Folder')
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from blackarch_mcp_v2 import BlackArchMCPServer
 
 class BlackArchAssistant:
@@ -197,6 +196,7 @@ binwalk -e firmware.bin
     
     def _get_all_recommendations(self) -> str:
         stats = self.server.db.get_stats()
+        counts = {c["name"]: c["count"] for c in stats["categories"]}
         return f"""
 ## BLACKARCH TOOLS - COMPLETE REFERENCE
 
@@ -206,44 +206,44 @@ binwalk -e firmware.bin
 
 ### Quick Access by Category:
 
-**Web Security:** {stats['total_tools']} tools
+**Web Security:** {counts['webapp']} tools
 ```json
-{"method":"tools/call","params":{"name":"get_tools","arguments":{"category":"webapp"}}}
+{{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"webapp"}}}}}}
 ```
 
-**Scanning:** {stats['total_tools']} tools
+**Scanning:** {counts['scanner']} tools
 ```json
-{"method":"tools/call","params":{"name":"get_tools","arguments":{"category":"scanner"}}}
+{{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"scanner"}}}}}}
 ```
 
-**Exploitation:** {stats['total_tools']} tools
+**Exploitation:** {counts['exploitation']} tools
 ```json
-{"method":"tools/call","params":{"name":"get_tools","arguments":{"category":"exploitation"}}}
+{{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"exploitation"}}}}}}
 ```
 
-**Password Attacks:** {stats['total_tools']} tools
+**Password Attacks:** {counts['cracker']} tools
 ```json
-{"method":"tools/call","params":{"name":"get_tools","arguments":{"category":"cracker"}}}
+{{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"cracker"}}}}}}
 ```
 
-**Wireless:** {stats['total_tools']} tools
+**Wireless:** {counts['wireless']} tools
 ```json
-{"method":"tools/call","params":{"name":"get_tools","arguments":{"category":"wireless"}}}
+{{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"wireless"}}}}}}
 ```
 
 ### Search for Specific Tool:
 ```json
-{"method":"tools/call","params":{"name":"search","arguments":{"query":"nmap"}}}
+{{"method":"tools/call","params":{{"name":"search","arguments":{{"query":"nmap"}}}}}}
 ```
 
 ### Get Random Tools:
 ```json
-{"method":"tools/call","params":{"name":"random","arguments":{"count":10}}}
+{{"method":"tools/call","params":{{"name":"random","arguments":{{"count":10}}}}}}
 ```
 
 ### Cheat Sheet for Category:
 ```json
-{"method":"tools/call","params":{"name":"cheat_sheet","arguments":{"category":"scanner"}}}
+{{"method":"tools/call","params":{{"name":"cheat_sheet","arguments":{{"category":"scanner"}}}}}}
 ```
 """
 

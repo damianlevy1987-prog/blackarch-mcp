@@ -19,6 +19,7 @@ WORKDIR /app
 
 # Copy application files
 COPY blackarch_mcp_v2.py /app/
+COPY blackarch_web.py /app/
 COPY blackarch_client.py /app/
 COPY blackarch_full_db.json /app/
 
@@ -26,10 +27,10 @@ COPY blackarch_full_db.json /app/
 RUN chmod +x /app/blackarch_mcp_v2.py
 
 # Environment variables
-ENV BLACKARCH_PATH=/app
+ENV BLACKARCH_DB=/app/blackarch_full_db.json
 ENV PYTHONUNBUFFERED=1
 
-# Expose port
+# Web UI listens here (blackarch_web.py); the MCP server itself is stdio-only
 EXPOSE 8080
 
 # Health check

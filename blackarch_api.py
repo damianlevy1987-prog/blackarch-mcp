@@ -6,8 +6,8 @@ Python library for programmatic access to BlackArch tools.
 
 import json
 import subprocess
-from typing import Dict, List, Optional, Any
-from dataclasses import dataclass, asdict
+from typing import Dict, List, Optional
+from dataclasses import dataclass
 from pathlib import Path
 
 @dataclass
@@ -21,17 +21,23 @@ class Tool:
 class BlackArchAPI:
     """Python API for BlackArch tools"""
     
-    def __init__(self, db_path: str = "/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json"):
-        self.db_path = Path(db_path)
+    def __init__(self, db_path: Optional[str] = None):
+        import os
+        default_db = Path(__file__).resolve().parent / "blackarch_full_db.json"
+        self.db_path = Path(db_path or os.environ.get("BLACKARCH_DB") or default_db)
         self._cache: Dict = {}
         self._load_db()
-    
+
     def _load_db(self):
         """Load tool database"""
         if self.db_path.exists():
             with open(self.db_path) as f:
                 data = json.load(f)
                 self._cache = data.get("categories", {})
+        else:
+            import sys
+            print(f"blackarch_api: warning: database not found at {self.db_path}",
+                  file=sys.stderr)
     
     def categories(self) -> List[str]:
         """List all categories"""
@@ -132,13 +138,17 @@ if __name__ == "__main__":
             print(f"Total tools: {s['total_tools']}")
             print(f"Categories: {s['total_categories']}")
         
+        elif cmd == "tags" and len(sys.argv) > 2:
+            for t in api.by_tag(sys.argv[2:]):
+                print(f"[{t.category:12}] {t.name} - {t.description[:60]}")
+        
         elif cmd == "random":
             count = int(sys.argv[2]) if len(sys.argv) > 2 else 5
             for t in api.random(count):
                 print(f"[{t.category:12}] {t.name}")
         
         else:
-            print("Commands: list, search <query>, find <name>, stats, random [count]")
+            print("Commands: list, search <query>, find <name>, tags <tag...>, stats, random [count]")
     else:
         print("BlackArch API v1.0")
-        print("Commands: list, search <query>, find <name>, stats, random [count]")
+        print("Commands: list, search <query>, find <name>, tags <tag...>, stats, random [count]")

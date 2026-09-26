@@ -1,6 +1,6 @@
 # BLACKARCH SECURITY TOOLS CHEAT SHEET
 
-> Complete reference for 2863+ penetration testing tools organized by category.
+> Quick command reference for the top categories of the 2863+ BlackArch tool catalog (detailed per-tool listings live in blackarch_categorized.md).
 
 ---
 

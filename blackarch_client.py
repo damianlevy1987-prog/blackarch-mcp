@@ -7,16 +7,19 @@ Simple client for interacting with the BlackArch MCP server.
 import json
 import subprocess
 import sys
-from typing import Optional, Dict, List, Any
+from pathlib import Path
+from typing import Optional, Dict, List
 
 class BlackArchClient:
     """Client for BlackArch MCP Server"""
     
-    def __init__(self, server_path: str = "blackarch_mcp_v2.py"):
-        self.server_path = server_path
+    def __init__(self, server_path: Optional[str] = None):
+        self.server_path = server_path or str(
+            Path(__file__).resolve().parent / "blackarch_mcp_v2.py"
+        )
     
     def _send_request(self, request: dict) -> dict:
-        """Send JSON-RPC request to MCP server"""
+        """Send JSON-RPC request to MCP server, unwrapping content-array results."""
         try:
             result = subprocess.run(
                 ['python3', self.server_path],
@@ -26,11 +29,19 @@ class BlackArchClient:
                 timeout=30
             )
             
-            # Parse last JSON line (skip banner)
             lines = result.stdout.strip().split('\n')
             for line in reversed(lines):
                 if line.strip().startswith('{'):
-                    return json.loads(line)
+                    response = json.loads(line)
+                    res = response.get("result")
+                    # MCP-conformant tool results: {content:[{type,text}]}
+                    if isinstance(res, dict) and isinstance(res.get("content"), list) and res["content"]:
+                        text = res["content"][0].get("text", "")
+                        try:
+                            response["result"] = json.loads(text)
+                        except json.JSONDecodeError:
+                            response["result"] = {"text": text}
+                    return response
             
             return {"error": "No JSON response"}
         except subprocess.TimeoutExpired:
@@ -121,6 +132,16 @@ class BlackArchClient:
         })
         return response.get("result", {})
 
+    def by_tags(self, tags: List[str]) -> List[Dict]:
+        """Find tools matching any of the given tags"""
+        response = self._send_request({
+            "jsonrpc": "2.0",
+            "id": 9,
+            "method": "tools/call",
+            "params": {"name": "by_tags", "arguments": {"tags": tags}}
+        })
+        return response.get("result", {}).get("tools", [])
+
 def print_banner():
     print("""
     ╔═══════════════════════════════════════════════════════╗
@@ -170,8 +191,42 @@ def main():
             print(f"   Total Tools: {stats.get('total_tools', 'N/A')}")
             print(f"   Categories: {stats.get('total_categories', 'N/A')}")
         
+        elif cmd == "cheat" and len(sys.argv) > 2:
+            sheet = client.get_cheat_sheet(sys.argv[2])
+            print(f"\n📜 Cheat sheet for '{sys.argv[2]}':\n")
+            for entry in sheet.get("commands", []):
+                print(f"  {entry['command']}")
+                print(f"    {entry['description']}")
+            for tool in sheet.get("suggested_tools", [])[:10]:
+                print(f"  [{tool.get('category', 'unknown'):12}] {tool['name']}")
+                print(f"    {tool['description'][:70]}")
+            if not sheet.get("commands") and not sheet.get("suggested_tools"):
+                print("  No cheat sheet available for this category")
+
+        elif cmd == "tags" and len(sys.argv) > 2:
+            tools = client.by_tags(sys.argv[2:])
+            print(f"\n🏷  Tools matching tags {sys.argv[2:]}:\n")
+            for t in tools[:20]:
+                print(f"  [{t.get('category', 'unknown'):12}] {t['name']}")
+                print(f"    {t['description'][:70]}")
+            if len(tools) > 20:
+                print(f"\n  ... and {len(tools)-20} more")
+            if not tools:
+                print("  No tools matched")
+
+        elif cmd == "tools" and len(sys.argv) > 2:
+            tools = client.get_tools(sys.argv[2])
+            print(f"\n🛠  Tools in '{sys.argv[2]}' ({len(tools)}):\n")
+            for t in tools:
+                print(f"  {t['name']:20} {t['description'][:60]}")
+            if not tools:
+                print("  No tools in this category")
+
         elif cmd == "random":
-            count = int(sys.argv[2]) if len(sys.argv) > 2 else 5
+            try:
+                count = int(sys.argv[2]) if len(sys.argv) > 2 else 5
+            except ValueError:
+                count = 5
             tools = client.get_random(count=count)
             print(f"\n🎲 Random Tools:\n")
             for t in tools:
@@ -188,17 +243,23 @@ def print_help():
     
     Commands:
       categories              List all categories
+      tools <category>        List tools in a category
       search <query>          Search tools
       tool <name>             Get tool details
       stats                   Database statistics
       random [count]          Random tools (default: 5)
-      
+      cheat <category>        Category cheat sheet
+      tags <tag> [tag...]     Find tools by tags/keywords
+
     Examples:
       python3 blackarch_client.py categories
+      python3 blackarch_client.py tools scanner
       python3 blackarch_client.py search sqlmap
       python3 blackarch_client.py tool nmap
       python3 blackarch_client.py stats
       python3 blackarch_client.py random 10
+      python3 blackarch_client.py cheat scanner
+      python3 blackarch_client.py tags recon bruteforce
     """)
 
 if __name__ == "__main__":

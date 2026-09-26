@@ -2,7 +2,7 @@
 
 **2,863+ security tools** organized across **48 categories** with MCP server, CLI, Web UI, and Python API.
 
-[![Tests](https://img.shields.io/badge/tests-16%20passed-brightgreen)](https://github.com/damianlevy1987-prog/blackarch-mcp)
+[![CI](https://github.com/damianlevy1987-prog/blackarch-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/damianlevy1987-prog/blackarch-mcp/actions/workflows/ci.yml)
 [![Tools](https://img.shields.io/badge/tools-2863-blue)](https://github.com/damianlevy1987-prog/blackarch-mcp)
 [![Categories](https://img.shields.io/badge/categories-48-orange)](https://github.com/damianlevy1987-prog/blackarch-mcp)
 
@@ -12,7 +12,7 @@
 - ✅ **CLI Tools** - Bash CLI with colored output
 - ✅ **Python API** - Full Python library
 - ✅ **Web Interface** - HTTP server on port 8080
-- ✅ **Test Suite** - 16/16 tests passing
+- ✅ **Test Suite** - 21/21 tests passing
 - ✅ **Docker Support** - Ready for containerization
 
 ---
@@ -27,12 +27,16 @@ cd blackarch-mcp
 python3 blackarch_mcp_v2.py
 ```
 
-### MCP Server Endpoints
+### MCP Protocol Methods (stdio JSON-RPC)
+
+The server speaks JSON-RPC 2.0 over stdin/stdout (no HTTP listener). Send one
+request per line; responses arrive as one JSON line each.
 
 | Method | Description |
 |--------|-------------|
+| `initialize` | Protocol handshake |
 | `tools/list` | List all available tools |
-| `tools/call` | Execute a tool |
+| `tools/call` | Execute a tool (results returned in the MCP `content` array) |
 
 ### Available Tools
 
@@ -93,7 +97,7 @@ python3 blackarch_mcp_v2.py
 
 ```bash
 python3 test_blackarch.py
-# 16/16 tests passed
+# 21/21 tests passed
 ```
 
 ---
@@ -101,12 +105,15 @@ python3 test_blackarch.py
 ## 🐳 Docker
 
 ```bash
-# Build and run
-docker-compose up -d
+# Build and start the web UI (http://localhost:8081) + image
+docker compose up -d
 
-# Or build manually
+# Or run the stdio MCP server interactively (JSON-RPC on stdin)
 docker build -t blackarch-mcp .
-docker run -p 8080:8080 blackarch-mcp
+docker run -i blackarch-mcp
+
+# Or run the web UI alone
+docker run -p 8080:8080 blackarch-mcp python3 /app/blackarch_web.py
 ```
 
 ---

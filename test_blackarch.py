@@ -7,20 +7,21 @@ Validates MCP server functionality.
 import json
 import subprocess
 import sys
-from typing import Dict, List, Any
 
 class BlackArchTestRunner:
     """Test runner for BlackArch MCP server"""
     
     def __init__(self):
-        self.server_path = "/run/media/phoenix0/Ventoy/New Folder/blackarch_mcp_v2.py"
-        self.db_path = "/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json"
+        from pathlib import Path
+        base = Path(__file__).resolve().parent
+        self.server_path = str(base / "blackarch_mcp_v2.py")
+        self.db_path = str(base / "blackarch_full_db.json")
         self.tests_passed = 0
         self.tests_failed = 0
         self.tests_run = 0
     
     def send_request(self, request: dict) -> dict:
-        """Send MCP request to server"""
+        """Send MCP request to server, unwrapping the MCP content array."""
         try:
             result = subprocess.run(
                 ['python3', self.server_path],
@@ -32,7 +33,18 @@ class BlackArchTestRunner:
             lines = result.stdout.strip().split('\n')
             for line in reversed(lines):
                 if line.strip().startswith('{'):
-                    return json.loads(line)
+                    response = json.loads(line)
+                    res = response.get("result")
+                    # MCP-conformant tool results arrive as {content:[{type,text}]}
+                    if isinstance(res, dict) and isinstance(res.get("content"), list) and res["content"]:
+                        text = res["content"][0].get("text", "")
+                        try:
+                            response["result"] = json.loads(text)
+                        except json.JSONDecodeError:
+                            response["result"] = {"text": text}
+                        if res.get("isError"):
+                            response["error"] = text
+                    return response
             return {"error": "No JSON response"}
         except subprocess.TimeoutExpired:
             return {"error": "Timeout"}
@@ -152,7 +164,53 @@ class BlackArchTestRunner:
         })
         result = response.get("result", {})
         self.test("Returns cheat sheet", "category" in result or "commands" in result or "error" not in response)
-        
+
+        # Test 10: by_tags
+        print("\n[10] by_tags Tool")
+        response = self.send_request({
+            "jsonrpc": "2.0", "id": 9,
+            "method": "tools/call",
+            "params": {"name": "by_tags", "arguments": {"tags": ["bruteforce"]}}
+        })
+        tools = response.get("result", {}).get("tools", [])
+        self.test("Returns tag-matched tools", len(tools) > 0)
+
+        response = self.send_request({
+            "jsonrpc": "2.0", "id": 10,
+            "method": "tools/call",
+            "params": {"name": "by_tags", "arguments": {"tags": "recon"}}
+        })
+        result = response.get("result", {})
+        self.test("Rejects bare-string tags",
+                  result.get("text", "") != "" or "error" in response or result.get("isError"))
+
+        # Test 11: negative paths
+        print("\n[11] Negative Paths")
+        response = self.send_request({
+            "jsonrpc": "2.0", "id": 11,
+            "method": "tools/call",
+            "params": {"name": "cheat_sheet", "arguments": {"category": "no-such-category"}}
+        })
+        result = response.get("result", {})
+        self.test("Unknown cheat_sheet category returns error", "error" in result)
+
+        response = self.send_request({
+            "jsonrpc": "2.0", "id": 12,
+            "method": "tools/call",
+            "params": {"name": "get_tool", "arguments": {"name": "zzz-no-such-tool-zzz"}}
+        })
+        tool = response.get("result", {}).get("tool")
+        self.test("Unknown get_tool returns null", tool is None)
+
+        response = self.send_request({
+            "jsonrpc": "2.0", "id": 13,
+            "method": "tools/call",
+            "params": {"name": "search", "arguments": {"query": ""}}
+        })
+        result = response.get("result", {})
+        self.test("Empty search query returns error",
+                  result.get("text", "") != "" or "error" in response)
+
         # Print summary
         print(f"""
 ╔═══════════════════════════════════════════════════════════╗

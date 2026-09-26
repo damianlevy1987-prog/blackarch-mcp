@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 """
-BlackArch Tools MCP Server
-Provides access to all BlackArch penetration testing tools organized by category.
+Legacy BlackArch Tools MCP Server (v1) — NOT the default entrypoint.
+
+The maintained stdio entrypoint is blackarch_mcp_v2.py (registered in
+MiMoCode/MCP host configs and used by blackarch_client.py and
+blackarch_web.py). This v1 keeps its own nonstandard tool names
+(search_tools, random_tool, get_stats) for backward compatibility with
+historical consumers; new integrations must wire v2.
 """
 
 import json
@@ -23,11 +28,24 @@ class BlackArchMCPServer:
         self._load_tools()
     
     def _load_tools(self):
-        """Load and categorize tools from blackarch file"""
-        blackarch_file = Path("/run/media/phoenix0/Ventoy/New Folder/blackarch")
-        
+        """Load tools: script-relative full DB first, raw TSV second, embedded last."""
+        base = Path(__file__).resolve().parent
+        db_json = Path(os.environ.get("BLACKARCH_DB") or base / "blackarch_full_db.json")
+
+        if db_json.exists():
+            with open(db_json, "r") as f:
+                data = json.load(f)
+            for cat, tools in data.get("categories", {}).items():
+                self.tools[cat] = [
+                    Tool(name=t["name"], version=t["version"],
+                         description=t["description"], category=cat)
+                    for t in tools
+                ]
+            return
+
+        blackarch_file = base / "blackarch"
         if not blackarch_file.exists():
-            # Use embedded data if file not found
+            # Use embedded data if no database found
             self._load_embedded_data()
             return
             
@@ -268,14 +286,35 @@ class BlackArchMCPServer:
         return {cat: len(tools) for cat, tools in self.tools.items()}
 
 # MCP Protocol Implementation
-def handle_mcp_request(request: dict) -> dict:
-    """Handle MCP protocol requests"""
-    server = BlackArchMCPServer()
+# Cached server instance: rebuilding per request reloads the 488KB DB every call.
+_server: Optional[BlackArchMCPServer] = None
+
+def handle_mcp_request(request: dict) -> Optional[dict]:
+    """Handle MCP protocol requests. Returns None for notifications."""
+    global _server
+    if _server is None:
+        _server = BlackArchMCPServer()
+    server = _server
     method = request.get("method", "")
-    params = request.get("params", {})
-    
+    params = request.get("params") or {}
+
+    if "id" not in request:
+        return None
+
     response = {"jsonrpc": "2.0", "id": request.get("id")}
-    
+
+    if method == "initialize":
+        response["result"] = {
+            "protocolVersion": params.get("protocolVersion", "2024-11-05"),
+            "capabilities": {"tools": {"listChanged": False}},
+            "serverInfo": {"name": "blackarch-mcp", "version": "1.0.1"},
+        }
+        return response
+
+    if method == "ping":
+        response["result"] = {}
+        return response
+
     if method == "tools/list":
         response["result"] = {
             "tools": [
@@ -336,68 +375,72 @@ def handle_mcp_request(request: dict) -> dict:
         }
     elif method == "tools/call":
         tool_name = params.get("name", "")
-        tool_args = params.get("arguments", {})
-        
+        tool_args = params.get("arguments", {}) or {}
+
         if tool_name == "get_categories":
-            response["result"] = {"categories": server.get_all_categories()}
+            payload = {"categories": server.get_all_categories()}
         elif tool_name == "get_tools":
-            response["result"] = {"tools": server.get_tools_by_category(tool_args.get("category", ""))}
+            payload = {"tools": server.get_tools_by_category(tool_args.get("category", ""))}
         elif tool_name == "search_tools":
-            response["result"] = {"results": server.search_tools(tool_args.get("query", ""))}
+            payload = {"results": server.search_tools(tool_args.get("query", ""))}
         elif tool_name == "get_tool":
-            response["result"] = {"tool": server.get_tool_by_name(tool_args.get("name", ""))}
+            payload = {"tool": server.get_tool_by_name(tool_args.get("name", ""))}
         elif tool_name == "random_tool":
-            response["result"] = {"tool": server.get_random_tool(tool_args.get("category"))}
+            payload = {"tool": server.get_random_tool(tool_args.get("category"))}
         elif tool_name == "get_stats":
-            response["result"] = {"stats": server.get_tools_count()}
+            payload = {"stats": server.get_tools_count()}
         else:
             response["error"] = {"code": -32601, "message": f"Unknown tool: {tool_name}"}
-    
+            payload = None
+
+        if payload is not None:
+            # MCP-spec tool result: content array of text items.
+            response["result"] = {
+                "content": [{"type": "text", "text": json.dumps(payload)}]
+            }
+
     return response
 
 if __name__ == "__main__":
     import sys
     
-    # Load full tool database
+    # Load full tool database once; reuse it for request handling
     server = BlackArchMCPServer()
+    _server = server
     
-    print("""
-    ╔═══════════════════════════════════════════════════════════════╗
-    ║                                                               ║
-    ║   ███████╗██╗  ██╗ ██████╗ ██████╗ ███╗   ██╗███████╗██╗   ██╗  ║
-    ║   ██╔════╝██║  ██║██╔═══██╗██╔══██╗████╗  ██║██╔════╝██║   ██║  ║
-    ║   ███████╗███████║██║   ██║██████╔╝██╔██╗ ██║███████╗██║   ██║  ║
-    ║   ╚════██║██╔══██║██║   ██║██╔══██╗██║╚██╗██║╚════██║██║   ██║  ║
-    ║   ███████║██║  ██║╚██████╔╝██║  ██║██║ ╚████║███████║╚██████╔╝  ║
-    ║   ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝ ╚═════╝   ║
-    ║                                                               ║
-    ║            BLACKARCH TOOLS MCP SERVER v1.0                   ║
-    ║                                                               ║
-    ╚═══════════════════════════════════════════════════════════════╝
-    """)
-    
-    print(f"Loaded {sum(len(v) for v in server.tools.values())} tools across {len(server.tools)} categories")
-    print("\nAvailable Categories:")
-    for cat in sorted(server.tools.keys()):
-        print(f"  • {cat.upper()} ({len(server.tools[cat])} tools)")
-    
-    print("\nStarting MCP Server on stdin/stdout...")
-    print("Waiting for MCP requests...\n")
-    
+    # stdout carries JSON-RPC only; all logs go to stderr
+    print(f"blackarch-mcp v1.0.1 — {sum(len(v) for v in server.tools.values())} tools "
+          f"across {len(server.tools)} categories; listening on stdin", file=sys.stderr, flush=True)
+
     # MCP server loop
     while True:
         try:
             line = sys.stdin.readline()
             if not line:
                 break
-            
-            request = json.loads(line.strip())
-            response = handle_mcp_request(request)
-            print(json.dumps(response), flush=True)
-        except json.JSONDecodeError:
-            pass
-        except Exception as e:
-            print(json.dumps({
-                "jsonrpc": "2.0",
-                "error": {"code": -32603, "message": str(e)}
-            }), flush=True)
+
+            try:
+                request = json.loads(line.strip())
+            except json.JSONDecodeError:
+                print(json.dumps({
+                    "jsonrpc": "2.0",
+                    "id": None,
+                    "error": {"code": -32700, "message": "Parse error"}
+                }), flush=True)
+                continue
+
+            try:
+                response = handle_mcp_request(request)
+            except Exception as e:
+                if "id" not in request:
+                    continue
+                response = {
+                    "jsonrpc": "2.0",
+                    "id": request.get("id"),
+                    "error": {"code": -32603, "message": str(e)}
+                }
+
+            if response is not None:
+                print(json.dumps(response), flush=True)
+        except KeyboardInterrupt:
+            break

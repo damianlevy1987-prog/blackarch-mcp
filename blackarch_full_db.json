@@ -3787,7 +3787,7 @@
       {
         "name": "resourcehacker",
         "version": "5.1.8",
-        "description": "Resource compiler and decompiler for Windows\u00ae applications."
+        "description": "Resource compiler and decompiler for Windows® applications."
       },
       {
         "name": "roadlib",
@@ -5614,7 +5614,7 @@
       {
         "name": "exploit-db",
         "version": "1.6",
-        "description": "The Exploit Database (EDB) \u2013 an ultimate archive of exploits and vulnerable software - A collection of hacks"
+        "description": "The Exploit Database (EDB) – an ultimate archive of exploits and vulnerable software - A collection of hacks"
       },
       {
         "name": "exploitpack",
@@ -9211,7 +9211,7 @@
       {
         "name": "grokevt",
         "version": "0.5.0",
-        "description": "A collection of scripts built for reading Windows\u00ae NT/2K/XP/2K eventlog files."
+        "description": "A collection of scripts built for reading Windows® NT/2K/XP/2K eventlog files."
       },
       {
         "name": "guymager",
@@ -10317,7 +10317,7 @@
       {
         "name": "boofuzz",
         "version": "v0.4.2.r34.gd9b0934",
-        "description": ""
+        "description": "Network protocol fuzzer, community fork of the sulley framework"
       },
       {
         "name": "browser-fuzzer",
@@ -13031,7 +13031,7 @@
       {
         "name": "chainsaw",
         "version": "v2.7.3.r6.g5d908fd",
-        "description": "A powerful \u2018first-response\u2019 capability to quickly identify threats within Windows event logs."
+        "description": "A powerful ‘first-response’ capability to quickly identify threats within Windows event logs."
       },
       {
         "name": "chkrootkit",
@@ -13743,7 +13743,7 @@
       {
         "name": "getsids",
         "version": "0.0.1",
-        "description": "Getsids tries to enumerate Oracle Sids by sending the services command to the Oracle TNS listener. Like doing \u2018lsnrctl service\u2019."
+        "description": "Getsids tries to enumerate Oracle Sids by sending the services command to the Oracle TNS listener. Like doing ‘lsnrctl service’."
       },
       {
         "name": "metacoretex",
@@ -14373,13 +14373,6 @@
         "description": "Provides a simple 'lsnfc' command that list tags which are in your NFC device field"
       }
     ],
-    "Checker": [
-      {
-        "name": "proxybroker2",
-        "version": "548.f807088",
-        "description": "Proxy [Finder"
-      }
-    ],
     "anti_forensic": [
       {
         "name": "ropeadope",
@@ -14416,6 +14409,13 @@
         "name": "threat-dragon",
         "version": "2.2.0",
         "description": "Electron Threat Modelling and diagramming tool."
+      }
+    ],
+    "checker": [
+      {
+        "name": "proxybroker2",
+        "version": "548.f807088",
+        "description": "Proxy [Finder"
       }
     ]
   }

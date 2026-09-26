@@ -1980,7 +1980,7 @@
 - **ajpfuzzer** `0.6` - A command-line fuzzer for the Apache JServ Protocol (ajp13).
 - **backfuzz** `1.b0648de` - A network protocol fuzzing toolkit.
 - **bfuzz** `60.fdaefc0` - Input based fuzzer tool for browsers.
-- **boofuzz** `v0.4.2.r34.gd9b0934` - 
+- **boofuzz** `v0.4.2.r34.gd9b0934` - Network protocol fuzzer, community fork of the sulley framework
 - **browser-fuzzer** `3` - Browser Fuzzer 3
 - **bunny** `0.93` - A closed loop, high-performance, general purpose protocol-blind fuzzer for C programs.
 - **choronzon** `4.d702c31` - An evolutionary knowledge-based fuzzer.

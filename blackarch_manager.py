@@ -7,6 +7,9 @@ Installs, configures, and provides quick access to all BlackArch tools.
 import subprocess
 import sys
 import os
+from pathlib import Path
+
+BASE = Path(__file__).resolve().parent
 
 class BlackArchInstaller:
     """Installer and configuration manager for BlackArch tools"""
@@ -81,6 +84,9 @@ class BlackArchInstaller:
                 f"dirb http://{target}",
                 f"sqlmap -u http://{target} --batch",
             ]
+        else:
+            print(f"Unknown scan type: {scan_type!r} (valid: basic, full, web)")
+            return
         
         for cmd in commands:
             print(f"\n→ Running: {cmd}")
@@ -176,10 +182,10 @@ nuclei -u http://$target
             
             elif choice == '6':
                 print("\nStarting MCP Server...")
-                os.system("python3 blackarch_mcp_v2.py")
+                os.system(f"python3 {BASE / 'blackarch_mcp_v2.py'}")
             
             elif choice == '7':
-                os.system("python3 blackarch_client.py")
+                os.system(f"python3 {BASE / 'blackarch_client.py'}")
             
             elif choice == '8':
                 print("\nGoodbye!")
@@ -202,16 +208,16 @@ def main():
                 print("Usage: python3 blackarch_manager.py scan <target> <basic|full|web>")
         
         elif cmd == "mcp":
-            os.system("python3 blackarch_mcp_v2.py")
+            os.system(f"python3 {BASE / 'blackarch_mcp_v2.py'}")
         
         elif cmd == "client":
-            os.system("python3 blackarch_client.py")
+            os.system(f"python3 {BASE / 'blackarch_client.py'}")
         
         elif cmd == "web":
-            os.system("python3 blackarch_web.py")
+            os.system(f"python3 {BASE / 'blackarch_web.py'}")
         
         elif cmd == "assistant":
-            os.system("python3 blackarch_assistant.py")
+            os.system(f"python3 {BASE / 'blackarch_assistant.py'}")
         
         else:
             print(f"Unknown command: {cmd}")
