@@ -322,8 +322,11 @@ class BlackArchMCPServer:
                 )}
             
             elif name == "search":
+                query = args.get("query", "")
+                if not isinstance(query, str) or not query.strip():
+                    return {"error": "search requires a non-empty 'query' string"}
                 return {"results": self.db.search_tools(
-                    args.get("query", ""),
+                    query,
                     args.get("limit", 50)
                 )}
             
@@ -340,7 +343,12 @@ class BlackArchMCPServer:
                 return self.db.get_stats()
             
             elif name == "by_tags":
-                return {"tools": self.db.get_tools_by_tag(args.get("tags", []))}
+                tags = args.get("tags", [])
+                if (not isinstance(tags, list)
+                        or not tags
+                        or not all(isinstance(t, str) for t in tags)):
+                    return {"error": "by_tags requires 'tags' as a non-empty array of strings"}
+                return {"tools": self.db.get_tools_by_tag(tags)}
             
             elif name == "cheat_sheet":
                 return self._generate_cheatsheet(args.get("category", ""))

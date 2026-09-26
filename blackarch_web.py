@@ -5,13 +5,14 @@ A simple web interface for the BlackArch MCP server.
 """
 
 import json
+import os
 import subprocess
 import http.server
 import socketserver
 import urllib.parse
 from pathlib import Path
 
-PORT = 8080
+PORT = int(os.environ.get("PORT", 8080))
 
 class BlackArchHandler(http.server.SimpleHTTPRequestHandler):
     """HTTP handler for BlackArch MCP interface"""
@@ -217,6 +218,7 @@ class BlackArchHandler(http.server.SimpleHTTPRequestHandler):
                 <li><strong>search</strong> - Search by name/description</li>
                 <li><strong>get_tool</strong> - Get specific tool info</li>
                 <li><strong>random</strong> - Get random tools</li>
+                <li><strong>by_tags</strong> - Find tools by tags/keywords</li>
                 <li><strong>stats</strong> - Database statistics</li>
                 <li><strong>cheat_sheet</strong> - Common commands</li>
             </ul>

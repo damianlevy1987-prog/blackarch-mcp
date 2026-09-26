@@ -190,6 +190,35 @@ cheat_sheet() {
     esac
 }
 
+# Search by tags
+search_tags() {
+    if [ $# -eq 0 ]; then
+        echo "Usage: blackarch tags <tag> [tag...]"
+        return
+    fi
+    BA_TAGS="$*" python3 << EOF
+import json, os
+tags = [t.lower() for t in os.environ["BA_TAGS"].split() if t]
+with open(os.environ["BLACKARCH_DB"]) as f:
+    data = json.load(f)
+    results = []
+    for cat, tools in data['categories'].items():
+        for t in tools:
+            hay = (t['name'] + ' ' + t['description'] + ' ' + cat).lower()
+            if any(tag in hay for tag in tags):
+                results.append((cat, t['name'], t['description']))
+                if len(results) >= 30:
+                    break
+        if len(results) >= 30:
+            break
+    for cat, name, desc in results:
+        print(f"[{cat:12}] ${GREEN}{name}${NC}")
+        print(f"  {desc[:70]}...")
+    if not results:
+        print("No results found")
+EOF
+}
+
 # Help
 show_help() {
     echo -e "${CYAN}BlackArch Tools CLI${NC}"
@@ -202,6 +231,7 @@ show_help() {
     echo "  tool <name>       Show tool details"
     echo "  random [n]        Get random tools (default: 5)"
     echo "  stats             Show database statistics"
+    echo "  tags <tag>...     Find tools by tags/keywords"
     echo "  cheat <category>  Show command cheat sheet"
     echo "  web               Open web interface"
     echo "  mcp               Start MCP server"
@@ -223,6 +253,7 @@ case "$1" in
     tool|info) show_tool "$2" ;;
     random) random_tools "$2" ;;
     stats) show_stats ;;
+    tags) shift; search_tags "$@" ;;
     cheat|commands) cheat_sheet "$2" ;;
     web) python3 "$BASE_DIR/blackarch_web.py" ;;
     mcp) python3 "$BASE_DIR/blackarch_mcp_v2.py" ;;

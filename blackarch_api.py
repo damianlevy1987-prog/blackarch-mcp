@@ -6,8 +6,8 @@ Python library for programmatic access to BlackArch tools.
 
 import json
 import subprocess
-from typing import Dict, List, Optional, Any
-from dataclasses import dataclass, asdict
+from typing import Dict, List, Optional
+from dataclasses import dataclass
 from pathlib import Path
 
 @dataclass
@@ -138,13 +138,17 @@ if __name__ == "__main__":
             print(f"Total tools: {s['total_tools']}")
             print(f"Categories: {s['total_categories']}")
         
+        elif cmd == "tags" and len(sys.argv) > 2:
+            for t in api.by_tag(sys.argv[2:]):
+                print(f"[{t.category:12}] {t.name} - {t.description[:60]}")
+        
         elif cmd == "random":
             count = int(sys.argv[2]) if len(sys.argv) > 2 else 5
             for t in api.random(count):
                 print(f"[{t.category:12}] {t.name}")
         
         else:
-            print("Commands: list, search <query>, find <name>, stats, random [count]")
+            print("Commands: list, search <query>, find <name>, tags <tag...>, stats, random [count]")
     else:
         print("BlackArch API v1.0")
-        print("Commands: list, search <query>, find <name>, stats, random [count]")
+        print("Commands: list, search <query>, find <name>, tags <tag...>, stats, random [count]")

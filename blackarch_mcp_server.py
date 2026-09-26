@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 """
-BlackArch Tools MCP Server
-Provides access to all BlackArch penetration testing tools organized by category.
+Legacy BlackArch Tools MCP Server (v1) — NOT the default entrypoint.
+
+The maintained stdio entrypoint is blackarch_mcp_v2.py (registered in
+MiMoCode/MCP host configs and used by blackarch_client.py and
+blackarch_web.py). This v1 keeps its own nonstandard tool names
+(search_tools, random_tool, get_stats) for backward compatibility with
+historical consumers; new integrations must wire v2.
 """
 
 import json

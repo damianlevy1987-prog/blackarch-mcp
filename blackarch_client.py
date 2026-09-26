@@ -8,7 +8,7 @@ import json
 import subprocess
 import sys
 from pathlib import Path
-from typing import Optional, Dict, List, Any
+from typing import Optional, Dict, List
 
 class BlackArchClient:
     """Client for BlackArch MCP Server"""
@@ -214,8 +214,19 @@ def main():
             if not tools:
                 print("  No tools matched")
 
+        elif cmd == "tools" and len(sys.argv) > 2:
+            tools = client.get_tools(sys.argv[2])
+            print(f"\n🛠  Tools in '{sys.argv[2]}' ({len(tools)}):\n")
+            for t in tools:
+                print(f"  {t['name']:20} {t['description'][:60]}")
+            if not tools:
+                print("  No tools in this category")
+
         elif cmd == "random":
-            count = int(sys.argv[2]) if len(sys.argv) > 2 else 5
+            try:
+                count = int(sys.argv[2]) if len(sys.argv) > 2 else 5
+            except ValueError:
+                count = 5
             tools = client.get_random(count=count)
             print(f"\n🎲 Random Tools:\n")
             for t in tools:
@@ -232,6 +243,7 @@ def print_help():
     
     Commands:
       categories              List all categories
+      tools <category>        List tools in a category
       search <query>          Search tools
       tool <name>             Get tool details
       stats                   Database statistics
@@ -241,6 +253,7 @@ def print_help():
 
     Examples:
       python3 blackarch_client.py categories
+      python3 blackarch_client.py tools scanner
       python3 blackarch_client.py search sqlmap
       python3 blackarch_client.py tool nmap
       python3 blackarch_client.py stats

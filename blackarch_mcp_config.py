@@ -5,7 +5,6 @@ MCP client configuration and integration guide.
 """
 
 import json
-import os
 from pathlib import Path
 
 class BlackArchMCPConfig:
@@ -110,6 +109,9 @@ def main():
     print("\n📄 For Neovim, add to ~/.config/nvim/mcp.json:")
     print(config.generate_nvim_config())
     
+    print("\n📄 For VS Code, add to .vscode/mcp.json:")
+    print(config.generate_vscode_config())
+    
     # Write config file
     config_path = Path(__file__).resolve().parent / "mcp_config.json"
     with open(config_path, 'w') as f:
@@ -118,7 +120,7 @@ def main():
                 "server_path": str(config.tools_path / "blackarch_mcp_v2.py"),
                 "database_path": str(config.tools_path / "blackarch_full_db.json"),
                 "protocol": "json-rpc",
-                "version": "1.0"
+                "version": "2.0.1"
             }
         }, f, indent=2)
     

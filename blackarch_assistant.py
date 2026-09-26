@@ -4,7 +4,6 @@ BlackArch MCP Server - CLI Integration with Claude Code
 Provides tool suggestions and examples based on security phase.
 """
 
-import json
 import sys
 from pathlib import Path
 
@@ -197,6 +196,7 @@ binwalk -e firmware.bin
     
     def _get_all_recommendations(self) -> str:
         stats = self.server.db.get_stats()
+        counts = {c["name"]: c["count"] for c in stats["categories"]}
         return f"""
 ## BLACKARCH TOOLS - COMPLETE REFERENCE
 
@@ -206,27 +206,27 @@ binwalk -e firmware.bin
 
 ### Quick Access by Category:
 
-**Web Security:** {stats['total_tools']} tools
+**Web Security:** {counts['webapp']} tools
 ```json
 {{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"webapp"}}}}}}
 ```
 
-**Scanning:** {stats['total_tools']} tools
+**Scanning:** {counts['scanner']} tools
 ```json
 {{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"scanner"}}}}}}
 ```
 
-**Exploitation:** {stats['total_tools']} tools
+**Exploitation:** {counts['exploitation']} tools
 ```json
 {{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"exploitation"}}}}}}
 ```
 
-**Password Attacks:** {stats['total_tools']} tools
+**Password Attacks:** {counts['cracker']} tools
 ```json
 {{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"cracker"}}}}}}
 ```
 
-**Wireless:** {stats['total_tools']} tools
+**Wireless:** {counts['wireless']} tools
 ```json
 {{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"wireless"}}}}}}
 ```
