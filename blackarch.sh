@@ -7,6 +7,10 @@ CYAN='\033[0;36m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
+# Resolve install location; DB overridable via BLACKARCH_DB
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export BLACKARCH_DB="${BLACKARCH_DB:-$BASE_DIR/blackarch_full_db.json}"
+
 # Banner
 show_banner() {
     echo -e "${CYAN}"
@@ -25,8 +29,8 @@ show_banner() {
 # Show categories
 show_categories() {
     python3 << EOF
-import json
-with open("/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json") as f:
+import json, os
+with open(os.environ["BLACKARCH_DB"]) as f:
     data = json.load(f)
     cats = sorted(data['categories'].items(), key=lambda x: -len(x[1]))
     print("\n${GREEN}Available Categories:${NC}")
@@ -44,11 +48,10 @@ search_tools() {
         echo "Usage: blackarch search <query>"
         return
     fi
-    python3 << EOF
-import json
-import sys
-query = "$query".lower()
-with open("/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json") as f:
+    BA_ARG="$query" python3 << EOF
+import json, os
+query = os.environ["BA_ARG"].lower()
+with open(os.environ["BLACKARCH_DB"]) as f:
     data = json.load(f)
     results = []
     for cat, tools in data['categories'].items():
@@ -70,11 +73,10 @@ show_tool() {
         echo "Usage: blackarch tool <name>"
         return
     fi
-    python3 << EOF
-import json
-import sys
-name = "$name".lower()
-with open("/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json") as f:
+    BA_ARG="$name" python3 << EOF
+import json, os
+name = os.environ["BA_ARG"].lower()
+with open(os.environ["BLACKARCH_DB"]) as f:
     data = json.load(f)
     for cat, tools in data['categories'].items():
         for t in tools:
@@ -83,7 +85,7 @@ with open("/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json") as f:
                 print(f"${GREEN}Version:${NC} {t['version']}")
                 print(f"${GREEN}Category:${NC} {cat}")
                 print(f"${GREEN}Description:${NC} {t['description']}")
-                return
+                raise SystemExit
     print("Tool not found")
 EOF
 }
@@ -91,13 +93,13 @@ EOF
 # Random tools
 random_tools() {
     local count="${1:-5}"
-    python3 << EOF
-import json
-import random
-with open("/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json") as f:
+    [[ "$count" =~ ^[0-9]+$ ]] || count=5
+    BA_COUNT="$count" python3 << EOF
+import json, os, random
+with open(os.environ["BLACKARCH_DB"]) as f:
     data = json.load(f)
     all_tools = [(cat, t) for cat, tools in data['categories'].items() for t in tools]
-    for cat, t in random.sample(all_tools, min($count, len(all_tools))):
+    for cat, t in random.sample(all_tools, min(int(os.environ["BA_COUNT"]), len(all_tools))):
         print(f"[{cat:12}] ${GREEN}{t['name']}${NC}")
         print(f"  {t['description'][:60]}...")
 EOF
@@ -106,8 +108,8 @@ EOF
 # Stats
 show_stats() {
     python3 << EOF
-import json
-with open("/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json") as f:
+import json, os
+with open(os.environ["BLACKARCH_DB"]) as f:
     data = json.load(f)
     total = sum(len(v) for v in data['categories'].values())
     cats = len(data['categories'])
@@ -206,8 +208,8 @@ case "$1" in
     random) random_tools "$2" ;;
     stats) show_stats ;;
     cheat|commands) cheat_sheet "$2" ;;
-    web) python3 /run/media/phoenix0/Ventoy/New\ Folder/blackarch_web.py ;;
-    mcp) python3 /run/media/phoenix0/Ventoy/New\ Folder/blackarch_mcp_v2.py ;;
+    web) python3 "$BASE_DIR/blackarch_web.py" ;;
+    mcp) python3 "$BASE_DIR/blackarch_mcp_v2.py" ;;
     help|--help|-h) show_help ;;
     *) show_help ;;
 esac

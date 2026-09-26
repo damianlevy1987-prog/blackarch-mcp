@@ -7,16 +7,19 @@ Simple client for interacting with the BlackArch MCP server.
 import json
 import subprocess
 import sys
+from pathlib import Path
 from typing import Optional, Dict, List, Any
 
 class BlackArchClient:
     """Client for BlackArch MCP Server"""
     
-    def __init__(self, server_path: str = "blackarch_mcp_v2.py"):
-        self.server_path = server_path
+    def __init__(self, server_path: Optional[str] = None):
+        self.server_path = server_path or str(
+            Path(__file__).resolve().parent / "blackarch_mcp_v2.py"
+        )
     
     def _send_request(self, request: dict) -> dict:
-        """Send JSON-RPC request to MCP server"""
+        """Send JSON-RPC request to MCP server, unwrapping content-array results."""
         try:
             result = subprocess.run(
                 ['python3', self.server_path],
@@ -26,11 +29,19 @@ class BlackArchClient:
                 timeout=30
             )
             
-            # Parse last JSON line (skip banner)
             lines = result.stdout.strip().split('\n')
             for line in reversed(lines):
                 if line.strip().startswith('{'):
-                    return json.loads(line)
+                    response = json.loads(line)
+                    res = response.get("result")
+                    # MCP-conformant tool results: {content:[{type,text}]}
+                    if isinstance(res, dict) and isinstance(res.get("content"), list) and res["content"]:
+                        text = res["content"][0].get("text", "")
+                        try:
+                            response["result"] = json.loads(text)
+                        except json.JSONDecodeError:
+                            response["result"] = {"text": text}
+                    return response
             
             return {"error": "No JSON response"}
         except subprocess.TimeoutExpired:

@@ -13,14 +13,16 @@ class BlackArchTestRunner:
     """Test runner for BlackArch MCP server"""
     
     def __init__(self):
-        self.server_path = "/run/media/phoenix0/Ventoy/New Folder/blackarch_mcp_v2.py"
-        self.db_path = "/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json"
+        from pathlib import Path
+        base = Path(__file__).resolve().parent
+        self.server_path = str(base / "blackarch_mcp_v2.py")
+        self.db_path = str(base / "blackarch_full_db.json")
         self.tests_passed = 0
         self.tests_failed = 0
         self.tests_run = 0
     
     def send_request(self, request: dict) -> dict:
-        """Send MCP request to server"""
+        """Send MCP request to server, unwrapping the MCP content array."""
         try:
             result = subprocess.run(
                 ['python3', self.server_path],
@@ -32,7 +34,18 @@ class BlackArchTestRunner:
             lines = result.stdout.strip().split('\n')
             for line in reversed(lines):
                 if line.strip().startswith('{'):
-                    return json.loads(line)
+                    response = json.loads(line)
+                    res = response.get("result")
+                    # MCP-conformant tool results arrive as {content:[{type,text}]}
+                    if isinstance(res, dict) and isinstance(res.get("content"), list) and res["content"]:
+                        text = res["content"][0].get("text", "")
+                        try:
+                            response["result"] = json.loads(text)
+                        except json.JSONDecodeError:
+                            response["result"] = {"text": text}
+                        if res.get("isError"):
+                            response["error"] = text
+                    return response
             return {"error": "No JSON response"}
         except subprocess.TimeoutExpired:
             return {"error": "Timeout"}

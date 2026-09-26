@@ -21,17 +21,23 @@ class Tool:
 class BlackArchAPI:
     """Python API for BlackArch tools"""
     
-    def __init__(self, db_path: str = "/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json"):
-        self.db_path = Path(db_path)
+    def __init__(self, db_path: Optional[str] = None):
+        import os
+        default_db = Path(__file__).resolve().parent / "blackarch_full_db.json"
+        self.db_path = Path(db_path or os.environ.get("BLACKARCH_DB") or default_db)
         self._cache: Dict = {}
         self._load_db()
-    
+
     def _load_db(self):
         """Load tool database"""
         if self.db_path.exists():
             with open(self.db_path) as f:
                 data = json.load(f)
                 self._cache = data.get("categories", {})
+        else:
+            import sys
+            print(f"blackarch_api: warning: database not found at {self.db_path}",
+                  file=sys.stderr)
     
     def categories(self) -> List[str]:
         """List all categories"""

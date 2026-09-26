@@ -45,7 +45,7 @@ class BlackArchHandler(http.server.SimpleHTTPRequestHandler):
                 "method": "tools/call",
                 "params": {"name": "get_tools", "arguments": {"category": category, "limit": 50}}
             }))
-        elif path.startswith('/api/search?'):
+        elif path == '/api/search':
             query = urllib.parse.parse_qs(parsed.query).get('q', [''])[0]
             self.send_json(self._mcp_request({
                 "jsonrpc": "2.0",
@@ -53,7 +53,7 @@ class BlackArchHandler(http.server.SimpleHTTPRequestHandler):
                 "method": "tools/call",
                 "params": {"name": "search", "arguments": {"query": query}}
             }))
-        elif path.startswith('/api/cheatsheet?'):
+        elif path == '/api/cheatsheet':
             category = urllib.parse.parse_qs(parsed.query).get('category', [''])[0]
             self.send_json(self._mcp_request({
                 "jsonrpc": "2.0",
@@ -72,10 +72,10 @@ class BlackArchHandler(http.server.SimpleHTTPRequestHandler):
             self.send_error(404)
     
     def _mcp_request(self, request: dict) -> dict:
-        """Send request to MCP server"""
+        """Send request to MCP server; returns the unwrapped payload for the UI."""
         try:
             result = subprocess.run(
-                ['python3', '/run/media/phoenix0/Ventoy/New Folder/blackarch_mcp_v2.py'],
+                ['python3', str(Path(__file__).resolve().parent / 'blackarch_mcp_v2.py')],
                 input=json.dumps(request),
                 capture_output=True,
                 text=True,
@@ -84,7 +84,18 @@ class BlackArchHandler(http.server.SimpleHTTPRequestHandler):
             lines = result.stdout.strip().split('\n')
             for line in reversed(lines):
                 if line.strip().startswith('{'):
-                    return json.loads(line)
+                    response = json.loads(line)
+                    res = response.get("result")
+                    # Unwrap MCP content-array: {content:[{type,text}]} -> payload
+                    if isinstance(res, dict) and isinstance(res.get("content"), list) and res["content"]:
+                        text = res["content"][0].get("text", "")
+                        try:
+                            return json.loads(text)
+                        except json.JSONDecodeError:
+                            return {"text": text}
+                    if isinstance(res, dict):
+                        return res
+                    return {"error": response.get("error", "No result")}
             return {"error": "No response"}
         except Exception as e:
             return {"error": str(e)}

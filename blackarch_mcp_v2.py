@@ -20,15 +20,16 @@ class Tool:
 class BlackArchDatabase:
     """BlackArch tools database manager"""
     
-    def __init__(self, db_path: str = "/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json"):
-        self.db_path = db_path
+    def __init__(self, db_path: Optional[str] = None):
+        default_db = Path(__file__).resolve().parent / "blackarch_full_db.json"
+        self.db_path = Path(db_path or os.environ.get("BLACKARCH_DB") or default_db)
         self.categories: Dict[str, List[Tool]] = {}
         self.metadata: Dict = {}
         self._load_database()
-    
+
     def _load_database(self):
         """Load the full tool database"""
-        if Path(self.db_path).exists():
+        if self.db_path.exists():
             with open(self.db_path, "r") as f:
                 data = json.load(f)
                 self.metadata = data.get("metadata", {})
@@ -39,10 +40,10 @@ class BlackArchDatabase:
         else:
             # Fallback to parsing the raw file
             self._load_from_raw()
-    
+
     def _load_from_raw(self):
         """Parse from raw blackarch file"""
-        raw_path = Path("/run/media/phoenix0/Ventoy/New Folder/blackarch")
+        raw_path = self.db_path.parent / "blackarch"
         if raw_path.exists():
             with open(raw_path, "r") as f:
                 for line in f:
@@ -259,21 +260,53 @@ class BlackArchMCPServer:
             }
         ]
     
-    def handle_request(self, request: dict) -> dict:
-        """Handle MCP request"""
+    def handle_request(self, request: dict) -> Optional[dict]:
+        """Handle MCP request. Returns None for notifications (no response)."""
         method = request.get("method", "")
         req_id = request.get("id")
-        
+
+        # Notifications carry no id and must not be answered.
+        if "id" not in request:
+            return None
+
+        if method == "initialize":
+            client_proto = (request.get("params") or {}).get("protocolVersion", "2024-11-05")
+            return {
+                "jsonrpc": "2.0",
+                "id": req_id,
+                "result": {
+                    "protocolVersion": client_proto,
+                    "capabilities": {"tools": {"listChanged": False}},
+                    "serverInfo": {"name": "blackarch-mcp", "version": "2.0.1"},
+                    "instructions": "BlackArch security tools catalog (2863 tools, 48 categories). Read-only reference data.",
+                },
+            }
+
+        if method == "ping":
+            return {"jsonrpc": "2.0", "id": req_id, "result": {}}
+
         if method == "tools/list":
             return {"jsonrpc": "2.0", "id": req_id, "result": {"tools": self.mcp_tools}}
-        
+
         if method == "tools/call":
-            tool_name = request.get("params", {}).get("name", "")
-            tool_args = request.get("params", {}).get("arguments", {})
-            
+            params = request.get("params") or {}
+            tool_name = params.get("name", "")
+            tool_args = params.get("arguments", {}) or {}
+
             result = self._execute_tool(tool_name, tool_args)
-            return {"jsonrpc": "2.0", "id": req_id, "result": result}
-        
+            # MCP spec: tool results are wrapped in a content array.
+            if "error" in result and len(result) == 1:
+                return {
+                    "jsonrpc": "2.0",
+                    "id": req_id,
+                    "result": {"content": [{"type": "text", "text": result["error"]}], "isError": True},
+                }
+            return {
+                "jsonrpc": "2.0",
+                "id": req_id,
+                "result": {"content": [{"type": "text", "text": json.dumps(result, indent=2)}]},
+            }
+
         return {"jsonrpc": "2.0", "id": req_id, "error": {"code": -32601, "message": "Unknown method"}}
     
     def _execute_tool(self, name: str, args: dict) -> dict:
@@ -375,49 +408,47 @@ class BlackArchMCPServer:
         return cheat_sheet
 
 def main():
-    """Main MCP server loop"""
+    """Main MCP server loop. stdout carries JSON-RPC only; all logs go to stderr."""
     server = BlackArchMCPServer()
-    
-    # Print startup banner
-    print("""
-    ╔═══════════════════════════════════════════════════════════════════╗
-    ║                                                                   ║
-    ║   ███████╗ ██████╗ ██████╗ ███╗   ██╗██╗███╗   ██╗ ██████╗       ║
-    ║   ██╔════╝██╔═══██╗██╔══██╗████╗  ██║██║████╗  ██║██╔═══██╗      ║
-    ║   ███████╗██║   ██║██████╔╝██╔██╗ ██║██║██╔██╗ ██║██║   ██║      ║
-    ║   ╚════██║██║   ██║██╔══██╗██║╚██╗██║██║██║╚██╗██║██║   ██║      ║
-    ║   ███████║╚██████╔╝██║  ██║██║ ╚████║██║██║ ╚████║╚██████╔╝      ║
-    ║   ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝ ╚═════╝       ║
-    ║                                                                   ║
-    ║            BLACKARCH TOOLS MCP SERVER v2.0                        ║
-    ║            2863+ Security Tools • 48 Categories                  ║
-    ║                                                                   ║
-    ╚═══════════════════════════════════════════════════════════════════╝
-    """, flush=True)
-    
-    print(f"Database loaded: {server.db.metadata.get('total_tools', 0)} tools")
-    print("Waiting for MCP requests...\n", flush=True)
-    
+
+    print(f"blackarch-mcp v2.0.1 ready — {len(server.db.categories)} categories, "
+          f"{server.db.metadata.get('total_tools', 0)} tools", file=sys.stderr, flush=True)
+
     # MCP protocol loop
     while True:
         try:
             line = sys.stdin.readline()
             if not line:
                 break
-            
-            request = json.loads(line.strip())
-            response = server.handle_request(request)
-            print(json.dumps(response), flush=True)
-            
-        except json.JSONDecodeError:
-            pass
+
+            try:
+                request = json.loads(line.strip())
+            except json.JSONDecodeError:
+                print(json.dumps({
+                    "jsonrpc": "2.0",
+                    "id": None,
+                    "error": {"code": -32700, "message": "Parse error"}
+                }), flush=True)
+                continue
+
+            req_id = request.get("id")
+            try:
+                response = server.handle_request(request)
+            except Exception as e:
+                # Never answer a notification, even on error.
+                if "id" not in request:
+                    continue
+                response = {
+                    "jsonrpc": "2.0",
+                    "id": req_id,
+                    "error": {"code": -32603, "message": str(e)},
+                }
+
+            if response is not None:
+                print(json.dumps(response), flush=True)
+
         except KeyboardInterrupt:
             break
-        except Exception as e:
-            print(json.dumps({
-                "jsonrpc": "2.0",
-                "error": {"code": -32603, "message": str(e)}
-            }), flush=True)
 
 if __name__ == "__main__":
     main()

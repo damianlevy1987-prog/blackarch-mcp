@@ -1,17 +1,14 @@
-version: '3.8'
-
 services:
   blackarch-mcp:
     build: .
     container_name: blackarch-mcp-server
-    ports:
-      - "8080:8080"
+    # stdio-only JSON-RPC server: attach with `docker run -i`, no ports.
+    stdin_open: true
     volumes:
       - ./blackarch_full_db.json:/app/blackarch_full_db.json:ro
     environment:
-      - BLACKARCH_PATH=/app
+      - BLACKARCH_DB=/app/blackarch_full_db.json
       - PYTHONUNBUFFERED=1
-    restart: unless-stopped
     healthcheck:
       test: ["CMD", "python3", "-c", "import json; open('/app/blackarch_full_db.json').read()"]
       interval: 30s

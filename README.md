@@ -27,12 +27,16 @@ cd blackarch-mcp
 python3 blackarch_mcp_v2.py
 ```
 
-### MCP Server Endpoints
+### MCP Protocol Methods (stdio JSON-RPC)
+
+The server speaks JSON-RPC 2.0 over stdin/stdout (no HTTP listener). Send one
+request per line; responses arrive as one JSON line each.
 
 | Method | Description |
 |--------|-------------|
+| `initialize` | Protocol handshake |
 | `tools/list` | List all available tools |
-| `tools/call` | Execute a tool |
+| `tools/call` | Execute a tool (results returned in the MCP `content` array) |
 
 ### Available Tools
 
@@ -101,12 +105,15 @@ python3 test_blackarch.py
 ## 🐳 Docker
 
 ```bash
-# Build and run
-docker-compose up -d
+# Build and start the web UI (http://localhost:8081) + image
+docker compose up -d
 
-# Or build manually
+# Or run the stdio MCP server interactively (JSON-RPC on stdin)
 docker build -t blackarch-mcp .
-docker run -p 8080:8080 blackarch-mcp
+docker run -i blackarch-mcp
+
+# Or run the web UI alone
+docker run -p 8080:8080 blackarch-mcp python3 /app/blackarch_web.py
 ```
 
 ---

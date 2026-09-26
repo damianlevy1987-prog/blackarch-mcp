@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 # Import the main MCP server
-sys.path.insert(0, '/run/media/phoenix0/Ventoy/New Folder')
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from blackarch_mcp_v2 import BlackArchMCPServer
 
 class BlackArchAssistant:

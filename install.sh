@@ -16,6 +16,15 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m'
 
+# Resolve install location (all paths derive from here)
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Make entrypoints executable (repo checkout may not preserve the bit)
+chmod_scripts() {
+    chmod +x "$BASE_DIR/blackarch.sh" "$BASE_DIR/blackarch_mcp_v2.py" \
+             "$BASE_DIR/blackarch_client.py" 2>/dev/null || true
+}
+
 # Detect OS
 detect_os() {
     if [ -f /etc/arch-release ]; then
@@ -59,7 +68,7 @@ install_deps() {
 setup_aliases() {
     echo -e "${CYAN}Setting up aliases...${NC}"
     
-    ALIAS_LINE="alias blackarch='/run/media/phoenix0/Ventoy/New Folder/blackarch.sh'"
+    ALIAS_LINE="alias blackarch='$BASE_DIR/blackarch.sh'"
     BASHRC="$HOME/.bashrc"
     
     if ! grep -q "blackarch.sh" "$BASHRC" 2>/dev/null; then
@@ -83,7 +92,12 @@ setup_service() {
     echo -e "${CYAN}Setting up systemd service...${NC}"
     
     if command -v systemctl &> /dev/null; then
-        sudo cp /run/media/phoenix0/Ventoy/New\ Folder/blackarch-mcp.service /etc/systemd/system/
+        local rendered
+        rendered=$(mktemp)
+        sed -e "s|@BASE_DIR@|$BASE_DIR|g" -e "s|@USER@|$(id -un)|g" \
+            "$BASE_DIR/blackarch-mcp.service" > "$rendered"
+        sudo cp "$rendered" /etc/systemd/system/blackarch-mcp.service
+        rm -f "$rendered"
         sudo systemctl daemon-reload
         echo -e "${GREEN}✓ Systemd service installed${NC}"
         echo -e "${YELLOW}Run: sudo systemctl enable --now blackarch-mcp${NC}"
@@ -113,8 +127,8 @@ setup_symlinks() {
     BIN_DIR="$HOME/.local/bin"
     mkdir -p "$BIN_DIR"
     
-    ln -sf /run/media/phoenix0/Ventoy/New\ Folder/blackarch.sh "$BIN_DIR/blackarch"
-    ln -sf /run/media/phoenix0/Ventoy/New\ Folder/blackarch_client.py "$BIN_DIR/ba"
+    ln -sf "$BASE_DIR/blackarch.sh" "$BIN_DIR/blackarch"
+    ln -sf "$BASE_DIR/blackarch_client.py" "$BIN_DIR/ba"
     
     if [ -d "$BIN_DIR" ] && [[ ":$PATH:" == *":$HOME/.local/bin:"* ]]; then
         echo -e "${GREEN}✓ Symlinks created in ~/.local/bin${NC}"
@@ -129,16 +143,22 @@ verify() {
         :
     fi
     
-    if [ -f "/run/media/phoenix0/Ventoy/New Folder/blackarch_full_db.json" ]; then
+    if [ -f "$BASE_DIR/blackarch_full_db.json" ]; then
         echo -e "${GREEN}✓ Database present${NC}"
+    else
+        echo -e "${RED}✗ Database missing at $BASE_DIR/blackarch_full_db.json${NC}"
     fi
     
-    if [ -x "/run/media/phoenix0/Ventoy/New Folder/blackarch_mcp_v2.py" ]; then
-        echo -e "${GREEN}✓ MCP server executable${NC}"
+    if [ -f "$BASE_DIR/blackarch_mcp_v2.py" ]; then
+        echo -e "${GREEN}✓ MCP server present${NC}"
+    else
+        echo -e "${RED}✗ MCP server missing${NC}"
     fi
     
-    if [ -x "/run/media/phoenix0/Ventoy/New Folder/blackarch.sh" ]; then
+    if [ -x "$BASE_DIR/blackarch.sh" ]; then
         echo -e "${GREEN}✓ CLI executable${NC}"
+    else
+        echo -e "${RED}✗ CLI not executable${NC}"
     fi
     
     echo -e "${GREEN}✓ Installation complete!${NC}"
@@ -146,6 +166,7 @@ verify() {
 
 # Main menu
 main() {
+    chmod_scripts
     echo ""
     echo "Detected OS: $(detect_os)"
     echo ""
@@ -191,9 +212,9 @@ main() {
     
     echo ""
     echo -e "${CYAN}Quick Start:${NC}"
-    echo "  ./blackarch.sh stats"
-    echo "  python3 blackarch_mcp_v2.py"
-    echo "  python3 blackarch_client.py categories"
+    echo "  $BASE_DIR/blackarch.sh stats"
+    echo "  python3 $BASE_DIR/blackarch_mcp_v2.py"
+    echo "  python3 $BASE_DIR/blackarch_client.py categories"
     echo ""
 }
 
