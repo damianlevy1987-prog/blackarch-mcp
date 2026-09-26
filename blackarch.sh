@@ -128,7 +128,7 @@ cheat_sheet() {
     local category="$1"
     if [ -z "$category" ]; then
         echo "Usage: blackarch cheat <category>"
-        echo "Categories: scanner, webapp, exploitation, cracker, wireless, forensic, recon, mobile"
+        echo "Categories: scanner, webapp, exploitation, cracker, wireless, recon, forensic"
         return
     fi
     
@@ -168,8 +168,24 @@ cheat_sheet() {
             echo "  airodump-ng wlan0mon"
             echo "  aircrack-ng capture.cap -w wordlist.txt"
             ;;
+        recon)
+            echo -e "${GREEN}THEHARVESTER:${NC}"
+            echo "  theHarvester -d target.com -b google"
+            echo -e "\n${GREEN}AMASS:${NC}"
+            echo "  amass enum -passive -d target.com"
+            echo -e "\n${GREEN}RECON-NG:${NC}"
+            echo "  recon-ng"
+            ;;
+        forensic)
+            echo -e "${GREEN}BINWALK:${NC}"
+            echo "  binwalk firmware.bin"
+            echo -e "\n${GREEN}AUTOPSY:${NC}"
+            echo "  autopsy"
+            echo -e "\n${GREEN}VOLATILITY:${NC}"
+            echo "  volatility -f memory.dmp --profile=Win10x64 pslist"
+            ;;
         *)
-            echo "Available cheat sheets: scanner, webapp, exploitation, cracker, wireless"
+            echo "Available cheat sheets: scanner, webapp, exploitation, cracker, wireless, recon, forensic"
             ;;
     esac
 }

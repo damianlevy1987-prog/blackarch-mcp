@@ -164,6 +164,7 @@ class BlackArchHandler(http.server.SimpleHTTPRequestHandler):
             <a href="#" onclick="showSection('categories')">Categories</a>
             <a href="#" onclick="showSection('search')">Search</a>
             <a href="#" onclick="showSection('random')">Random Tools</a>
+            <a href="#" onclick="showSection('cheatsheet')">Cheat Sheet</a>
             <a href="#" onclick="showSection('mcp')">MCP Protocol</a>
         </div>
         
@@ -188,6 +189,13 @@ class BlackArchHandler(http.server.SimpleHTTPRequestHandler):
             <h2>🎲 Random Tools</h2>
             <button class="btn" onclick="getRandom()">Get Random Tools</button>
             <div id="random-results"></div>
+        </div>
+        
+        <div id="cheatsheet-section" style="display:none">
+            <h2>📜 Cheat Sheet</h2>
+            <input type="text" class="search-box" id="cheat-input" placeholder="Category (e.g., scanner, webapp, recon, forensic)..." onkeyup="if(event.key==='Enter')loadCheat()">
+            <button class="btn" onclick="loadCheat()">Show Cheat Sheet</button>
+            <div id="cheat-results"></div>
         </div>
         
         <div id="mcp-section" style="display:none">
@@ -217,7 +225,7 @@ class BlackArchHandler(http.server.SimpleHTTPRequestHandler):
     
     <script>
         function showSection(name) {
-            ['stats', 'categories', 'search', 'random', 'mcp'].forEach(s => {
+            ['stats', 'categories', 'search', 'random', 'cheatsheet', 'mcp'].forEach(s => {
                 document.getElementById(s + '-section').style.display = s === name ? 'block' : 'none';
             });
             if (name === 'stats') loadStats();
@@ -288,6 +296,34 @@ class BlackArchHandler(http.server.SimpleHTTPRequestHandler):
                         <div class="tool-desc">${t.description}</div>
                     </div>`
                 ).join('') + '</div>';
+        }
+        
+        async function loadCheat() {
+            const cat = document.getElementById('cheat-input').value.trim();
+            if (!cat) return;
+            const res = await fetch('/api/cheatsheet?category=' + encodeURIComponent(cat));
+            const data = await res.json();
+            let html = '';
+            if (data.error) {
+                html = `<p>${data.error}</p>`;
+            } else {
+                if ((data.commands || []).length) {
+                    html += `<div class="tools-list" style="display:block"><h3>Commands</h3>` +
+                        data.commands.map(c =>
+                            `<div class="tool"><span class="tool-name">${c.command}</span>
+                             <div class="tool-desc">${c.description}</div></div>`
+                        ).join('') + '</div>';
+                }
+                if ((data.suggested_tools || []).length) {
+                    html += `<div class="tools-list" style="display:block"><h3>Suggested Tools</h3>` +
+                        data.suggested_tools.map(t =>
+                            `<div class="tool"><span class="tool-name">${t.name}</span>
+                             <span class="tool-version">${t.version}</span>
+                             <div class="tool-desc">${t.description}</div></div>`
+                        ).join('') + '</div>';
+                }
+            }
+            document.getElementById('cheat-results').innerHTML = html;
         }
         
         loadStats();

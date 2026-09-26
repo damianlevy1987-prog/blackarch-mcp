@@ -354,12 +354,21 @@ class BlackArchMCPServer:
     def _generate_cheatsheet(self, category: str) -> dict:
         """Generate a cheat sheet for a category"""
         cat_lower = category.lower().replace(" ", "_")
-        tools = self.db.get_tools_by_category(cat_lower, 20)
-        
+        tools = self.db.get_tools_by_category(cat_lower, 10)
+
+        if not tools:
+            return {
+                "category": category,
+                "commands": [],
+                "error": f"Unknown category: {category}",
+            }
+
         cheat_sheet = {
             "category": category,
             "description": f"Common tools for {category}",
-            "commands": []
+            "commands": [],
+            # Every category carries its top tools, even without curated commands
+            "suggested_tools": tools,
         }
         
         # Add example commands based on category
@@ -406,7 +415,6 @@ class BlackArchMCPServer:
                 cheat_sheet["commands"].append({"command": cmd, "description": desc})
         
         return cheat_sheet
-
 def main():
     """Main MCP server loop. stdout carries JSON-RPC only; all logs go to stderr."""
     server = BlackArchMCPServer()
