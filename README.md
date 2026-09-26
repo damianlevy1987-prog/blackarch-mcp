@@ -2,7 +2,7 @@
 
 **2,863+ security tools** organized across **48 categories** with MCP server, CLI, Web UI, and Python API.
 
-[![Tests](https://img.shields.io/badge/tests-16%20passed-brightgreen)](https://github.com/damianlevy1987-prog/blackarch-mcp)
+[![CI](https://github.com/damianlevy1987-prog/blackarch-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/damianlevy1987-prog/blackarch-mcp/actions/workflows/ci.yml)
 [![Tools](https://img.shields.io/badge/tools-2863-blue)](https://github.com/damianlevy1987-prog/blackarch-mcp)
 [![Categories](https://img.shields.io/badge/categories-48-orange)](https://github.com/damianlevy1987-prog/blackarch-mcp)
 
