@@ -45,6 +45,9 @@ def main() -> int:
         res = r.get("result", {})
         if "protocolVersion" not in res or "serverInfo" not in res:
             failures.append(f"initialize: bad result shape {res}")
+        elif res["protocolVersion"] != "2025-06-18":
+            failures.append(
+                f"initialize: protocolVersion not echoed (got {res['protocolVersion']})")
 
     # 2. notification (no id) -> must produce NO response
     send({"jsonrpc": "2.0", "method": "notifications/initialized"})
@@ -110,6 +113,25 @@ def main() -> int:
     if not r or r.get("id") != 99:
         failures.append(f"id correlation: expected id 99, got {r}")
 
+    # 10. by_tags: array input works; bare string input must be rejected
+    send({"jsonrpc": "2.0", "id": 10, "method": "tools/call",
+          "params": {"name": "by_tags", "arguments": {"tags": ["bruteforce"]}}})
+    r = recv()
+    payload = {}
+    try:
+        payload = json.loads(r["result"]["content"][0]["text"])
+    except (KeyError, IndexError, TypeError, json.JSONDecodeError):
+        pass
+    if r.get("id") != 10 or not payload.get("tools"):
+        failures.append(f"by_tags array input: expected tools, got {r}")
+
+    send({"jsonrpc": "2.0", "id": 11, "method": "tools/call",
+          "params": {"name": "by_tags", "arguments": {"tags": "recon"}}})
+    r = recv()
+    res = (r or {}).get("result", {})
+    if not res.get("isError"):
+        failures.append(f"by_tags string input: expected isError, got {res}")
+
     proc.stdin.close()
     proc.wait(timeout=10)
     stderr = proc.stderr.read()
@@ -121,7 +143,7 @@ def main() -> int:
         for f in failures:
             print(f"  - {f}")
         return 1
-    print("PASS: all 9 handshake checks green")
+    print("PASS: all 10 handshake checks green")
     return 0
 
 

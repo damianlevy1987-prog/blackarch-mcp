@@ -7,7 +7,6 @@ Validates MCP server functionality.
 import json
 import subprocess
 import sys
-from typing import Dict, List, Any
 
 class BlackArchTestRunner:
     """Test runner for BlackArch MCP server"""
@@ -165,7 +164,53 @@ class BlackArchTestRunner:
         })
         result = response.get("result", {})
         self.test("Returns cheat sheet", "category" in result or "commands" in result or "error" not in response)
-        
+
+        # Test 10: by_tags
+        print("\n[10] by_tags Tool")
+        response = self.send_request({
+            "jsonrpc": "2.0", "id": 9,
+            "method": "tools/call",
+            "params": {"name": "by_tags", "arguments": {"tags": ["bruteforce"]}}
+        })
+        tools = response.get("result", {}).get("tools", [])
+        self.test("Returns tag-matched tools", len(tools) > 0)
+
+        response = self.send_request({
+            "jsonrpc": "2.0", "id": 10,
+            "method": "tools/call",
+            "params": {"name": "by_tags", "arguments": {"tags": "recon"}}
+        })
+        result = response.get("result", {})
+        self.test("Rejects bare-string tags",
+                  result.get("text", "") != "" or "error" in response or result.get("isError"))
+
+        # Test 11: negative paths
+        print("\n[11] Negative Paths")
+        response = self.send_request({
+            "jsonrpc": "2.0", "id": 11,
+            "method": "tools/call",
+            "params": {"name": "cheat_sheet", "arguments": {"category": "no-such-category"}}
+        })
+        result = response.get("result", {})
+        self.test("Unknown cheat_sheet category returns error", "error" in result)
+
+        response = self.send_request({
+            "jsonrpc": "2.0", "id": 12,
+            "method": "tools/call",
+            "params": {"name": "get_tool", "arguments": {"name": "zzz-no-such-tool-zzz"}}
+        })
+        tool = response.get("result", {}).get("tool")
+        self.test("Unknown get_tool returns null", tool is None)
+
+        response = self.send_request({
+            "jsonrpc": "2.0", "id": 13,
+            "method": "tools/call",
+            "params": {"name": "search", "arguments": {"query": ""}}
+        })
+        result = response.get("result", {})
+        self.test("Empty search query returns error",
+                  result.get("text", "") != "" or "error" in response)
+
         # Print summary
         print(f"""
 ╔═══════════════════════════════════════════════════════════╗
