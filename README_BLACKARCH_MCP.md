@@ -13,13 +13,13 @@
 | File | Size | Description |
 |------|------|-------------|
 | `blackarch_mcp_v2.py` | 18KB | **Main MCP server** |
-| `blackarch_client.py` | 7KB | Python MCP client |
+| `blackarch_client.py` | 10KB | Python MCP client |
 | `blackarch_mcp_config.py` | 4KB | Claude Code integration |
 
 ### CLI Tools
 | File | Size | Description |
 |------|------|-------------|
-| `blackarch.sh` | 7KB | Bash CLI (colored output) |
+| `blackarch.sh` | 9KB | Bash CLI (colored output) |
 | `blackarch_api.py` | 5KB | Python API library |
 | `blackarch_assistant.py` | 7KB | Phase-based recommendations |
 | `blackarch_manager.py` | 8KB | Tool installer/manager |
@@ -27,7 +27,7 @@
 ### Web Interface
 | File | Size | Description |
 |------|------|-------------|
-| `blackarch_web.py` | 14KB | HTTP server (port 8080) |
+| `blackarch_web.py` | 16KB | HTTP server (port 8080) |
 
 ### Documentation
 | File | Size | Description |
@@ -51,10 +51,10 @@ cd blackarch-mcp   # the directory you cloned this repo into
 ./blackarch.sh list
 
 # Search tools
-./blackarch.sh search nmap
+./blackarch.sh search burp
 
 # Show tool details
-./blackarch.sh tool sqlmap
+./blackarch.sh tool burpsuite
 
 # Command cheat sheet
 ./blackarch.sh cheat scanner
@@ -67,8 +67,8 @@ python3 blackarch_mcp_v2.py
 
 # In another terminal - use client
 python3 blackarch_client.py categories
-python3 blackarch_client.py search sqlmap
-python3 blackarch_client.py tool nmap
+python3 blackarch_client.py search burp
+python3 blackarch_client.py tool nuclei
 ```
 
 ### 3. Web Interface
@@ -88,7 +88,7 @@ api = BlackArchAPI()
 print(api.categories())
 
 # Search tools
-for tool in api.search("nmap"):
+for tool in api.search("burp"):
     print(f"{tool.name} - {tool.description}")
 
 # Get stats

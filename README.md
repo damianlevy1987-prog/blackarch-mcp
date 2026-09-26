@@ -12,7 +12,7 @@
 - ✅ **CLI Tools** - Bash CLI with colored output
 - ✅ **Python API** - Full Python library
 - ✅ **Web Interface** - HTTP server on port 8080
-- ✅ **Test Suite** - 16/16 tests passing
+- ✅ **Test Suite** - 21/21 tests passing
 - ✅ **Docker Support** - Ready for containerization
 
 ---
@@ -97,7 +97,7 @@ python3 blackarch_mcp_v2.py
 
 ```bash
 python3 test_blackarch.py
-# 16/16 tests passed
+# 21/21 tests passed
 ```
 
 ---
