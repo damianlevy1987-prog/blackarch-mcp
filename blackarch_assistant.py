@@ -208,42 +208,42 @@ binwalk -e firmware.bin
 
 **Web Security:** {stats['total_tools']} tools
 ```json
-{"method":"tools/call","params":{"name":"get_tools","arguments":{"category":"webapp"}}}
+{{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"webapp"}}}}}}
 ```
 
 **Scanning:** {stats['total_tools']} tools
 ```json
-{"method":"tools/call","params":{"name":"get_tools","arguments":{"category":"scanner"}}}
+{{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"scanner"}}}}}}
 ```
 
 **Exploitation:** {stats['total_tools']} tools
 ```json
-{"method":"tools/call","params":{"name":"get_tools","arguments":{"category":"exploitation"}}}
+{{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"exploitation"}}}}}}
 ```
 
 **Password Attacks:** {stats['total_tools']} tools
 ```json
-{"method":"tools/call","params":{"name":"get_tools","arguments":{"category":"cracker"}}}
+{{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"cracker"}}}}}}
 ```
 
 **Wireless:** {stats['total_tools']} tools
 ```json
-{"method":"tools/call","params":{"name":"get_tools","arguments":{"category":"wireless"}}}
+{{"method":"tools/call","params":{{"name":"get_tools","arguments":{{"category":"wireless"}}}}}}
 ```
 
 ### Search for Specific Tool:
 ```json
-{"method":"tools/call","params":{"name":"search","arguments":{"query":"nmap"}}}
+{{"method":"tools/call","params":{{"name":"search","arguments":{{"query":"nmap"}}}}}}
 ```
 
 ### Get Random Tools:
 ```json
-{"method":"tools/call","params":{"name":"random","arguments":{"count":10}}}
+{{"method":"tools/call","params":{{"name":"random","arguments":{{"count":10}}}}}}
 ```
 
 ### Cheat Sheet for Category:
 ```json
-{"method":"tools/call","params":{"name":"cheat_sheet","arguments":{"category":"scanner"}}}
+{{"method":"tools/call","params":{{"name":"cheat_sheet","arguments":{{"category":"scanner"}}}}}}
 ```
 """
 
